@@ -1,0 +1,27 @@
+body {
+  padding: 5%;
+  margin: auto;
+  background-color: white;
+  font-family: arial, sans-serif;
+}
+.main {
+  padding: 1%;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+.title p {
+  font-style: oblique;
+}
+.image {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+figcaption {
+  font-size: 1.1em;
+}
+.text {
+  margin-top: 3%;
+  font-size: 1.1em;
+}
