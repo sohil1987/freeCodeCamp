@@ -1,0 +1,44 @@
+body {
+  /*padding-top: 50px !important;*/
+}
+.navbar {
+  background-color: #2A2A2A;
+}
+#img-navbar {
+  height: 35px;
+}
+#home {
+  background: url(./images/mesaVacia.jpeg) no-repeat center center;
+  background-size: cover;
+  /*height: calc(100vh - 50px);*/
+  height: 100vh;
+}
+.home-text {
+  /*font-weight: bold;*/
+  font-size: 1.5em;
+  text-align: center;
+  color: #ededed;
+}
+#about {
+  padding-top: 50px !important;
+  background-color: #ededed;
+}
+#portfolio {
+  padding-top: 50px !important;
+}
+#contact {
+  background-color: burlywood;
+}
+h2 {
+  padding-top: 30px;
+}
+hr {
+  border-width: medium !important;
+  background-color: #ededed;
+}
+.card {
+  border-color: transparent !important;
+}
+.img-thumbnail {
+  border-color: transparent !important;
+}
