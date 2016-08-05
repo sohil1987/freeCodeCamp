@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Wikipedia Viewer</title>
+  <title>WikiViewer</title>
   <link rel="stylesheet" type="text/css" href="wiki.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
@@ -12,22 +12,24 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row text-xs-center">
-      <h2>Cat Photo Finder</h2>
+  <div class="workZone container-fluid">
+    <div class="text-xs-center">
+      <h2>WIKIVIEWER</h2>
     </div>
-    <div class="row text-xs-center">
-      <div class="col-xs-12 well message">
-        The message will go here
+    <div class="text-xs-center">
+      <button id="readRandom" class="btn btn-info">
+        Random article
+      </button>
+      <div class="input-group">
+        <input id="searchText" type="text" class="form-control" placeholder="Search">
+        <span class="input-group-btn">
+          <button id="searchBt" class="btn btn-success" type="button">Search</button>
+        </span>
       </div>
     </div>
-    <div class="row text-xs-center">
-      <div class="col-xs-12">
-        <button id="getMessage" class="btn btn-primary">
-          Get Message
-        </button>
-      </div>
-    </div>
+  </div>
+
+  <div id="results">
   </div>
 
   <script src="wiki.js"></script>

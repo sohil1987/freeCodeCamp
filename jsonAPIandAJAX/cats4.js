@@ -10,7 +10,13 @@
     console.log('COMIENZA');
     // GET ejemplo
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://cors-test.appspot.com/test', true);
+    // testear otras APIS
+    // var url = 'http://en.wikipedia.org/w/api.php'
+    // var url = 'http://ip-api.com/json'
+    /*var url =
+    'http://api.openweathermap.org/data/2.5/weather?q=logro%C3%B1o&appid=a6ccf57f755e7e5bbc51b4c2c1a052d4';*/
+    var url = 'https://cors-test.appspot.com/test';
+    xhr.open('GET', url, true);
     // xhr.setRequestHeader('Content-Type', 'application/json')
     xhr.onreadystatechange = function () {
       if (this.status == 200 && this.readyState == 4) {

@@ -1,0 +1,11 @@
+body {
+  background-color: darkgrey !important;
+}
+.workZone {
+  border-radius: 10px;
+  margin: 10% auto auto auto;
+  width: 450px;
+  padding: 30px 30px 30px 30px;
+  background-color: #ededed;
+  font-size: 1.5em;
+}
