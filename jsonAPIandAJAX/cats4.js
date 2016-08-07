@@ -15,7 +15,8 @@
     // var url = 'http://ip-api.com/json'
     /*var url =
     'http://api.openweathermap.org/data/2.5/weather?q=logro%C3%B1o&appid=a6ccf57f755e7e5bbc51b4c2c1a052d4';*/
-    var url = 'https://cors-test.appspot.com/test';
+    // var url = 'https://cors-test.appspot.com/test'
+    var url = 'https://api.twitch.tv/kraken/streams/ogamingsc2';
     xhr.open('GET', url, true);
     // xhr.setRequestHeader('Content-Type', 'application/json')
     xhr.onreadystatechange = function () {

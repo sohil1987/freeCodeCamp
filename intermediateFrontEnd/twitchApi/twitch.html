@@ -13,25 +13,38 @@
 <body>
 
   <div class="container-fluid">
-    <div class="row text-xs-center">
-      <h2>Cat Photo Finder</h2>
-    </div>
-    <div class="row text-xs-center">
-      <div class="col-xs-12 well message">
-        The message will go here
+    <div class="menu">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 text-xs-center">
+          <h4 id="icono">TWITCH.TV</h4>
+        </div>
+        <div class="col-sm-7 offset-sm-1 col-xs-12">
+          <nav class="navbar navbar-dark">
+            <div class="nav navbar-nav">
+              <button id="btnAll" class="btn">ALL</button>
+              <button id="btnOnline" class="btn">ONLINE</button>
+              <button id="btnOffline" class="btn">OFFLINE</button>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-    <div class="row text-xs-center">
-      <div class="col-xs-12">
-        <button id="getMessage" class="btn btn-primary">
-          Get Message
-        </button>
-      </div>
-    </div>
+
   </div>
 
-  <script src="twitch.js"></script>
+  <div id="results" class="result">
+  </div>
+
+  </div>
+
+  <script src="twitch2.js"></script>
 
 </body>
 
 </html>
+
+<!--
+
+
+
+-->
