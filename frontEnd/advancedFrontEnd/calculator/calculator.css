@@ -1,6 +1,26 @@
+@font-face {
+  font-family: "digital-7";
+  src: url(./images/digital-7.ttf);
+}
 body {
   background-color: #fafafa !important;
+  font-family: digital-7, monospace !important;
 }
+.calculator {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  max-width: 360px;
+  font-size: 2em;
+}
+.card {
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+  border-radius: 10px !important;
+}
+#minidisplay {
+  font-size: 0.5em;
+}
+#equal {}
 
 /*
 
