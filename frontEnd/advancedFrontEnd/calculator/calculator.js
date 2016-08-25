@@ -8,7 +8,8 @@
 
   function init () {
     console.log('Inicio');
-    var clickType = document.getElementsByClassName('card');
+    var clickType = document.getElementsByClassName('action');
+    console.log(clickType.length);
     for (var i = 0; i < clickType.length; i++) {
       clickType.item(i).addEventListener('click', clickCal);
     // console.log(clickType.item(i).innerText)
@@ -17,7 +18,7 @@
 
   function clickCal (ev) {
     var action = ev.target.innerText;
-    var prev = document.getElementById('display').innerText;
+    var prev = document.getElementById('result').innerText;
     if (action === '=') {
       printResult(result, log);
     } else if (action === 'AC') {
@@ -48,9 +49,9 @@
     }
   }
 
-  function printResult (display, minidisplay) {
-    document.getElementById('display').innerText = display;
-    document.getElementById('minidisplay').innerText = minidisplay;
+  function printResult (result, log) {
+    document.getElementById('result').innerText = result;
+    document.getElementById('log').innerText = log;
   }
 
   addEventListener('load', init);

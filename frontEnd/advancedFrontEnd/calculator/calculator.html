@@ -4,79 +4,94 @@
 <head>
   <meta charset="utf-8">
   <title>Calculator</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/brusbb.png">
   <link rel="stylesheet" type="text/css" href="calculator.css" />
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+      integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY"
+      crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <div class="calculator container-fluid">
-    <div class="row">
-      <div id="title " class="col-xs-12 text-xs-center">
-        Javascript Calculator
+  <div class="main container-fluid">
+
+    <div class="title row">
+      <div class="text-sm-center">JAVASCRIPT CALCULATOR</div>
+    </div>
+
+    <div class="display form-control input-group row">
+      <div class="text-sm-right" id="result">0</div>
+      <div class="text-sm-right" id="log">0</div>
+    </div>
+
+    <div class="calculator row text-sm-center">
+      <div class="col-sm-6">
+        <div class="action">AC</div>
       </div>
-      <div id="display" class="col-xs-12 text-xs-right">0
+      <div class="col-sm-3">
+        <div class="action">CE</div>
       </div>
-      <div id="minidisplay" class="col-xs-12 text-xs-right">0
+      <div class="col-sm-3">
+        <div class="action">&#215;</div>
       </div>
-      <div class=" text-xs-center ">
-        <div class="card col-xs-3 ">AC
-        </div>
-        <div class="card col-xs-3 ">CE
-        </div>
-        <div class="card col-xs-3 ">&#247;
-        </div>
-        <div class="card col-xs-3 ">&#215;
-        </div>
-        <div class="card col-xs-3 ">7
-        </div>
-        <div class="card col-xs-3 ">8
-        </div>
-        <div class="card col-xs-3 ">9
-        </div>
 
-        <div class="card col-xs-3 ">-
-        </div>
-        <div class="card col-xs-3 ">4
-        </div>
-        <div class="card col-xs-3 ">5
-        </div>
-        <div class="card col-xs-3 ">6
-        </div>
-        <div class="card col-xs-3 ">+
-        </div>
+      <div class="col-sm-3">
+        <div class="action">7</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">8</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">9</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">+</div>
+      </div>
 
-        <div class="col-xs-9 ">
-          <div class="row ">
-            <div class="card col-xs-4 ">1
-            </div>
-            <div class="card col-xs-4 ">2
-            </div>
-            <div class="card col-xs-4 ">3
-            </div>
-          </div>
-          <div class="row ">
-            <div class="card col-xs-8 ">0
-            </div>
-            <div class="card col-xs-4 ">.
-            </div>
-          </div>
-        </div>
+      <div class="col-sm-3">
+        <div class="action">4</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">5</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">6</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">-</div>
+      </div>
 
-        <div class="col-xs-3 ">
-          <div id="equal" class="card card-block">=
-          </div>
-        </div>
+      <div class="col-sm-3">
+        <div class="action">1</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">2</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">3</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">&#247;</div>
+      </div>
 
-
+      <div class="col-sm-3">
+        <div class="action">0</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="action">.</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="action">=</div>
       </div>
     </div>
+
   </div>
 
-  <script src="calculator.js "></script>
+  <script src="calculator.js"></script>
+
 </body>
 
 </html>
