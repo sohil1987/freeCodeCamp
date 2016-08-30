@@ -9,50 +9,95 @@
   function init () {
     console.log('Inicio');
     var clickType = document.getElementsByClassName('action');
-    console.log(clickType.length);
     for (var i = 0; i < clickType.length; i++) {
-      clickType.item(i).addEventListener('click', clickCal);
+      clickType.item(i).addEventListener('click', clickAction);
     // console.log(clickType.item(i).innerText)
     }
   }
 
-  function clickCal (ev) {
+  function clickAction (ev) {
     var action = ev.target.innerText;
     var prev = document.getElementById('result').innerText;
-    if (action === '=') {
-      printResult(result, log);
+    if (prev.length > 9) {
+      tooManyDigits();
+    } else if (action === '=') {
+      makeOperation(action);
     } else if (action === 'AC') {
-      log = 0;
-      result = 0;
-      operation = '';
-      printResult(0, 0);
+      makeAllClear();
     } else if (action === 'CE') {
-      result = 0;
-      printResult(0, log);
+      makeClear();
     } else if (action === '.') {
-      log += log;
-      printResult(prev, log);
-    } else if (Number.isNaN(parseInt(action))) {
-      if (operation === '+') {
-        result += result;
+      if (prev[prev.length - 1] !== '.') { // avoid 2+ commas in a row
+        addComma(prev);
       }
-      if (operation === '-') {}
-      if (operation === '&#247') {}
-      if (operation === '&#215') {}
-      operation = action;
-      log += log;
-      printResult(prev, log);
+    } else if (Number.isNaN(parseFloat(action))) {
+      if (!Number.isNaN(parseInt(log[log.length - 1]))) { // dont repeat ops
+        if (result === 0 && action === '-') { // negative number begin with -
+          addNumber(action, prev);
+        } else if (action === '=') {
+          makeOperation(action);
+        } else {
+          addNumber(action, prev);
+        }
+      }
     } else {
-      console.log('NUMERO', action);
-      log += log;
-      printResult(result, log);
+      if (action !== '0' || result !== 0) { // avoid leading zeros
+        addNumber(action, prev);
+      }
     }
   }
 
-  function printResult (result, log) {
-    document.getElementById('result').innerText = result;
-    document.getElementById('log').innerText = log;
+  function tooManyDigits () {
+    result = 0;
+    log = 0;
+    operation = '';
+    printResult(result, 'TOO MANY DIGITS');
   }
 
-  addEventListener('load', init);
+  function makeOperation (operation) {
+    log = log.replace('\u00F7', '/');
+    log = log.replace('\u00D7', '*');
+    printResult(eval(log), log);
+  }
+
+  function addComma (prev) {
+    result += '.';
+    log += '.';
+    printResult(result, log);
+  }
+
+  function addNumber (num, prev) {
+    if (Number.isNaN(parseFloat(num))) {
+      result = num;
+    } else if (prev !== '0') {
+      result = prev + num;
+    } else result = num;
+    if (log !== 0) {
+      log += num;
+    } else log = num;
+    printResult(result, log);
+  }
+
+  function makeAllClear () {
+    result = 0;
+    log = 0;
+    operation = '';
+    printResult(result, log);
+  }
+
+  function makeClear () {
+    result = 0;
+    printResult(result, log);
+  }
+
+  function printResult (result, log) {
+    if (String(result).length < 10) {
+      document.getElementById('result').innerText = result;
+      document.getElementById('log').innerText = log;
+    } else {
+      tooManyDigits();
+    }
+  }
+
+  window.addEventListener('load', init);
 }());
