@@ -1,6 +1,63 @@
+@font-face {
+  font-family: "orbitronM";
+  src: url(./images/orbitron-medium.otf);
+}
+
 body {
   background-color: #fafafa !important;
+  font-family: orbitronM, monospace !important;
+  /* this changes size of all calculator */
+  font-size: 2em !important;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
 }
+
+.controls {
+  padding-top: 10px;
+}
+
+.main {
+  border-radius: 5px;
+  background-color: #e9e9e9;
+  max-width: 500px;
+  margin: 50px auto 0px auto;
+  border: 2px solid grey;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-size: 0.5em !important;
+}
+
+.action.minor {
+  padding: 3px 5px 3px 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action:hover {
+  color: orange;
+}
+
+.clock {
+  padding-top: 20px;
+}
+
+#clock {
+  font-size: 2em;
+  color: green;
+}
+
+#type {
+  font-size: 0.8em;
+}
+
 
 /*
 

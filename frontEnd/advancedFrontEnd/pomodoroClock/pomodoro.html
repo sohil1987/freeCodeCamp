@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Pomodoro</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/brusbb.png">
   <link rel="stylesheet" type="text/css" href="pomodoro.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
@@ -14,11 +16,32 @@
 
 <body>
 
-  <div class="workZone container-fluid">
-    Pomodoro
-  </div>
+  <div class="main container-fluid">
 
-  <script src="pomodoro.js"></script>
+    <div class="controls row text-sm-center">
+      <div class="col-sm-6">
+        <div id="sessionControl">
+          <h4>Break Time</h4>
+          <span class="action minor" id="breakTimeMinus">-</span>
+          <span id="breakTime">5</span>
+          <span class="action minor" id="breakTimePlus">+</span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h4>Work Time</h4>
+        <span class="action minor" id="workTimeMinus">-</span>
+        <span id="workTime">25</span>
+        <span class="action minor" id="workTimePlus">+</span>
+      </div>
+    </div>
+    <div class="clock row text-sm-center">
+      <div class="col-sm-12">
+        <span id="type">WORKING !</span><br>
+        <span class="action" id="clock">25:00</span>
+      </div>
+    </div>
+
+    <script src="pomodoro.js"></script>
 </body>
 
 </html>
