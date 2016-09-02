@@ -18,6 +18,13 @@ body {
   font-family: orbitronM, orbitronL, digital-7, monospace !important;
   /* this changes size of all calculator */
   font-size: 1.5em !important;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
 }
 
 .main {
