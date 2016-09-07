@@ -2,10 +2,11 @@
   'use strict';
   /* code here */
   // https://www.freecodecamp.com/json/cats.json
+  // https://cors-test.appspot.com/test
 
   function iniciar () {
     // getMessage.addEventListener('click', makeCorsRequest)
-    getCORS('https://cors-test.appspot.com/test', function (request) {
+    getCORS('https://www.freecodecamp.com/json/cats.json', function (request) {
       var response = request.currentTarget.response || request.target.responseText;
       console.log(response);
     });

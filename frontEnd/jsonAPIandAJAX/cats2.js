@@ -42,8 +42,9 @@
 
   // Make the actual CORS request.
   function makeCorsRequest () {
-    var url = 'https://cors-test.appspot.com/test';
+    // var url = 'https://cors-test.appspot.com/test'
     // var url = 'http://updates.html5rocks.com'
+    var url = 'https://www.freecodecamp.com/json/cats.json';
     var xhr = createCORSRequest('GET', url);
     // xhr.setRequestHeader('X-Custom-Header', 'value')
 
