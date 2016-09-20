@@ -1,31 +1,40 @@
 # Free Code Camp
 
-## Basic Front End Development Projects
+## Responsive Web Design
 
-* [Tribute Page](https://freecodecamp.brusbilis.com/frontEnd/basicFrontEnd/tributePage/tribute.html)
+* [Tribute Page](https://brusbilis.com/freecodecamp/1-responsive/tribute/tribute.html)
 
-* [Personal Portfolio](https://freecodecamp.brusbilis.com/frontEnd/basicFrontEnd/personalPortfolio/personal.html)
+* [Personal Portfolio](https://brusbilis.com/freecodecamp/1-responsive/portfolio/portfolio.html)
 
-## JSON API and AJAX
+## Javascript and Data Structures
 
-* [Cats Api](https://freecodecamp.brusbilis.com/frontEnd/jsonAPIandAJAX/cats.html)
+* [Intermediate Algorithm](https://brusbilis.com/freecodecamp/2-javascript/intermediate/intermediate.html)
 
-## Intermediate Front End Development Projects
+* [Advanced Algorithm](https://brusbilis.com/freecodecamp/2-javascript/advanced/advanced.html)
 
-* [Random Quotes Machine](https://freecodecamp.brusbilis.com/frontEnd/intermediateFrontEnd/randomQuote/quote.html)
+## Front End
 
-* [Local Weather](https://freecodecamp.brusbilis.com/frontEnd/intermediateFrontEnd/localWeather/weather.html)
+* [Random Quote Machine](https://brusbilis.com/freecodecamp/3-frontEnd/quote/quote.html)
 
-* [Wikipedia Viewer](https://freecodecamp.brusbilis.com/frontEnd/intermediateFrontEnd/wikiViewer/wiki.html)
+* [Javascript Calculator](https://brusbilis.com/freecodecamp/3-frontEnd/calculator/calculator.html)
 
-* [Twitch.tv API](https://freecodecamp.brusbilis.com/frontEnd/intermediateFrontEnd/twitchApi/twitch.html)
+* [Pomodoro Clock](https://brusbilis.com/freecodecamp/3-frontEnd/pomodoro/pomodoro.html)
 
-## Advanced Front End Development Projects
 
-* [Calculator](https://freecodecamp.brusbilis.com/frontEnd/advancedFrontEnd/calculator/calculator.html)
+## Data Visualization
 
-* [Pomodoro Clock](https://freecodecamp.brusbilis.com/frontEnd/advancedFrontEnd/pomodoroClock/pomodoro.html)
 
-* [Tic Tac Toe](https://freecodecamp.brusbilis.com/frontEnd/advancedFrontEnd/ticTacToe/ticTacToe.html)
+## APIs and Microservices
 
-* [Simon Game](https://freecodecamp.brusbilis.com/frontEnd/advancedFrontEnd/simonGame/simon.html)
+
+## Information Security and Quality Assurance
+
+## Bonus Projects
+
+* [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
+
+* [Twitch TV](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
+
+* [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wikiViewer/wiki.html)
+
+* [Cats API](https://brusbilis.com/freecodecamp/7-bonus/cats/cats.html)
