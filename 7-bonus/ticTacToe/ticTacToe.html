@@ -14,8 +14,8 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
-      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
-      crossorigin="anonymous">
+    integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+    crossorigin="anonymous">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
@@ -31,49 +31,59 @@
 
   <div class="main container-fluid">
 
-    <div class="control row text-sm-center">
-      <div class="col-sm-6">
+    <div class="control row text-xs-center">
+      <div class="display col-xs-12">
+        Select PLAYER (X or O)
+      </div>
+      <div class="col-xs-6">
         <button class="action btn btn-success" id="X">PLAY - X</button>
       </div>
-      <div class="col-sm-6">
+      <div class="col-xs-6">
         <button class="action btn btn-success" id="O">PLAY - 0</button>
-      </div>
-      <div class="display col-sm-12">
-        Select X or O
       </div>
     </div>
 
-    <div class="board row text-sm-center">
-      <div class="col-sm-4">
-        <div id="1" class="action cell">1</div>
+    <div class="board row text-xs-center" hidden>
+      <div class="col-xs-4">
+        <div id="0" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="2" class="action cell">2</div>
+      <div class="col-xs-4">
+        <div id="1" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="3" class="action cell">3</div>
+      <div class="col-xs-4">
+        <div id="2" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="4" class="action cell">4</div>
+      <div class="col-xs-4">
+        <div id="3" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="5" class="action cell">5</div>
+      <div class="col-xs-4">
+        <div id="4" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="6" class="action cell">6</div>
+      <div class="col-xs-4">
+        <div id="5" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="7" class="action cell">7</div>
+      <div class="col-xs-4">
+        <div id="6" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="8" class="action cell">8</div>
+      <div class="col-xs-4">
+        <div id="7" class="action cell"></div>
       </div>
-      <div class="col-sm-4">
-        <div id="9" class="action cell">9</div>
+      <div class="col-xs-4">
+        <div id="8" class="action cell"></div>
       </div>
     </div>
 
   </div>
+
+  <div class="result row text-xs-center" hidden>
+    <div class="text1 col-xs-12">
+      <p id="gameResult">RESULT</p>
+    </div>
+    <div class="text2 col-xs-12">
+      <button id="continue" class="continue btn btn-primary">CONTINUE</button>
+    </div>
+  </div>
+
 
   <script src="ticTacToe.js"></script>
 
