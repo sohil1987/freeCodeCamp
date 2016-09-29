@@ -38,3 +38,7 @@
 * [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wikiViewer/wiki.html)
 
 * [Cats API](https://brusbilis.com/freecodecamp/7-bonus/cats/cats.html)
+
+* [TicTacToe](https://brusbilis.com/freecodecamp/7-bonus/ticTacToe/ticTacToe.html)
+
+* [Simon](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)

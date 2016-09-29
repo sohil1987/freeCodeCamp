@@ -14,8 +14,8 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
-    integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
-    crossorigin="anonymous">
+      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+      crossorigin="anonymous">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
@@ -31,11 +31,33 @@
 
   <div class="main container-fluid">
 
+    <div class="control">
+      <div class="name row text-xs-center">
+        <h1 class="brand col-xs-12">Simon<span class="reg">&reg;</span></h1>
+      </div>
+      <div class="col-xs-6 text-xs-center">
+        <button class="btn btn-secondary btn-sm" id="start">START</button>
+      </div>
+      <div class="col-xs-6 text-xs-center">
+        <button class="btn btn-secondary btn-sm" id="strict">STRICT</button>
+      </div>
+    </div>
+
     <div class="board row text-xs-center">
-      <div id="green" class="action cell col-xs-6">green</div>
-      <div id="red" class="action cell col-xs-6">red</div>
-      <div id="yellow" class="action cell col-xs-6">yellow</div>
-      <div id="blue" class="action cell col-xs-6">blue</div>
+      <div id="green" class="action cell col-xs-6"></div>
+      <div id="red" class="action cell col-xs-6"></div>
+      <div id="yellow" class="action cell col-xs-6"></div>
+      <div id="blue" class="action cell col-xs-6"></div>
+    </div>
+
+    <div class="score row text-xs-center">
+      <div class="col-xs-12">
+        <h4>COUNT&nbsp;
+          <span class="alert alert-info" id="counter"><strong>0</strong></span>
+          &nbsp;OF&nbsp;
+          <span class="alert alert-info" id="round"><strong>0</strong></span>
+        </h4>
+      </div>
     </div>
 
   </div>
