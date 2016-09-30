@@ -1,67 +1,114 @@
-(function () {
+(function simon () {
   'use strict';
   /* code here */
 
   var strict = 'off';
   var start = 'off';
-  var options = ['green', 'red', 'yellow', 'blue'];
-  var cpu = [];
-  var player = [];
+  var pos = ['green', 'red', 'yellow', 'blue'];
+  var colors = ['green', '#b20000', '#cccc00', 'blue'];
+  var colors2 = ['chartreuse', '#ff0000', '#ffff00', 'cyan'];
+  var cpu = []; // ['green', '#b20000', '#cccc00', 'blue']
+  var cpuMoves = []; // [0, 1, 2, 3]
+  var playerMoves = [];
+  var counter = 0;
+  var round = 0;
+  var audio1 = new Audio('./sounds/simon1.mp3');
+  var audio2 = new Audio('./sounds/simon2.mp3');
+  var audio3 = new Audio('./sounds/simon3.mp3');
+  var audio4 = new Audio('./sounds/simon4.mp3');
+  var audio = [audio1, audio2, audio3, audio4];
 
   function init () {
     console.log('Init');
     document.getElementById('strict').addEventListener('click', changeStatus);
     document.getElementById('start').addEventListener('click', changeStatus);
+    document.getElementById('restart').addEventListener('click', reload);
   }
 
-  function startGame () {
-    // upBoard()
-    var fin = false;
-    while (!fin) {
+  function startRound (restart) {
+    if (!restart) {
       addMovement();
-      animate();
-      fin = userResponse();
-      fin = true;
+    }
+    animate(function (valor) {
+      upBoard();
+    });
+  }
+
+  function userResponse (ev) {
+    turnOn(pos.indexOf(ev.target.id), 100);
+    playerMoves.push(pos.indexOf(ev.target.id));
+    document.getElementById('counter').textContent = playerMoves.length + 1;
+    document.getElementById('round').textContent = cpuMoves.length;
+    var success = playerMoves.every(function (element, index) {
+      return element === cpuMoves[index];
+    });
+    console.log(success);
+    if (!success) {
+      playerMoves = [];
+      downBoard();
+      if (strict === 'off') {
+        startRound(true);
+      }
+      if (strict === 'on') {
+        location.reload();
+      }
+    }
+    if (success && playerMoves.length === cpuMoves.length) {
+      if (playerMoves.length >= 20) {
+        alert('YOU WIN!');
+        location.reload();
+      }
+      playerMoves = [];
+      downBoard();
+      document.getElementById('next').removeAttribute('hidden');
+      document.getElementById('score').setAttribute('hidden', 'true');
+      setTimeout(function () {
+        document.getElementById('next').setAttribute('hidden', 'true');
+        document.getElementById('score').removeAttribute('hidden');
+        setTimeout(function () {
+          startRound(false);
+        }, 1000);
+      }, 3000);
     }
   }
 
   function addMovement () {
-    var cpuMove = options[Math.floor((Math.random() * options.length))];
-    cpu.push(cpuMove);
-    console.log(cpu);
+    var rnd = colors[Math.floor((Math.random() * colors.length))];
+    cpu.push(rnd);
+    cpuMoves.push(colors.indexOf(rnd));
   }
 
-  function animate () {
-    for (var i = 0; i < cpu.length; i++) {
-      setTimeout(console.log(cpu[i]), 1000);
-    // console.log(cpu[i])
-    }
-  }
-
-  function animate2 (sequence) {
+  function animate (cb) {
     var i = 0;
     var interval = setInterval(function () {
-      encenderLuz(sequence[i]);
+      document.getElementById('counter').textContent = i + 1;
+      document.getElementById('round').textContent = cpu.length;
+      turnOn(colors.indexOf(cpu[i]), 500);
       i++;
-      if (i >= sequence.length) {
+      if (i >= cpu.length) {
         clearInterval(interval);
+        // console.log('ANIMATION ENDS')
+        cb('ANIMATION ENDS');
       }
-    }, 600);
+    }, 1000);
   }
 
-  function userResponse () {
-    // console.log()
-  }
-
-  function aunNo (ev) {
-    console.log(ev.target.id);
+  function turnOn (p, time) {
+    audio[p].play();
+    document.getElementById(pos[p]).style.backgroundColor = colors2[p];
+    setTimeout(function () {
+      document.getElementById(pos[p]).style.backgroundColor = colors[p];
+    }, time);
   }
 
   function upBoard () {
-    document.getElementsByClassName('board')[0].style.pointerEvents = 'all';
+    document.getElementById('counter').textContent = playerMoves.length + 1;
+    document.getElementById('round').textContent = cpuMoves.length;
+    document.getElementsByClassName('board')[0].style.pointerEvents =
+      'auto';
     var click = document.getElementsByClassName('action');
     for (var i = 0; i < click.length; i++) {
-      click.item(i).addEventListener('click', aunNo);
+      click.item(i).addEventListener('click', userResponse);
     // console.log(click.item(i).id)
     }
   }
@@ -90,7 +137,7 @@
         start = 'on';
         x.style.borderLeft = '5px solid green';
         x.style.borderRight = '5px solid green';
-        startGame();
+        startRound(false);
       } else {
         start = 'off';
         x.style.borderLeft = '5px solid red';
@@ -100,15 +147,9 @@
     }
   }
 
+  function reload () {
+    location.reload();
+  }
+
   addEventListener('load', init);
 }());
-
-/*
-start
-round
-- random number (1-4) to sequence
-- animate sequence to the player
-- user interaction (while not bad response and clicks < sequence lebgth wait player input)
-
-more rounds until fails
-*/

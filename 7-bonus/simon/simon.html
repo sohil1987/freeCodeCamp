@@ -35,10 +35,13 @@
       <div class="name row text-xs-center">
         <h1 class="brand col-xs-12">Simon<span class="reg">&reg;</span></h1>
       </div>
-      <div class="col-xs-6 text-xs-center">
+      <div class="col-xs-4 text-xs-center">
         <button class="btn btn-secondary btn-sm" id="start">START</button>
       </div>
-      <div class="col-xs-6 text-xs-center">
+      <div class="col-xs-4 text-xs-center">
+        <button class="btn btn-outline-secondary btn-sm" id="restart">RESTART</button>
+      </div>
+      <div class="col-xs-4 text-xs-center">
         <button class="btn btn-secondary btn-sm" id="strict">STRICT</button>
       </div>
     </div>
@@ -51,12 +54,15 @@
     </div>
 
     <div class="score row text-xs-center">
-      <div class="col-xs-12">
+      <div id="score" class="col-xs-12">
         <h4>COUNT&nbsp;
           <span class="alert alert-info" id="counter"><strong>0</strong></span>
           &nbsp;OF&nbsp;
           <span class="alert alert-info" id="round"><strong>0</strong></span>
         </h4>
+      </div>
+      <div id="next" class="col-xs-12 alert alert-success" role="alert" hidden>
+        <h4><strong>Well Done! Prepare for next Round</strong></h4>
       </div>
     </div>
 
