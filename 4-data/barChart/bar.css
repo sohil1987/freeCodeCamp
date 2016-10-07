@@ -23,40 +23,55 @@ body {
 .title {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-div.bar {
-  display: inline-block;
-  width: 20px;
-  height: 75px;
-  /* We'll override height later */
-  background-color: teal;
-  margin-right: 2px;
-}
-
-
-/* bar2.js
-.barChart {
-  fill: steelblue;
-}
-
-.chart rect {
-  fill: steelblue;
-}
-
-.chart text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: middle;
+  color: #404040;
 }
 
 .bar {
-  fill: steelblue;
+  /*fill: teal;*/
 }
-*/
+
+.barChartSvg {
+  background-color: #fafafa;
+}
+
+.inner {
+  background-color: #fafafa;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: 'Roboto', 'arial', sans-serif;
+  font-size: 1.3em;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 0px 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#tooltip p {
+  font-family: 'Roboto', 'arial', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+#tooltip.hidden {
+  display: none;
+}
 
 .notes {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 

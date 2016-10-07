@@ -23,6 +23,8 @@
 
 ## Data Visualization
 
+* [Bar Chart Visualization](https://brusbilis.com/freecodecamp/4-data/barChart/bar.html)
+
 
 ## APIs and Microservices
 
