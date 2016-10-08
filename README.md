@@ -25,6 +25,9 @@
 
 * [Bar Chart Visualization](https://brusbilis.com/freecodecamp/4-data/barChart/bar.html)
 
+* [ScatterPlot Graph](https://brusbilis.com/freecodecamp/4-data/scatterplot/scatter.html)
+
+* [Heat Map Visualization](https://brusbilis.com/freecodecamp/4-data/heat/heat.html)
 
 ## APIs and Microservices
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>D3 Scatterplot Graph Visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto de visualizacion de datos usando libreria d3 scatterplot o grafico de dispersion de puntos"
+  />
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+    integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+    crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="scatter.css">
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="main container-fluid">
+
+    <div class="card text-xs-center">
+      <div class="title card-header text-xs-center">
+        <h2>Doping in Professional Bicycle Racing</h2>
+        <h5>The 35 fastest times ascending Alpe d'Huez</h5>
+        <h6>Normalized to a distance of 13.8km</h6>
+      </div>
+      <div class="inner">
+        <svg class="scatterPlotSvg"></svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong><span id="value1">value</span></strong><br>
+        <span id="value2">value</span><br>
+        <span id="value3">value</span>
+      </div>
+      <div class="notes card-footer text-xs-left">Sources: <br/>
+        <a href="https://en.wikipedia.org/wiki/Alpe_d%27Huez">Wikipedia Alpe d'Huez</a><br>
+        <a href="http://www.fillarifoorumi.fi/forum/showthread.php?38129-Ammattilaispy%F6r%E4ilij%F6iden-nousutietoja-%28aika-km-h-VAM-W-W-kg-etc-%29&p=2041608#post2041608">ALPE D'HUEZ, ALL-TIME TOP 200 LIST</a><br/>
+        <a href="https://alex-cycle.blogspot.com/2015/07/alpe-dhuez-tdf-fastest-ascent-times.html">Alpe d'Huez: TDF Fastest Ascent Times 1982-2015</a><br/>
+        <a href="http://www.dopeology.org/">dopeology.org</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="scatter.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>
