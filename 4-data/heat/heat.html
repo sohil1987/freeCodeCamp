@@ -9,8 +9,8 @@
   <meta name="description" content="Freecodecamp proyecto de visualizacion de datos usando libreria d3 con heat map o mapa de calor"
   />
 
-  <!-- Roboto -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+  <!-- Lato -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
@@ -31,8 +31,28 @@
 
   <div class="main container-fluid">
 
-    <div class="title row text-xs-center">
-      <div class="col-xs-12">Hola</div>
+    <div class="card text-xs-center">
+      <div class="card-header text-xs-center">
+        <div class="title">
+          <span>Monthly Global Land-Surface Temperature</span>
+        </div>
+        <div class="interval">
+          <span>1753 - 2015</span>
+        </div>
+        <div>
+          <span class="clarification">Temperatures are in Celsius and reported as anomalies relative to the Jan
+            1951-Dec 1980 average.<br> Estimated Jan 1951-Dec 1980 absolute temperature
+            &#8451;: 8.66 +/- 0.07</span>
+        </div>
+      </div>
+      <div class="inner">
+        <svg class="heatMap"></svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong><span id="date">date</span></strong><br>
+        <span id="temp">temp</span><br>
+        <span id="variation">variation</span>
+      </div>
     </div>
 
   </div>

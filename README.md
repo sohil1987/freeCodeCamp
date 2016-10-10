@@ -29,6 +29,10 @@
 
 * [Heat Map Visualization](https://brusbilis.com/freecodecamp/4-data/heat/heat.html)
 
+* [Country Borders Force Directed Graph](https://brusbilis.com/freecodecamp/4-data/graph/graph.html)
+
+* [Meteorite Landings World Map](https://brusbilis.com/freecodecamp/4-data/worldMap/world.html)
+
 ## APIs and Microservices
 
 
