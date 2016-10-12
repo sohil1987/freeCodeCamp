@@ -13,6 +13,49 @@ body {
 
 .main {}
 
+.alert {
+  margin-top: 20px;
+}
+
+.forceDirectedSvg {
+  background-color: #fafafa;
+}
+
+.boundary {
+  stroke: darkgrey;
+  stroke-width: 2px;
+}
+
+.country text {
+  pointer-events: none;
+  font: 10px 'Roboto', 'arial', sans-serif;
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 0px 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 10;
+}
+
+#tooltip p {
+  font-family: 'Roboto', 'arial', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
 
 /*
 
@@ -27,3 +70,5 @@ GRISES CLAROS
 #a9a9a9
 
 */
+
+/
