@@ -14,8 +14,8 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
-      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
-      crossorigin="anonymous">
+    integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+    crossorigin="anonymous">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
@@ -31,14 +31,28 @@
 
   <div class="main container-fluid">
 
-    <div class="title row text-xs-center">
-      <div style="margin-top: 50px" class="alert alert-success offset-xs-3 col-xs-6">METEORITE LANDING DATA MAP</div>
+    <div class="card text-xs-center">
+      <div class="title card-header text-xs-center">
+        <h2>Meteorite Landings Map</h2>
+      </div>
+      <div class="inner">
+        <svg class="meteoriteMap"></svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong><span id="value1">value</span></strong><br>
+        <span id="value2">value</span><br>
+        <span id="value3">value</span>
+      </div>
+      <div class="notes card-footer text-xs-center">
+        You can drag the map and zoom (x.5 - x5)<br> Source: <a href="https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json">Meteorite Strike Data</a>
+      </div>
     </div>
 
   </div>
 
   <!-- Last version D3 -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
 
   <script src="world.js"></script>
 
