@@ -35,7 +35,6 @@
 
 ## APIs and Microservices
 
-
 ## Information Security and Quality Assurance
 
 ## Bonus Projects
@@ -51,3 +50,7 @@
 * [TicTacToe](https://brusbilis.com/freecodecamp/7-bonus/ticTacToe/ticTacToe.html)
 
 * [Simon](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)
+
+* [Markdown Previewer](https://brusbilis.com/freecodecamp/7-bonus/markdown/md.html)
+
+* [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/leaderboard/camper.html)

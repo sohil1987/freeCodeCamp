@@ -1,4 +1,4 @@
-(function simon () {
+(function simon() {
   'use strict';
   /* code here */
 
@@ -18,14 +18,14 @@
   var audio4 = new Audio('./sounds/simon4.mp3');
   var audio = [audio1, audio2, audio3, audio4];
 
-  function init () {
+  function init() {
     console.log('Init');
     document.getElementById('strict').addEventListener('click', changeStatus);
     document.getElementById('start').addEventListener('click', changeStatus);
     document.getElementById('restart').addEventListener('click', reload);
   }
 
-  function startRound (restart) {
+  function startRound(restart) {
     if (!restart) {
       addMovement();
     }
@@ -34,7 +34,7 @@
     });
   }
 
-  function userResponse (ev) {
+  function userResponse(ev) {
     turnOn(pos.indexOf(ev.target.id), 100);
     playerMoves.push(pos.indexOf(ev.target.id));
     document.getElementById('counter').textContent = playerMoves.length + 1;
@@ -72,13 +72,13 @@
     }
   }
 
-  function addMovement () {
+  function addMovement() {
     var rnd = colors[Math.floor((Math.random() * colors.length))];
     cpu.push(rnd);
     cpuMoves.push(colors.indexOf(rnd));
   }
 
-  function animate (cb) {
+  function animate(cb) {
     var i = 0;
     var interval = setInterval(function () {
       document.getElementById('counter').textContent = i + 1;
@@ -93,7 +93,7 @@
     }, 1000);
   }
 
-  function turnOn (p, time) {
+  function turnOn(p, time) {
     audio[p].play();
     document.getElementById(pos[p]).style.backgroundColor = colors2[p];
     setTimeout(function () {
@@ -101,7 +101,7 @@
     }, time);
   }
 
-  function upBoard () {
+  function upBoard() {
     document.getElementById('counter').textContent = playerMoves.length + 1;
     document.getElementById('round').textContent = cpuMoves.length;
     document.getElementsByClassName('board')[0].style.pointerEvents =
@@ -109,16 +109,16 @@
     var click = document.getElementsByClassName('action');
     for (var i = 0; i < click.length; i++) {
       click.item(i).addEventListener('click', userResponse);
-    // console.log(click.item(i).id)
+      // console.log(click.item(i).id)
     }
   }
 
-  function downBoard () {
+  function downBoard() {
     document.getElementsByClassName('board')[0].style.pointerEvents =
       'none';
   }
 
-  function changeStatus (ev) {
+  function changeStatus(ev) {
     var target = ev.target.id;
     var x = document.getElementById(target);
     if (target === 'strict') {
@@ -147,9 +147,9 @@
     }
   }
 
-  function reload () {
+  function reload() {
     location.reload();
   }
 
   addEventListener('load', init);
-}());
+} ());
