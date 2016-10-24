@@ -1,0 +1,104 @@
+@media (min-width: 544px) {}
+
+@media (max-width: 544px) {}
+
+body {
+  font-family: 'Titillium Web', 'Lato', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  max-width: 960px;
+  margin: auto;
+  /*-webkit-user-select: none;*/
+  /* Chrome all / Safari all */
+  /*-moz-user-select: none;*/
+  /* Firefox all */
+  /*-ms-user-select: none;*/
+  /* IE 10+ */
+  /*user-select: none;*/
+}
+
+.main {}
+
+.menu {
+  margin-top: 20px;
+}
+
+.card {
+  height: 219.75px;
+}
+
+.recipe {
+  height: 185px;
+}
+
+.title {
+  padding-top: 5px;
+}
+
+.btnAdd {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.font-bold {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card {
+  border-color: transparent;
+  background-color: inherit;
+}
+
+.recipeImg {
+  background-color: inherit;
+  border-color: transparent;
+  max-width: 150px;
+  height: auto;
+}
+
+img.recipeImg {
+  font-size: 3.5em;
+}
+
+p.recipeText {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+span.maxLine {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Para usar solo una linea */
+  white-space: nowrap;
+  /* numLineas = max-height / line-height */
+  /*line-height: 1em;
+  max-height: 2em;*/
+}
+
+.btnGroup {}
+
+#delRecipe {
+  margin-right: 5px;
+}
+
+#editRecipe {
+  margin-left: 5px;
+}
+
+
+/*
+
+GRISES CLAROS
+
+#fafafa
+#f6f6f6
+#f1f1f1
+#ededed
+#e9e9e9
+#dcdcdc
+#a9a9a9
+
+*/
