@@ -22,6 +22,9 @@
 
 * [Recipe Box](https://brusbilis.com/freecodecamp/3-frontEnd/recipe/recipe.html)
 
+* [Conway's Game of Life](https://brusbilis.com/freecodecamp/3-frontEnd/gameLife/life.html)
+
+
 ## Data Visualization
 
 * [Bar Chart Visualization](https://brusbilis.com/freecodecamp/4-data/barChart/bar.html)
@@ -55,3 +58,5 @@
 * [Markdown Previewer](https://brusbilis.com/freecodecamp/7-bonus/markdown/md.html)
 
 * [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/leaderboard/camper.html)
+
+* [Roguelike Dungeon Crawler](https://brusbilis.com/freecodecamp/7-bonus/rogue/rogue.html)

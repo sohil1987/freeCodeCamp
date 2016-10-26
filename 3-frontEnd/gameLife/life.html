@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Conway's Game of Life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto frontend de cliente para crear una aplicacion el juego de la vida de Conway ,Conway's game of life)"
+  />
+
+  <!-- Maven Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,900" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+      integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+      crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="life.css">
+
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="main container-fluid">
+
+    <div class="title text-xs-center">
+      <span><h2 class="fontBold">Conway's Game of Life<h2></span>
+    </div>
+    <hr>
+    <nav class="controlsUp text-xs-center">
+      <span class="tagBtnGroup fontBold">controls</span>
+      <div class="btn-group btn-group-sm" role="group">
+        <button type="button" id="0" class="btn btn-secondary">Run</button>
+        <button type="button" id="1" class="btn btn-secondary">Pause</button>
+        <button type="button" id="2" class="btn btn-secondary">Clear</button>
+      </div>
+      <span class="tagBtnGroup fontBold">speed</span>
+      <div class="btn-group btn-group-sm" role="group">
+        <button type="button" id="3" class="btn btn-secondary">x0.5</button>
+        <button type="button" id="4" class="btn btn-secondary">x1</button>
+        <button type="button" id="5" class="btn btn-secondary">x3</button>
+      </div>
+    </nav>
+    <nav class="controlsUp controlsUp2 text-xs-center">
+      <span class="tagBtnGroup fontBold">size</span>
+      <div class="btn-group btn-group-sm" role="group">
+        <button type="button" id="6" class="btn btn-secondary">20x20</button>
+        <button type="button" id="7" class="btn btn-secondary">50x40</button>
+        <button type="button" id="8" class="btn btn-secondary">80x50</button>
+      </div>
+    </nav>
+
+    <section class="canvas text-xs-center">
+      <div>
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </section>
+
+    <footer class="controlsDown text-xs-center">
+      <span class="tagBtnGroup fontBold">GENERATION :</span>
+      <div class="btn-group btn-group-sm" role="group">
+        <button type="button" id="score" class="btn btn-secondary">0</button>
+      </div>
+      <span class="tagBtnGroup fontBold">LIVE CELLS :</span>
+      <div class="btn-group btn-group-sm" role="group">
+        <button type="button" id="living" class="btn btn-secondary">0</button>
+      </div><br>
+      <span class="">You can add or remove Cells during Pause</span>
+
+    </footer>
+
+    <hr>
+
+  </div>
+
+  <script src="life.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>
