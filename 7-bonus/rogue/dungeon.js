@@ -3,6 +3,7 @@ var dungeon = {
   rows: 40,
   ppp: 10,
   map: [],
+  center: {},
   maxRooms: 20,
   rooms: [],
   minSizeRoom: 5,
@@ -13,11 +14,13 @@ var dungeon = {
   randomWall: {},
   nextFeature: {},
   newRoom: {},
+  foes: [],
   createDungeon: function () {
     'use strict';
     this.createSize();
     this.createRooms();
     this.populate();
+    this.getFoes();
   },
   createSize: function () {
     'use strict';
@@ -186,7 +189,7 @@ var dungeon = {
         }
       }
       units = room.foes;
-      while (units > -1) { // POTIONS
+      while (units > 1) { // POTIONS
         x = bb.getRandomNumber(room.x, room.x + room.width - 1);
         y = bb.getRandomNumber(room.y, room.y + room.height - 1);
         if (this.map[x][y] === 2) {
@@ -203,10 +206,39 @@ var dungeon = {
       if (this.map[x][y] === 2) {
         this.map[x][y] = 6;
         // console.log('HERO', x, y)
+        this.center.x = x;
+        this.center.y = y;
         hero = true;
       }
     }
+    // BOSS
+    var boss = false;
+    while (!boss) {
+      x = bb.getRandomNumber(1, this.cols - 1);
+      y = bb.getRandomNumber(1, this.rows - 1);
+      if (this.map[x][y] === 2) {
+        this.map[x][y] = 7;
+        // console.log('BOSS', x, y)
+        boss = true;
+      }
+    }
   },
+
+  getFoes: function () {
+    var cont = 0;
+    for (var x = 0; x < dungeon.cols; x++) {
+      for (var y = 0; y < dungeon.rows; y++) {
+        if (dungeon.map[x][y] === 3) {
+          var myFoe = Object.create(app.foe);
+          myFoe.x = x;
+          myFoe.y = y;
+          this.foes.push(myFoe);
+        }
+      }
+    }
+  // console.log(this.foes)
+  },
+
   putWalls: function (roomNumber) {
     'use strict';
     var x = this.rooms[roomNumber].x;
@@ -281,56 +313,3 @@ var dungeon = {
     return aux;
   }
 };
-
-var rendererBig = (function () {
-  'use strict';
-  // console.log('Drawing Map...')
-  var canvas;
-  var ctx;
-  var cols = dungeon.cols;
-  var rows = dungeon.rows;
-  var ppp = dungeon.ppp;
-  // var hero = new Image()
-  // hero.src = ('./images/knight.png')
-
-  function setMyCanvas () {
-    canvas = document.getElementById('myCanvas');
-    ctx = canvas.getContext('2d');
-    canvas.width = cols * ppp;
-    canvas.height = rows * ppp;
-  }
-
-  function drawMyCanvas (map) {
-    // map[1][1] = 5
-    // var kk = (ppp / 50) * 0.07
-    for (var x = 0; x < cols; x++) {
-      for (var y = 0; y < rows; y++) {
-        var tile = map[x][y];
-        if (tile === 0) {
-          ctx.fillStyle = 'teal'; // earth
-        } else if (tile === 1) {
-          ctx.fillStyle = 'darkgrey'; // wall
-        } else if (tile === 2) {
-          ctx.fillStyle = 'bisque'; // walkable floor
-        } else if (tile === 3) {
-          ctx.fillStyle = 'coral'; // foe
-        } else if (tile === 4) {
-          ctx.fillStyle = 'skyblue'; // weapon
-        } else if (tile === 5) {
-          ctx.fillStyle = 'darkseagreen'; // potions
-        } else if (tile === 6) {
-          ctx.fillStyle = 'magenta'; // hero
-        }
-        ctx.fillRect((x * ppp) + 1, (y * ppp) + 1, ppp - 1, ppp - 1);
-      /*if (tile === 5) {
-        ctx.drawImage(hero, (x * ppp) + 6, (y * ppp), hero.width * kk,
-          hero.height * kk)
-      } */
-      }
-    }
-  }
-  return {
-    setMyCanvas: setMyCanvas,
-    drawMyCanvas: drawMyCanvas
-  };
-}());

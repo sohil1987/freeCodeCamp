@@ -35,7 +35,7 @@ body {
   background-color: grey;
   color: #fafafa;
   display: inline-block;
-  width: 60px !important;
+  width: 70px !important;
 }
 
 .btn {
@@ -47,7 +47,7 @@ body {
 }
 
 #health, #weapon, #xp, #level {
-  width: 80px;
+  width: 100px;
   pointer-events: none;
 }
 
@@ -60,8 +60,9 @@ body {
   resize: none;
   background-color: #f1f1f1;
   width: 100%;
-  min-height: 100px;
+  height: 400px;
   border: 1px solid darkgrey;
   border-radius: 5px;
   font-size: 0.8em;
+  pointer-events: none;
 }

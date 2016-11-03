@@ -17,8 +17,8 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
-    integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
-    crossorigin="anonymous">
+      integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+      crossorigin="anonymous">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
@@ -35,13 +35,13 @@
 
   <div class="main container-fluid">
 
-    <div>
-      <div class="title text-xs-center">
-        <span><h2 class="fontBold">Roguelike Dungeon Crawler<h2></span>
-      </div>
-      <hr>
+    <div class="title text-xs-center">
+      <span><h2 class="fontBold">Roguelike Dungeon Crawler<h2></span>
+    </div>
+    <hr>
 
-      <section class="infoPanel col-xs-12 col-sm-3 text-xs-right">
+    <div class="body">
+      <section class="infoPanel col-xs-12 col-sm-2 text-xs-right">
         <br><br>
         <span class="tagInfo fontBold">HP </span><br>
         <div class="btn-group btn-group-sm" role="group">
@@ -61,22 +61,26 @@
         </div><br><br>
       </section>
 
-      <section class="canvas col-xs-12 col-sm-9 text-xs-left">
+      <section class="canvas col-xs-12 col-sm-7 text-xs-left">
         <div>
           <canvas tabindex="1" id="myCanvas"></canvas>
         </div>
       </section>
+
+      <section class="logArea col-xs-12 col-sm-3 text-xs-left">
+        <div>
+          <textarea id="logArea" placeholder="Log Area"></textarea>
+        </div>
+      </section>
     </div>
 
-    <section class="logArea col-xs-12 text-xs-left">
-      <div>
-        <textarea id="logArea" placeholder="Log Area"></textarea>
-      </div>
-    </section>
   </div>
+  <hr>
 
-  <script src="myLib.js"></script>
+
+  <script src="https://brusbilis.com/myLib/js/myLib.js"></script>
   <script src="dungeon.js"></script>
+  <script src="renderer.js"></script>
   <script src="rogue.js"></script>
 
   <!-- google-analytics -->
