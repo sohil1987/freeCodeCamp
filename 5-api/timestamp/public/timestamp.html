@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>API Timestamp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto backend de servidor para crear una API uqe sirve devuelve JSON con el timestamp en formato unix y natural"
+  />
+
+  <!-- Titillium Web -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+    crossorigin="anonymous">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./logo/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="timestamp.css">
+
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="main container-fluid text-xs-center">
+    <h1 class="header">
+      API Timestamp Docs
+    </h1>
+    <blockquote class="alert alert-info">
+      <ul>1) You pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp
+        or a natural language date <strong>(Month Day, Year | Month Day Year)</strong></ul>
+      <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+      <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+      </ul>
+    </blockquote>
+    <h3>Example</h3>
+    <code><a href="https://brusbilis.com/freecodecamp/5-api/timestamp/July%2024,%201995">https://brusbilis.com/freecodecamp/5-api/timestamp/July%2024,%201995</a></code><br>
+    <a href="https://brusbilis.com/freecodecamp/5-api/timestamp/July 24 1995">https://brusbilis.com/freecodecamp/5-api/timestamp/July 24 1995</a></code><br>
+    <code><a href="https://brusbilis.com/freecodecamp/5-api/timestamp/806536800">https://brusbilis.com/freecodecamp/5-api/timestamp/806536800</a></code>
+    <h5>Output:</h5>
+    <code>
+      {
+        "unix": 806536800,
+        "natural": "July 24, 1995"
+      }
+    </code>
+  </div>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>

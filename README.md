@@ -39,6 +39,9 @@
 
 ## APIs and Microservices
 
+* [API timestamp](https://brusbilis.com/freecodecamp/5-api/timestamp/)
+
+
 ## Information Security and Quality Assurance
 
 ## Bonus Projects
