@@ -41,6 +41,7 @@
 
 * [API timestamp](https://brusbilis.com/freecodecamp/5-api/timestamp/)
 
+* [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/parser/)
 
 ## Information Security and Quality Assurance
 

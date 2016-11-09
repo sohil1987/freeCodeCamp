@@ -55,8 +55,6 @@ app.get('/:timeString', function (req, res) {
   });
 });
 
-console.log('var');
-
 app.listen(3001, function () {
   console.log('App started on port 3001');
 });
