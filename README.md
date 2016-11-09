@@ -39,9 +39,16 @@
 
 ## APIs and Microservices
 
-* [API timestamp](https://brusbilis.com/freecodecamp/5-api/timestamp/)
+* [Timestamp](https://brusbilis.com/freecodecamp/5-api/timestamp/)
 
 * [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/parser/)
+
+* [URL Shortener](https://brusbilis.com/freecodecamp/5-api/url/)
+
+* [Image Search](https://brusbilis.com/freecodecamp/5-api/image/)
+
+* [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/)
+
 
 ## Information Security and Quality Assurance
 
