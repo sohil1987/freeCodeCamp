@@ -4,3 +4,7 @@ node_modules/
 #ignore these files
 # Ignore Mac DS_Store files
 .DS_Store
+config.json
+private.json
+secret.json
+ 
