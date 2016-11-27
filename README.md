@@ -52,6 +52,8 @@
 
 ## Information Security and Quality Assurance
 
+* [Pintelest Clone](https://brusbilis.com/freecodecamp/6-backEnd/pintelest/)
+
 ## Bonus Projects
 
 * [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
@@ -71,3 +73,5 @@
 * [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/leaderboard/camper.html)
 
 * [Roguelike Dungeon Crawler](https://brusbilis.com/freecodecamp/7-bonus/rogue/rogue.html)
+
+* [Random Map Dungeon Generator](https://brusbilis.com/freecodecamp/7-bonus/rogueMap/random.html)  
