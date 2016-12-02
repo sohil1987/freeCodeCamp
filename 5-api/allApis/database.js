@@ -3,7 +3,7 @@
 
 var secure = require('./secret.json');
 var mysql = require('mysql');
-var baseUrl = 'https://brusbilis.com/5-api/allApis/url/';
+var baseUrl = 'https://brusbilis.com/freecodecamp/5-api/allApis/url/';
 
 var con = mysql.createConnection({
   host: secure.mysql.host,
@@ -53,7 +53,7 @@ var db = {
     });
   },
   create: function (req, res, callback) {
-    console.log('create ...', req.params.newUrl);
+    console.log('create JUSTO EN LA DB...', req.params.newUrl);
     con.query('SELECT * FROM url WHERE url.original = ?', [req.params.newUrl], function (err, result) {
       if (err) throw err;
       if (result.length > 0) { // url already in the DB 

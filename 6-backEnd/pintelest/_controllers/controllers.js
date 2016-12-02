@@ -1,7 +1,7 @@
 'use strict';
 /* jshint node: true */
 
-var secret = require('./../secret.json');
+var secret = require('./../../secret.json');
 var db = require('./../_models/database.js');
 
 var controller = {

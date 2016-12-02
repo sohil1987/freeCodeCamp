@@ -8,10 +8,10 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var secret = require('./secret.json');
-var publicPath = path.join(__dirname, 'public');
+var publicPath = path.join(__dirname, '_public');
 
-var index = require('./_routes/index');
-var apiV1 = require('./_routes/apiV1');
+var index = require('./pintelest/_routes/index');
+var apiV1 = require('./pintelest/_routes/apiV1');
 
 var app = express();
 
@@ -20,7 +20,7 @@ var app = express();
 // app.set('view engine', 'ejs')
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(publicPath, 'logo/brusbb.png')));
+app.use(favicon(path.join(publicPath, './logo/brusbb.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -28,9 +28,12 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static(publicPath));
 
+// pruebas
+app.use(express.static(__dirname + '/pintelest'));
+
 // routes
-app.use('/api/v1', apiV1);
-app.use('/', index);
+app.use('/pintelest/api/v1', apiV1);
+app.use('/pintelest', index);
 
 app.listen(secret.express.port, function () {
   console.log('App started on port', secret.express.port);

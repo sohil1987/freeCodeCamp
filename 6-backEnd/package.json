@@ -1,11 +1,11 @@
 {
-  "name": "pintelest-clone",
+  "name": "backendfcc",
   "version": "0.0.1",
-  "description": "clone de pinterest",
-  "main": "pinterest.js",
+  "description": "5 apps for backend freecodecamp",
+  "main": "backend.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon pintelest.js"
+    "start": "nodemon backend.js"
   },
   "author": "brusbilis",
   "license": "MIT",

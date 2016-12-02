@@ -92,6 +92,11 @@ app.get('/parser/v1/whoami', function (req, res) {
 
 app.get('/url/new/:newUrl*', function (req, res, next) {
   req.params.newUrl = req.url.slice(9);
+  var pos = req.params.newUrl.search('/');
+  if (req.params.newUrl.charAt(pos + 1) !== '/') {
+    req.params.newUrl = req.params.newUrl.slice(0, pos) + '/' + req.params.newUrl.slice(pos);
+  }
+  console.log('ANTES DE LA DB ...', req.params.newUrl);
   if (validUrl.isUri(req.params.newUrl)) {
     db.create(req, res, creationNew);
   } else {
