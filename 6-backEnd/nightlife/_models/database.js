@@ -6,10 +6,10 @@ var mysql = require('mysql');
 
 var db = {
   testConnection: function (req, res, callback) {
-    // console.log('Connecting ......')
+    console.log('Connecting ......');
     con.connect(function (err) {
       if (err) {
-        console.log('Error connecting to DB => ', err);
+        console.log('Error connecting to DB');
         res.status = false;
       } else {
         console.log('Connection OK');
