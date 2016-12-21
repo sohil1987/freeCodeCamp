@@ -20,5 +20,6 @@ function translatePigLatin (str) {
   return str;
 }
 
-console.log(translatePigLatin('california'));
+console.log(translatePigLatin('california hola'));
 console.log(translatePigLatin('glove'));
+console.log(translatePigLatin('Pig latin is cool'));

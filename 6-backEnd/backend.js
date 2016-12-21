@@ -33,7 +33,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static(publicPath));
 
 // several apps running on the same app
-app.use(express.static(__dirname + '/pintelest'));
+// app.use(express.static(__dirname + '/pintelest'))
+// app.use(express.static(__dirname + '/nightlife'))
 
 // routes
 app.use('/pintelest/api/v1', apiV1Pintelest);
