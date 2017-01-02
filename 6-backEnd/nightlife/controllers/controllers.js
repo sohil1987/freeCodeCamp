@@ -2,7 +2,7 @@
 /* jshint node: true */
 
 var secret = require('./../../secret.json');
-var db = require('./../_models/database.js');
+var db = require('./../models/database.js');
 
 var controller = {
   test: function (req, res) {

@@ -1,6 +1,5 @@
 body {
   font-family: 'Maven Pro', 'arial', sans-serif;
-  /*font-family: 'Press Start 2P', cursive;*/
   background-color: #fafafa;
   font-size: 1em;
   max-width: 960px;
@@ -12,4 +11,30 @@ body {
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
+}
+
+.navbar {
+  /*background-color: #2A2A2A;*/
+}
+
+.content {
+  padding-top: 70px;
+}
+
+#tb {
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+hr {
+  border-width: medium !important;
+  background-color: #ededed;
+}
+
+.card {
+  border-color: transparent !important;
+}
+
+.img-thumbnail {
+  border-color: transparent !important;
 }

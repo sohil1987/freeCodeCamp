@@ -1,0 +1,48 @@
+<div>
+  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container-fluid">
+      <div class="nav navbar-nav float-xs-left">
+        <a class="nav-item nav-link" href="/">PINTELEST CLONE</a>
+      </div>
+   
+      <div class="nav navbar-nav float-xs-right">
+      <% if (active === "home") { %>
+        <a class="nav-item nav-link active" href="/">Pics</a>
+      <% } else {%>
+        <a class="nav-item nav-link" href="/">Pics</a>
+      <% } %>
+
+      <% if (user) { %>
+        <% if (active === "myPics") { %>
+          <a class="nav-item nav-link active" href="myPics">My Pics</a>
+        <% } else {%>
+          <a class="nav-item nav-link" href="myPics">My Pics</a>
+        <% } %>
+
+        <% if (active === "addPic") { %>
+          <a class="nav-item nav-link active" href="addPic">Add a Pic </a>
+        <% } else {%>
+          <a class="nav-item nav-link" href="addPic">Add a Pic </a>
+        <% } %>
+        
+        <% if (active === "profile") { %>
+          <a class="nav-item nav-link active" href="profile">Profile</a>
+        <% } else {%>
+          <a class="nav-item nav-link" href="profile">Profile</a>
+        <% } %>
+      <% } %>
+
+      <% if (user) { %>
+        <button id="tb" class="nav-item nav-link btn btn-info">
+          <img src="./logo/twitter.png" alt="Twitter Logo">
+        <%= user.username %></button>
+      <% } else {%>
+        <button id="tb" class="nav-item nav-link btn btn-info">
+          <img src="./logo/twitter.png" alt="Twitter Logo">
+        Login</button>
+      <% } %>
+
+      </div>
+    </div>
+  </nav>
+</div>

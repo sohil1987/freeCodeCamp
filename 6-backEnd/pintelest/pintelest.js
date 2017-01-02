@@ -9,40 +9,22 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var secret = require('./secret.json');
-var publicPath = path.join(__dirname, '_public');
+var publicPath = path.join(__dirname, 'publicPintelest');
 
-var indexPintelest = require('./pintelest/routes/index');
-var apiV1Pintelest = require('./pintelest/routes/apiV1');
-var indexNightlife = require('./nightlife/routes/index');
-var apiV1Nightlife = require('./nightlife/routes/apiV1');
+var std = require('./routes/std');
+var apiV1 = require('./routes/apiV1');
 
 var passport = require('passport');
-var Strategy = require('passport-twitter').Strategy;
+
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-passport.use(new Strategy({
-  consumerKey: secret.twitter.consumerKey,
-  consumerSecret: secret.twitter.consumerSecret,
-  callbackURL: 'http://localhost:3000/pintelest' // /login/twitter/return'
-}, function (token, tokenSecret, profile, cb) {
-  return cb(null, profile);
-}));
-
-passport.serializeUser(function (user, cb) {
-  cb(null, user);
-});
-
-passport.deserializeUser(function (obj, cb) {
-  cb(null, obj);
-});
-
 var app = express();
 
 // view engine setup
-// app.set('views', path.join(__dirname, 'views'))
-// app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(helmet());
@@ -60,26 +42,13 @@ app.use(session({
 }));
 app.use(express.static(publicPath));
 
-// Initialize Passport and restore authentication state, if any, from the
-// session.
+// Initialize Passport and restore authentication state, if any, from session.
 app.use(passport.initialize());
 app.use(passport.session());
 
-// several apps running on the same app
-// app.use(express.static(__dirname + '/pintelest'))
-// app.use(express.static(__dirname + '/nightlife'))
-
-// routes
-
-app.use('/pintelest/api/v1', apiV1Pintelest);
-app.use('/pintelest', indexPintelest);
-app.use('/pintelest/login/twitter', indexPintelest);
-app.use('/pintelest/profile', indexPintelest);
-app.use('/nightlife/api/v1', apiV1Nightlife);
-app.use('/nightlife', indexNightlife);
-app.use('/', function (req, res) {
-  res.sendFile(publicPath + '/index.html');
-});
+// Routes
+app.use('/api/v1', apiV1);
+app.use('/', std);
 
 app.listen(secret.express.port, function () {
   console.log('App started on port', secret.express.port);

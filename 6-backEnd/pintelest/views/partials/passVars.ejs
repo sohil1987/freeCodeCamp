@@ -1,0 +1,19 @@
+<% if (active) { %>
+  <script>
+    var active = <%- JSON.stringify(active) %>;  
+  </script>
+<% } else { %>
+   <script>
+    var active;
+  </script>
+<% } %>
+
+<% if (user) { %>
+  <script>
+    var user = <%- JSON.stringify(user) %>;
+  </script>
+<% } else { %>
+   <script>
+    var user;
+  </script>
+<% } %>

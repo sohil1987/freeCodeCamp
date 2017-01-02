@@ -4,7 +4,7 @@ var app = (function () {
   /* code here */
 
   function init () {
-    console.log('Inicio');
+    console.log('Inicio NIGHTLIFE');
   }
 
   return {

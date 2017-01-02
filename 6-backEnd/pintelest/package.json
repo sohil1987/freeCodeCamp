@@ -1,11 +1,11 @@
 {
-  "name": "backendfcc",
+  "name": "pintelest",
   "version": "0.0.1",
-  "description": "5 apps for backend freecodecamp",
-  "main": "backend.js",
+  "description": "pinterest clone for freecodecamo",
+  "main": "pintelest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend.js"
+    "start": "nodemon pintelest.js"
   },
   "author": "brusbilis",
   "license": "MIT",

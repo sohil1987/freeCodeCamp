@@ -4,7 +4,18 @@ var app = (function () {
   /* code here */
 
   function init () {
-    console.log('Inicio');
+    console.log('Inicio PINTELEST');
+    if (user)   console.log('USUARIO', user.username);
+    if (active) console.log('ACTIVE', active);
+    document.getElementById('tb').addEventListener('click', handleTwitter);
+  }
+
+  function handleTwitter () {
+    if (user) {
+      window.location = 'http:/logout';
+    } else {
+      window.location = 'http:/login/twitter';
+    }
   }
 
   return {

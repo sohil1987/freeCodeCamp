@@ -2,11 +2,17 @@
 /* jshint node: true */
 
 var secret = require('./../../secret.json');
-var db = require('./../_models/database.js');
+var db = require('./../models/database.js');
 
 var controller = {
   test: function (req, res) {
     db.testConnection(req, res, connStatus);
+  },
+  test1: function (req, res) {
+    res.status(200).json('test1');
+  },
+  test2: function (req, res) {
+    res.status(200).json('test2');
   }
 
 };

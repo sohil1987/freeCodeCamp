@@ -1,0 +1,27 @@
+<% include ../partials/head %>
+
+<% include ../partials/navbar %>
+
+<div class="content">
+  <h2>PROFILE</h2>
+</div>
+
+<% if (user) { %>
+<div class="postLogin col-xs-12">
+  <span id="userId">ID </span><%= user.id%><br>
+  <span id="userName">User </span><%= user.username%><br>
+  <img id="userlogo" src="<%= user.photos[0].value %>">
+</div>
+
+<div>
+<% for (i in user) { %>
+<%= i %> ==> <%= user[i] %><br>
+<% } %>
+</div>
+<% } %>
+
+<% include ../partials/passVars %>
+
+<script src="pintelest.js"></script>
+ 
+<% include ../partials/end %>
