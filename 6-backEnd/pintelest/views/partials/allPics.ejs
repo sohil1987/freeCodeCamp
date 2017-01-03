@@ -1,0 +1,21 @@
+<div class="card-columns">
+
+<% for (let i = 0; i < pics.length; i++) { %>
+
+<div class="card card-block"> 
+  <img class="img-fluid cardImage" src="<%= pics[i].link %>" alt="image">
+  <div class="cardText text-xs-center">
+    <span><%= pics[i].text %></span>
+  </div>
+  <div class="footerCard">
+    <a class="float-xs-left" href="#"><img class="footerLogo" 
+    src="<%= pics[i].logoAuthor %>"></a>
+    <a class="float-xs-right" href="#"><img src="./logo/star32.png">
+    <%= pics[i].likes %></a>
+  </div>
+</div>
+
+<% } %>
+
+</div>
+

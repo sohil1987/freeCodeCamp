@@ -9,7 +9,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var secret = require('./secret.json');
-var publicPath = path.join(__dirname, 'publicPintelest');
+var publicPath = path.join(__dirname, 'public');
 
 var std = require('./routes/std');
 var apiV1 = require('./routes/apiV1');

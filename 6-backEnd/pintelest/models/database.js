@@ -1,7 +1,7 @@
 'use strict';
 /* jshint node: true */
 
-var secret = require('./../../secret.json');
+var secret = require('./../secret.json');
 var mysql = require('mysql');
 
 var db = {

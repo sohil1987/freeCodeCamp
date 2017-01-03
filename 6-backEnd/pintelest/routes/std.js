@@ -8,11 +8,14 @@ var router = express.Router();
 var passport = require('passport');
 var passConf = require('./../config/passport.js');
 
-router.use(express.static(__dirname + './../publicPintelest'));
+var pics = require('./../data.json');
+pics = pics.images;
+
+router.use(express.static(__dirname + './../public'));
 
 router.get('/', function (req, res, next) {
   // console.log('RUTA ', __dirname)
-  res.render('pages/home', {user: req.user,  active: 'home'});
+  res.render('pages/home', {user: req.user,  active: 'home', pics: pics});
 });
 
 router.get('/pics', function (req, res) {
