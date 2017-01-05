@@ -2,26 +2,35 @@
 
 <% include ../partials/navbar %>
 
-<div class="content">
+<div class="content postLogin col-xs-12 text-xs-center">
   <h2>PROFILE</h2>
-</div>
 
 <% if (user) { %>
-<div class="postLogin col-xs-12">
-  <span id="userId">ID </span><%= user.id%><br>
-  <span id="userName">User </span><%= user.username%><br>
+
+<span id="userId">ID .....</span><%= user.id%>
+<span id="userName"> , User .....</span><%= user.username%>
+<span> , Logo ..... 
   <img id="userlogo" src="<%= user.photos[0].value %>">
+</span>
+
 </div>
 
-<div>
+<% } else { %>
+
+</div>
+
+<% } %>
+
+<!--
+<div class="text-xs-center">
 <% for (i in user) { %>
-<%= i %> ==> <%= user[i] %><br>
+<%= i %> ..... <%= user[i] %><br>
 <% } %>
 </div>
-<% } %>
+-->
 
 <% include ../partials/passVars %>
 
-<script src="pintelest.js"></script>
+<script src="./pintelest.js"></script>
  
 <% include ../partials/end %>

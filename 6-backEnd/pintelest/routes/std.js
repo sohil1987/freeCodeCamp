@@ -5,17 +5,32 @@ var express = require('express');
 var router = express.Router();
 // var path = require('path')
 
+var db = require('./../models/database.js');
+
 var passport = require('passport');
 var passConf = require('./../config/passport.js');
 
-var pics = require('./../data.json');
-pics = pics.images;
+var pics;
 
-router.use(express.static(__dirname + './../public'));
+// router.use(express.static(__dirname + './../public'))
 
 router.get('/', function (req, res, next) {
   // console.log('RUTA ', __dirname)
-  res.render('pages/home', {user: req.user,  active: 'home', pics: pics});
+  db.getListaAllPics(req, res, function () {
+    res.render('pages/home', {
+      user: req.user, active: 'home', pics: res.pics
+    });
+  });
+});
+
+router.get('/user/:id', function (req, res, next) {
+  // var name = req.params.name
+  db.getListaUserPics(req, res, function () {
+    // console.log('PICS .....', res.pics)
+    res.render('pages/user', {
+      user: req.user, active: 'user', pics: res.pics
+    });
+  });
 });
 
 router.get('/pics', function (req, res) {
@@ -23,16 +38,35 @@ router.get('/pics', function (req, res) {
 });
 
 router.get('/myPics', passConf.checkAuthentication, function (req, res) {
-  res.render('pages/myPics' , {user: req.user,  active: 'myPics'});
+  res.render('pages/myPics',
+    { user: req.user, active: 'myPics', pics: undefined});
 });
 
 router.get('/addPic', passConf.checkAuthentication, function (req, res) {
-  res.render('pages/addPic' , {user: req.user,  active: 'addPic'});
+  res.render('pages/addPic',
+    { user: req.user, active: 'addPic',pics: undefined });
+});
+
+router.post('/addPic', passConf.checkAuthentication, function (req, res) {
+  var body = req.body;
+  // console.log('req.body', req.body)
+  db.insertNewUser(req, res, function () {
+    res.redirect('/user/' + req.body.idTwitter);
+  });
 });
 
 router.get('/profile', passConf.checkAuthentication, function (req, res) {
-  res.render('pages/profile' , {user: req.user,  active: 'profile'});
+  res.render('pages/profile',
+    { user: req.user, active: 'profile',  pics: undefined});
 });
+
+router.get('/vote/:userId/:picId', passConf.checkAuthentication,
+  function (req, res) {
+    db.postAddVote(req, res, function () {
+      res.redirect('/');
+    });
+  }
+);
 
 router.get('/logout', function (req, res) {
   req.session.destroy(function (err) {
@@ -46,7 +80,8 @@ router.get('/login/twitter',
 router.get('/login/twitter/return',
   passport.authenticate('twitter', { failureRedirect: '/login' }),
   function (req, res) {
-    res.redirect('/profile');
+    res.redirect('/addPic');
+  //  res.redirect('/profile'); ORIGINALMENTE VA ESTA REDIRECCION
   });
 
 module.exports = router;

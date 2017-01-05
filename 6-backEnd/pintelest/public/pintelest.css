@@ -58,4 +58,5 @@ https://stackoverflow.com/questions/34140793/bootstrap-4-responsive-cards-in-car
 
 .footerLogo {
   max-height: 30px;
+  transform: translateY(5px);
 }

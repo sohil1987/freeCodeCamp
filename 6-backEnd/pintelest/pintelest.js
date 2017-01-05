@@ -28,6 +28,7 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(helmet());
+app.use(express.static(publicPath));
 // uncomment after placing your favicon in /public
 app.use(favicon(path.join(publicPath, './logo/brusbb.png')));
 app.use(cookieParser());
@@ -40,7 +41,6 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
-app.use(express.static(publicPath));
 
 // Initialize Passport and restore authentication state, if any, from session.
 app.use(passport.initialize());

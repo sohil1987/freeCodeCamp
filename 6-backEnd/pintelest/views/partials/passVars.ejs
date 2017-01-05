@@ -17,3 +17,13 @@
     var user;
   </script>
 <% } %>
+
+<% if (pics) { %>
+  <script>
+    var pics = <%- JSON.stringify(pics) %>;
+  </script>
+<% } else { %>
+   <script>
+    var pics;
+  </script>
+<% } %>

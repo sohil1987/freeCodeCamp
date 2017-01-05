@@ -1,6 +1,12 @@
+<% if (pics) { %>
+
 <div class="card-columns">
 
 <% for (let i = 0; i < pics.length; i++) { %>
+
+<!--
+//<h2><span>HOLA <%= pics[i].idPic %></span></h2>
+-->
 
 <div class="card card-block"> 
   <img class="img-fluid cardImage" src="<%= pics[i].link %>" alt="image">
@@ -8,14 +14,19 @@
     <span><%= pics[i].text %></span>
   </div>
   <div class="footerCard">
-    <a class="float-xs-left" href="#"><img class="footerLogo" 
-    src="<%= pics[i].logoAuthor %>"></a>
-    <a class="float-xs-right" href="#"><img src="./logo/star32.png">
-    <%= pics[i].likes %></a>
+    <a class="float-xs-left" href="./../user/<%= pics[i].idTwitter || pics.id %>">
+      <img class="footerLogo" src="<%= pics[i].logoAuthor %>">
+    </a>
+    <button class="addStar float-xs-right" id="vote<%= pics[i].idPic %>">
+      <img src="./../logo/star32.png"><%= pics[i].likes %>
+    </button>
   </div>
+</div>
+
+<% } %> 
+ 
 </div>
 
 <% } %>
 
-</div>
 
