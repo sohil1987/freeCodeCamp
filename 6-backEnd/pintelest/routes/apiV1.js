@@ -18,23 +18,24 @@ router.get('/test1', controllers.test1);
 
 router.get('/test2', controllers.test2);
 
-//  Go microJson
+//  Golang microJson
+/*
 router.get('/test3', function (req, res) {
-  var http = require('http');
-  var url = 'http://127.0.0.1:3020';
+  var http = require('http')
+  var url = 'http://127.0.0.1:3020'
   var callback = function (response) {
-    var str = '';
+    var str = ''
     // another chunk of data has been recieved, so append it to `str`
     response.on('data', function (chunk) {
-      str += chunk;
-    });
+      str += chunk
+    })
     // the whole response has been recieved, so we just print it out here
     response.on('end', function () {
-      console.log(str);
-    });
-  };
-  http.request(url, callback).end();
-  res.end();
-});
-
+      console.log(str)
+    })
+  }
+  http.request(url, callback).end()
+  res.end()
+})
+*/
 module.exports = router;

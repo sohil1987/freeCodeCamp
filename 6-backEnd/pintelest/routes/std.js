@@ -38,9 +38,21 @@ router.get('/pics', function (req, res) {
 });
 
 router.get('/myPics', passConf.checkAuthentication, function (req, res) {
-  res.render('pages/myPics',
-    { user: req.user, active: 'myPics', pics: undefined});
+  db.getListaMyPics(req, res, function () {
+    // console.log('PICS .....', res.pics)
+    res.render('pages/myPics', {
+      user: req.user, active: 'myPics', pics: res.pics
+    });
+  });
 });
+
+router.get('/myPics/delete/:id', passConf.checkAuthentication,
+  function (req, res) {
+    // console.log('myPics...', req.params.id)
+    db.deletePic(req, res, function () {
+      res.redirect('/myPics');
+    });
+  });
 
 router.get('/addPic', passConf.checkAuthentication, function (req, res) {
   res.render('pages/addPic',
@@ -80,7 +92,7 @@ router.get('/login/twitter',
 router.get('/login/twitter/return',
   passport.authenticate('twitter', { failureRedirect: '/login' }),
   function (req, res) {
-    res.redirect('/addPic');
+    res.redirect('/myPics');
   //  res.redirect('/profile'); ORIGINALMENTE VA ESTA REDIRECCION
   });
 

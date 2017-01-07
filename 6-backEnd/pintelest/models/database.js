@@ -57,6 +57,26 @@ var db = {
       }
     });
   },
+  getListaMyPics: function (req, res, callback) {
+    var sql = 'SELECT idPic, users.nameTwitter AS username, users.logoTwitter AS logoAuthor, text, link, likes ';
+    sql += 'FROM pics ';
+    sql += 'JOIN users ON pics.idTwitter = users.idTwitter ';
+    sql += 'WHERE pics.idTwitter = ?';
+    var inserts = [req.user.id];
+    sql = mysql.format(sql, inserts);
+    // console.log(sql)
+    con.query(sql, function (err, rows) {
+      if (err) {
+        throw err;
+      } else {
+        res.pics = rows;
+        res.pics.id = req.params.id;
+        // console.log('RESULTADOS --> ', rows.length)
+        // console.log(rows)
+        callback();
+      }
+    });
+  },
   postAddVote: function (req, res, callback) {
     var sql = 'SELECT COUNT (*) as times ';
     sql += 'FROM likes ';
@@ -138,8 +158,6 @@ var db = {
     });
   },
   addNewPic: function (req, res, callback) {
-    // console.log(req.body)
-    // console.log('USER', req.user)
     var sql = 'INSERT INTO pics (idTwitter, text, link) ';
     sql += 'VALUES(?, ?, ?)';
     var inserts = [req.user.id, req.body.textPic, req.body.linkPic];
@@ -149,7 +167,7 @@ var db = {
       if (err) {
         throw err;
       } else {
-        console.log('NEW PIC SAVED ...........');
+        // console.log('NEW PIC SAVED ...........')
         callback();
       }
     });
@@ -167,8 +185,22 @@ var db = {
       if (err) {
         throw err;
       } else {
-        console.log('NEW USER SAVED ...........');
+        // console.log('NEW USER SAVED ...........')
         db.addNewPic(req, res, callback);
+      }
+    });
+  },
+  deletePic: function (req, res, callback) {
+    var sql = 'DELETE FROM pics WHERE idPic = ? ';
+    var inserts = [req.params.id];
+    sql = mysql.format(sql, inserts);
+    // console.log(sql)
+    con.query(sql, function (err) {
+      if (err) {
+        throw err;
+      } else {
+        // console.log('PIC DELETED...........')
+        callback();
       }
     });
   }

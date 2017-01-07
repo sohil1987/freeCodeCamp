@@ -11,6 +11,7 @@ var app = (function () {
       console.log('USUARIO', user.username);
       createVotingEvents();
     }
+    checkImages();
   }
 
   function createVotingEvents () {
@@ -37,6 +38,23 @@ var app = (function () {
     let userId = user.id;
     // console.log('User... ', userId, ' --- Pic... ', picId)
     window.location = '/vote/' + userId + '/' + picId;
+  }
+
+  function checkImages () {
+    var array = document.getElementsByClassName('cardImage');
+    for (let i = 0; i < array.length; i++) {
+      urlPicExists(array[i]);
+    }
+  }
+
+  function urlPicExists (pic) {
+    // console.log('testing ...', pic.src)
+    var imageData = new Image();
+    imageData.onload = function () {};
+    imageData.onerror = function () {
+      pic.src = './../images/photoNot.png';
+    };
+    imageData.src = pic.src;
   }
 
   return {

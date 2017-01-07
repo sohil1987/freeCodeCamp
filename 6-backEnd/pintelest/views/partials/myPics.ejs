@@ -1,5 +1,5 @@
 <% if (pics) { %>
-
+MYPICS
 <div class="card-columns">
 
 <% for (let i = 0; i < pics.length; i++) { %>
@@ -21,6 +21,11 @@
       <img src="./../logo/star32.png"><%= pics[i].likes %>
     </button>
   </div>
+  <div class="text-xs-center">
+    <a class="text-xs-center" href="./../myPics/delete/<%= pics[i].idPic %>">
+        <button class="removeButton btn btn-danger">Delete</button>   
+    </a>
+  </div>
 </div>
 
 <% } %> 
@@ -28,4 +33,3 @@
 </div>
 
 <% } %>
-
