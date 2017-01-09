@@ -30,7 +30,7 @@ app.use(logger('dev'));
 app.use(helmet());
 app.use(express.static(publicPath));
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(publicPath, './logo/brusbb.png')));
+app.use(favicon(path.join(publicPath, '/logo/brusbb.png')));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

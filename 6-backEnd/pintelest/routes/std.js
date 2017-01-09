@@ -10,6 +10,7 @@ var db = require('./../models/database.js');
 var passport = require('passport');
 var passConf = require('./../config/passport.js');
 
+var baseUrl = ''; // 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest'
 var pics;
 
 // router.use(express.static(__dirname + './../public'))
@@ -34,7 +35,7 @@ router.get('/user/:id', function (req, res, next) {
 });
 
 router.get('/pics', function (req, res) {
-  res.redirect('/');
+  res.redirect(baseUrl + '/');
 });
 
 router.get('/myPics', passConf.checkAuthentication, function (req, res) {
@@ -50,7 +51,7 @@ router.get('/myPics/delete/:id', passConf.checkAuthentication,
   function (req, res) {
     // console.log('myPics...', req.params.id)
     db.deletePic(req, res, function () {
-      res.redirect('/myPics');
+      res.redirect(baseUrl + '/myPics');
     });
   });
 
@@ -63,7 +64,8 @@ router.post('/addPic', passConf.checkAuthentication, function (req, res) {
   var body = req.body;
   // console.log('req.body', req.body)
   db.insertNewUser(req, res, function () {
-    res.redirect('/user/' + req.body.idTwitter);
+    // res.redirect('/user/' + req.body.idTwitter)
+    res.redirect(baseUrl + 'myPics');
   });
 });
 
@@ -75,14 +77,14 @@ router.get('/profile', passConf.checkAuthentication, function (req, res) {
 router.get('/vote/:userId/:picId', passConf.checkAuthentication,
   function (req, res) {
     db.postAddVote(req, res, function () {
-      res.redirect('/');
+      res.redirect(baseUrl + '/');
     });
   }
 );
 
 router.get('/logout', function (req, res) {
   req.session.destroy(function (err) {
-    res.redirect('/');
+    res.redirect(baseUrl + '/');
   });
 });
 
@@ -92,8 +94,8 @@ router.get('/login/twitter',
 router.get('/login/twitter/return',
   passport.authenticate('twitter', { failureRedirect: '/login' }),
   function (req, res) {
-    res.redirect('/myPics');
-  //  res.redirect('/profile'); ORIGINALMENTE VA ESTA REDIRECCION
+    // res.redirect('/myPics')
+    res.redirect(baseUrl + '/profile');
   });
 
 module.exports = router;

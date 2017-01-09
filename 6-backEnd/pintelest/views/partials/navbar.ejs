@@ -2,12 +2,12 @@
   <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
     <div class="container-fluid">
       <div class="nav navbar-nav float-xs-left">
-        <a class="nav-item nav-link" href="/">PINTELEST CLONE</a>
+        <a class="nav-item nav-link" href="./">PINTELEST CLONE</a>
       </div>
    
       <div class="nav navbar-nav float-xs-right">
       <% if (active === "home") { %>
-        <a class="nav-item nav-link active" href="./..">Pics</a>
+        <a class="nav-item nav-link active" href="./">Pics</a>
       <% } else {%>
         <a class="nav-item nav-link" href="./..">Pics</a>
       <% } %>
@@ -34,11 +34,11 @@
 
       <% if (user) { %>
         <button id="tb" class="nav-item nav-link btn btn-info">
-          <img src="./../logo/twitter.png" alt="Twitter Logo">
+          <img src="./logo/twitter.png" alt="Twitter Logo">
         <%= user.username %></button>
       <% } else {%>
         <button id="tb" class="nav-item nav-link btn btn-info">
-          <img src="./../logo/twitter.png" alt="Twitter Logo">
+          <img src="./logo/twitter.png" alt="Twitter Logo">
         Login</button>
       <% } %>
 

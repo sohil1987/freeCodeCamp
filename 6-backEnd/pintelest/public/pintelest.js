@@ -3,6 +3,9 @@ var app = (function () {
   /* jshint node: true */
   /* code here */
 
+  // var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest/'
+  var baseUrl = '';
+
   function init () {
     console.log('Inicio PINTELEST');
     if (active) console.log('ACTIVE', active);
@@ -27,9 +30,9 @@ var app = (function () {
 
   function handleTwitter () {
     if (user) {
-      window.location = '/logout';
+      window.location = baseUrl + 'logout';
     } else {
-      window.location = '/login/twitter';
+      window.location = baseUrl + 'login/twitter';
     }
   }
 
@@ -52,7 +55,7 @@ var app = (function () {
     var imageData = new Image();
     imageData.onload = function () {};
     imageData.onerror = function () {
-      pic.src = './../images/photoNot.png';
+      pic.src = baseUrl + 'images/photoNot.png';
     };
     imageData.src = pic.src;
   }
@@ -63,3 +66,6 @@ var app = (function () {
 }());
 
 window.addEventListener('load', app.inicio);
+
+// callback in secret.json
+// "https://brusbilis.com/freecodecamp/6-backEnd/pintelest/login/twitter/return"

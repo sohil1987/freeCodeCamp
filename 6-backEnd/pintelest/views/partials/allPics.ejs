@@ -14,11 +14,11 @@
     <span><%= pics[i].text %></span>
   </div>
   <div class="footerCard">
-    <a class="float-xs-left" href="./../user/<%= pics[i].idTwitter || pics.id %>">
+    <a class="float-xs-left" href="./user/<%= pics[i].idTwitter || pics.id %>">
       <img class="footerLogo" src="<%= pics[i].logoAuthor %>">
     </a>
     <button class="addStar float-xs-right" id="vote<%= pics[i].idPic %>">
-      <img src="./../logo/star32.png"><%= pics[i].likes %>
+      <img src="./logo/star32.png"><%= pics[i].likes %>
     </button>
   </div>
 </div>
