@@ -10,7 +10,7 @@ var db = require('./../models/database.js');
 var passport = require('passport');
 var passConf = require('./../config/passport.js');
 
-var baseUrl = ''; // 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest'
+var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest';
 var pics;
 
 // router.use(express.static(__dirname + './../public'))
@@ -65,7 +65,7 @@ router.post('/addPic', passConf.checkAuthentication, function (req, res) {
   // console.log('req.body', req.body)
   db.insertNewUser(req, res, function () {
     // res.redirect('/user/' + req.body.idTwitter)
-    res.redirect(baseUrl + 'myPics');
+    res.redirect(baseUrl + '/myPics');
   });
 });
 

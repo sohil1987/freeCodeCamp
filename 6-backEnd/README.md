@@ -2,6 +2,13 @@
 
 ## Pinterest Clone
 
-REST API Node + Expressjs + MySql    
+Server ==> Node + Expressjs + EJS + MySql    
 
-SPA con vanilla JS + Bootstrap 4
+Client ==> Vanilla JS + Bootstrap 4 alpha
+
+
+## Voting Apps
+
+Server ==> Go stdlib ?
+
+Client ==> SPA Vanilla JS + Bootstrap 4

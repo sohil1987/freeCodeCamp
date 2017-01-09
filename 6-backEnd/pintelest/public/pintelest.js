@@ -3,8 +3,8 @@ var app = (function () {
   /* jshint node: true */
   /* code here */
 
-  // var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest/'
-  var baseUrl = '';
+  var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest/';
+  // var baseUrl = ''
 
   function init () {
     console.log('Inicio PINTELEST');
@@ -40,7 +40,7 @@ var app = (function () {
     let picId = e.target.id.slice(4);
     let userId = user.id;
     // console.log('User... ', userId, ' --- Pic... ', picId)
-    window.location = '/vote/' + userId + '/' + picId;
+    window.location = baseUrl + 'vote/' + userId + '/' + picId;
   }
 
   function checkImages () {
@@ -56,6 +56,7 @@ var app = (function () {
     imageData.onload = function () {};
     imageData.onerror = function () {
       pic.src = baseUrl + 'images/photoNot.png';
+    // if (user) { pic.src = baseUrl + './../images/photoNot.png'; }
     };
     imageData.src = pic.src;
   }

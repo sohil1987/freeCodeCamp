@@ -38,6 +38,7 @@
 
 ## Information Security and Quality Assurance
 
+* [Voting App](https://brusbilis.com/freecodecamp/6-backEnd/voting/)
 * [Pintelest Clone](https://brusbilis.com/freecodecamp/6-backEnd/pintelest/)
 
 ## Bonus Projects
