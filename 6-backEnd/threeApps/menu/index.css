@@ -1,0 +1,52 @@
+body {
+  padding-top: 0px;
+  margin: auto;
+  background-color: #fafafa;
+  font-family: 'Roboto', 'arial', sans-serif;
+  font-size: 1em;
+  max-width: 960px;
+}
+
+ol ul {
+  padding-top: 5px;
+  /* Chrome numbers of ol inside text */
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.section {
+  display: inline;
+  border: 7px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #dcdcdc;
+}
+
+.list-unstyled {
+  margin-top: 30px;
+}
+
+.notYet {
+  pointer-events: none;
+  text-decoration: line-through;
+  color: #555555;
+}
+
+
+/*
+
+GRISES CLAROS
+
+#fafafa
+#f6f6f6
+#f1f1f1
+#ededed
+#e9e9e9
+#dcdcdc
+#a9a9a9
+
+*/

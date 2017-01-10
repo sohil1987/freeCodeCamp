@@ -1,5 +1,6 @@
 #Ignore these directories
 node_modules/
+tmp/
 
 #ignore these files
 # Ignore Mac DS_Store files
@@ -7,4 +8,3 @@ node_modules/
 config.json
 private.json
 secret.json
- 
