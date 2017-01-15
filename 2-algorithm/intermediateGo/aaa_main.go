@@ -1,14 +1,12 @@
 package main
 
 func main() {
-	argumentOptional()
 	//binaryAgents()
 	//booWho()
 	//convertHTMLents()
 	//diffTwoArrays()
 	//dnaPairing()
 	//dropIt()
-	//everythingBeTrue()
 	//findersKeepers()
 	//missingLetters()
 	//pigLatin()
@@ -17,9 +15,7 @@ func main() {
 	//smallCommonMultiple()
 	//sortedUnion()
 	//spinalTapCase()
-	//steamRoller()
 	//sumAllNumsIntRange()
 	//sumAllPrimes()
 	//sumOddFiboNums()
-	//whereforeArtThou()
 }

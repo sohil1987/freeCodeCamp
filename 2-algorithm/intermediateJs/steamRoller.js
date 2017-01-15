@@ -15,8 +15,4 @@ function steamrollArray (arr) {
   return result;
 }
 
-steamrollArray([1, [2],
-  [3, [
-    [4]
-  ]]
-]);
+console.log(steamrollArray([1, [2], [3, [[4]]]]));
