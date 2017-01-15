@@ -9,6 +9,7 @@ import (
 func diffArray(s1, s2 interface{}) []string {
 	var aux1 []int
 	var res, a1, a2 []string
+	//fmt.Println(reflect.TypeOf(s1))
 	if reflect.TypeOf(s1) == reflect.TypeOf(aux1) {
 		//fmt.Println(s1, s2, "son []int")
 		a1, a2 = convertIntToString(s1.([]int), s2.([]int))
