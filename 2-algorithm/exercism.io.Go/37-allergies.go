@@ -17,7 +17,6 @@ func allergies() {
 		128: "cats",
 	}
 	for _, v := range test37 {
-		fmt.Sprintln(v.input, a)
 		list := getAllergies(int(v.input), a)
 		fmt.Println(v.input, " --> ", list)
 	}
@@ -26,7 +25,16 @@ func allergies() {
 func getAllergies(num int, a alergies) []string {
 	res := make([]string, 0)
 	arrayPos := getPosArr(num)
-	fmt.Sprintln(arrayPos)
+	arrayPos = reverseSliceInt(arrayPos)
+	for _, v := range arrayPos {
+		if num >= v {
+			if _, ok := a[v]; ok {
+				//fmt.Println(`HOLA `, v, a[v])
+				res = append(res, a[v])
+			}
+			num -= v
+		}
+	}
 	return res
 }
 
@@ -58,19 +66,26 @@ func getPosMap(num int) int {
 	return i
 }
 
+func reverseSliceInt(reverse []int) []int {
+	for i, j := 0, len(reverse)-1; i < j; i, j = i+1, j-1 {
+		reverse[i], reverse[j] = reverse[j], reverse[i]
+	}
+	return reverse
+}
+
 type alergies map[int]string
 
 var test37 = []struct {
 	expected []string
 	input    uint
-}{ /*
-		{[]string{}, 0},
-		{[]string{"eggs"}, 1},
-		{[]string{"peanuts"}, 2},
-		{[]string{"strawberries"}, 8},
-		{[]string{"eggs", "peanuts"}, 3},
-		{[]string{"eggs", "shellfish"}, 5},
-		{[]string{"strawberries", "tomatoes", "chocolate", "pollen", "cats"}, 248},
-		{[]string{"eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"}, 255},*/
+}{
+	{[]string{}, 0},
+	{[]string{"eggs"}, 1},
+	{[]string{"peanuts"}, 2},
+	{[]string{"strawberries"}, 8},
+	{[]string{"eggs", "peanuts"}, 3},
+	{[]string{"eggs", "shellfish"}, 5},
+	{[]string{"strawberries", "tomatoes", "chocolate", "pollen", "cats"}, 248},
+	{[]string{"eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"}, 255},
 	{[]string{"eggs", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"}, 509},
 }
