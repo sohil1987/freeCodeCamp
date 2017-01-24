@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Simon Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto de crear una recreacion del juego simon dice en javascript"
+  />
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+      crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="simon.css">
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="main container-fluid">
+
+    <div class="control">
+      <div class="name row text-xs-center">
+        <h1 class="brand col-xs-12">Simon<span class="reg">&reg;</span></h1>
+      </div>
+      <div class="col-xs-4 text-xs-center">
+        <button class="btn btn-secondary btn-sm" id="start">START</button>
+      </div>
+      <div class="col-xs-4 text-xs-center">
+        <button class="btn btn-outline-secondary btn-sm" id="restart">RESTART</button>
+      </div>
+      <div class="col-xs-4 text-xs-center">
+        <button class="btn btn-secondary btn-sm" id="strict">STRICT</button>
+      </div>
+    </div>
+
+    <div class="board row text-xs-center">
+      <div id="green" class="action cell col-xs-6"></div>
+      <div id="red" class="action cell col-xs-6"></div>
+      <div id="yellow" class="action cell col-xs-6"></div>
+      <div id="blue" class="action cell col-xs-6"></div>
+    </div>
+
+    <div class="score row text-xs-center">
+      <div id="score" class="col-xs-12">
+        <h4>COUNT&nbsp;
+          <span class="alert alert-info" id="counter"><strong>0</strong></span>
+          &nbsp;OF&nbsp;
+          <span class="alert alert-info" id="round"><strong>0</strong></span>
+        </h4>
+      </div>
+      <div id="next" class="col-xs-12 alert alert-success" role="alert" hidden>
+        <h4><strong>Well Done! Prepare for next Round</strong></h4>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="simon.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>

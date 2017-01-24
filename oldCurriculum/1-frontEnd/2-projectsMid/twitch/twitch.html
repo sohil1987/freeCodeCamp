@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Twitch TV API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto para mostrar los canales activos de la plataforma Twitch TV usando su API"
+  />
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+      crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="twitch.css">
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="menu">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 text-xs-center">
+          <h4 id="icono">TWITCH.TV</h4>
+        </div>
+        <div class="col-sm-7 offset-sm-1 col-xs-12">
+          <nav class="navbar navbar-dark">
+            <div class="nav navbar-nav">
+              <button id="btnAll" class="btn">ALL</button>
+              <button id="btnOnline" class="btn">ONLINE</button>
+              <button id="btnOffline" class="btn">OFFLINE</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="results" class="result">
+  </div>
+
+  </div>
+
+  <script src="twitch2.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>

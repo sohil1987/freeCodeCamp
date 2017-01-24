@@ -2,54 +2,62 @@
 
 ## Responsive Web Design
 
-* [Tribute Page](https://brusbilis.com/freecodecamp/1-responsive/tribute/tribute.html)
-* [Personal Portfolio](https://brusbilis.com/freecodecamp/1-responsive/portfolio/portfolio.html)
+* ~~[Tribute Page]()~~
+* ~~[Survey Form]()~~
+* ~~[Product Landing Page]()~~
+* ~~[Technical Documentation Page]()~~
+* ~~[Personal Portfolio]()~~
 
 ## Javascript and Data Structures
 
-* [Intermediate Algorithm](https://brusbilis.com/freecodecamp/2-javascript/intermediate/intermediate.html)
-* [Advanced Algorithm](https://brusbilis.com/freecodecamp/2-javascript/advanced/advanced.html)
+* ~~[Basic Algorithm]()~~
+* ~~[Intermediate Algorithm]()~~
 
-## Front End
+## Front End Libraries
 
-* [Random Quote Machine](https://brusbilis.com/freecodecamp/3-frontEnd/quote/quote.html)
-* [Javascript Calculator](https://brusbilis.com/freecodecamp/3-frontEnd/calculator/calculator.html)
-* [Pomodoro Clock](https://brusbilis.com/freecodecamp/3-frontEnd/pomodoro/pomodoro.html)
-* [Recipe Box](https://brusbilis.com/freecodecamp/3-frontEnd/recipe/recipe.html)
-* [Conway's Game of Life](https://brusbilis.com/freecodecamp/3-frontEnd/gameLife/life.html)
-
+* ~~[Random Quote Machine]()~~
+* ~~[Markdown Previewer]()~~
+* ~~[Drum Machine]()~~
+* ~~[Javascript Calculator]()~~
+* ~~[Pomodoro Clock]()~~
 
 ## Data Visualization
 
-* [Bar Chart Visualization](https://brusbilis.com/freecodecamp/4-data/barChart/bar.html)
-* [ScatterPlot Graph](https://brusbilis.com/freecodecamp/4-data/scatterplot/scatter.html)
-* [Heat Map Visualization](https://brusbilis.com/freecodecamp/4-data/heat/heat.html)
-* [Country Borders Force Directed Graph](https://brusbilis.com/freecodecamp/4-data/graph/graph.html)
-* [Meteorite Landings World Map](https://brusbilis.com/freecodecamp/4-data/worldMap/world.html)
+* ~~[Bar Chart]()~~
+* ~~[Scatterplot Graph]()~~
+* ~~[Heat Map]()~~
+* ~~[Choropleth Map]()~~
+* ~~[Treemap Diagram]()~~
 
 ## APIs and Microservices
 
-* [Timestamp](https://brusbilis.com/freecodecamp/5-api/allApis/timestamp/)
-* [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/allApis/parser/)
-* [URL Shortener](https://brusbilis.com/freecodecamp/5-api/allApis/url/)
-* [Image Search](https://brusbilis.com/freecodecamp/5-api/allApis/image/)
-* [File Metadata](https://brusbilis.com/freecodecamp/5-api/allApis/file/)
-
+* ~~[Timestamp]()~~
+* ~~[Request Header Parser]()~~
+* ~~[URL Shortener]()~~
+* ~~[Exercise Tracker]()~~
+* ~~[File Metadata]()~~
 
 ## Information Security and Quality Assurance
 
-* [Voting App](https://brusbilis.com/freecodecamp/6-backEnd/voting/)
-* [Pintelest Clone](https://brusbilis.com/freecodecamp/6-backEnd/pintelest/)
+* ~~[Metric-Imperial Converter]()~~
+* ~~[Issue Tracker]()~~
+* ~~[Personal Library]()~~
+* ~~[Stock Price Checker]()~~
+* ~~[Anonymous Message Board]()~~
 
-## Bonus Projects
+## Bonus Extra Projects and Challenges
 
-* [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
-* [Twitch TV](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
-* [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wikiViewer/wiki.html)
-* [Cats API](https://brusbilis.com/freecodecamp/7-bonus/cats/cats.html)
-* [TicTacToe](https://brusbilis.com/freecodecamp/7-bonus/ticTacToe/ticTacToe.html)
-* [Simon](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)
-* [Markdown Previewer](https://brusbilis.com/freecodecamp/7-bonus/markdown/md.html)
-* [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/leaderboard/camper.html)
-* [Roguelike Dungeon Crawler](https://brusbilis.com/freecodecamp/7-bonus/rogue/rogue.html)
-* [Random Map Dungeon Generator](https://brusbilis.com/freecodecamp/7-bonus/rogueMap/random.html)  
+* ~~[Local Weather]()~~
+* ~~[Wikipedia Viewer]()~~
+* ~~[Twitch.tv API]()~~
+* ~~[Tic Tac Toe Game]()~~
+* ~~[Simon Game]()~~
+* ~~[Camper Leaderboard]()~~
+* ~~[Roguelike Dungeon Game]()~~
+* ~~[Random Dungeon generator]()~~
+* ~~[P2P Video Chat Aplication]()~~
+* ~~[National Contiguity with Force Directed Graph]()~~
+* ~~[Map Data Across the Globe]()~~
+* ~~[Advanced Algorithm]()~~
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>D3 Heat Map for data visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp proyecto de visualizacion de datos usando libreria d3 con heat map o mapa de calor"
+  />
+
+  <!-- Lato -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+      integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj"
+      crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../images/logos/brusbb.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="heat.css">
+
+  <!-- Head -->
+  <!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+  <div class="main container-fluid">
+
+    <div class="card text-xs-center">
+      <div class="card-header text-xs-center">
+        <div class="title">
+          <span>Monthly Global Land-Surface Temperature</span>
+        </div>
+        <div class="interval">
+          <span>1753 - 2015</span>
+        </div>
+        <div>
+          <span class="clarification">Temperatures are in Celsius and reported as anomalies relative to the Jan
+            1951-Dec 1980 average.<br> Estimated Jan 1951-Dec 1980 absolute temperature
+            &#8451;: 8.66 +/- 0.07</span>
+        </div>
+      </div>
+      <div class="inner">
+        <svg class="heatMap"></svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong><span id="date">date</span></strong><br>
+        <span id="temp">temp</span><br>
+        <span id="variation">variation</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="heat.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>

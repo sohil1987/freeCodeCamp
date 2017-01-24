@@ -49,7 +49,7 @@ ol ul {
 }
 
 .section {
-  display: inline;
+  display: block;
   border: 7px solid #dcdcdc;
   border-radius: 5px;
   padding: 5px;
