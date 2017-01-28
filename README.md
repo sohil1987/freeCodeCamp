@@ -3,14 +3,14 @@
 ## Responsive Web Design
 
 * [Tribute Page](https://brusbilis.com/freecodecamp/1-responsive/tribute/tribute.html)  
-* ~~Survey Form~~
-* ~~Product Landing Page~~
+* [Survey Form](https://brusbilis.com/freecodecamp/1-responsive/form/form.html)
+* ~~[Product Landing Page](https://brusbilis.com/freecodecamp/1-responsive/landing/landing.html)~~
 * ~~Technical Documentation Page~~
 * [Personal Portfolio](https://brusbilis.com/freecodecamp/1-responsive/portfolio/portfolio.html)  
 
 ## Javascript and Data Structures
 
-* ~~Basic Algorithm~~
+* ~~[Basic Algorithm](https://brusbilis.com/freecodecamp/2-algorithm/basic/)~~
 * ~~Intermediate Algorithm~~
 * ~~Advanced Algorithm~~
 
@@ -59,5 +59,3 @@
 * ~~P2P Video Chat Aplication~~
 * ~~National Contiguity with Force Directed Graph~~
 * ~~Meteor World Map Data~~
-
-
