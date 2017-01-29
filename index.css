@@ -53,10 +53,11 @@ body {
 
 a, a:visited {
   text-decoration: none;
+  color: #375EAB;
 }
 
 a:hover {
-  color: #428bca;
+  color: lightskyblue;
 }
 
 li:hover {
@@ -72,10 +73,10 @@ ul {
   list-style-type: none;
 }
 
-.notYet {
+a.notYet {
   pointer-events: none;
   text-decoration: line-through;
-  color: #555555;
+  color: #555555 !important;
 }
 
 hr {
