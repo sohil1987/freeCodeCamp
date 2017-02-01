@@ -59,3 +59,17 @@
 * ~~P2P Video Chat Aplication~~
 * ~~National Contiguity with Force Directed Graph~~
 * ~~Meteor World Map Data~~
+
+## Old Curriculum Backend
+
+* [Timestamp](https://brusbilis.com/freecodecamp/8-dynamic/apis/time.html)
+* [Request Header Parser](https://brusbilis.com/freecodecamp/8-dynamic/apis/parser.html)
+* [URL Shortener](https://brusbilis.com/freecodecamp/8-dynamic/apis/url.html)
+* [Image Search](https://brusbilis.com/freecodecamp/8-dynamic/apis/image.html)
+* [File Metadata](https://brusbilis.com/freecodecamp/8-dynamic/apis/file.html)
+* ~~Voting App~~
+* ~~Nightlife Coordination~~
+* ~~Stock Market~~
+* ~~Book Trading Club~~
+* ~~Pinterest Clone~~
+

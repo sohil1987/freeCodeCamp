@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> API URL Shortener </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Freecodecamp API Projects API URL Shortener " />
+
+	<!-- Oxygen -->
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="./../../assets/logos/brusbb.png">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./url.css">
+
+	<!-- siteVerification -->
+	<!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+	<div class="main">
+		<h1 class="header">
+			API URL Shortener Docs
+		</h1>
+		<blockquote class="doc">
+			<ul>
+				1) You submit a URL as a parameter and receive a shortened URL in JSON response.
+			</ul>
+			<ul>
+				2) If you pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain
+				an error instead.
+			</ul>
+			<ul>
+				3) If you visit a shortened URL you will be redirected to the original link.
+			</ul>
+		</blockquote>
+		<h3><span>Creation Example :</span></h3>
+		<div class="codePre">
+			<a href="https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/new/https://www.freecodecamp.com">https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/new/https://www.freecodecamp.com</a>
+			<a href="https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/new/https://freecodecamp.com">https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/new/https://freecodecamp.com</a>
+		</div>
+		<h3><span>Creation JSON response :</span></h3>
+		<div class="json">
+			<pre>
+{ 
+	"original": "http://freecodecamp.com" , 
+	"short": "https://brusbilis.com/freecodecamp/5-api/allApis/url/1596" 
+}
+    </pre>
+		</div>
+		<div class="codePre">
+			<h3><span>Usage</span></h3>
+			<a href="https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/1596">https://brusbilis.com/freecodecamp/8-dynamic/apis/v1/url/1596</a>
+			<br>redirects to<br>
+			<a href="https://freecodecamp.com">freecodecamp.com</a>
+		</div>
+	</div>
+	<hr>
+
+	<div id="footer">
+		<a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+	</div>
+
+	<!-- google-analytics -->
+	<!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+	<!-- cookie Law -->
+	<!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+</body>
+
+</html>

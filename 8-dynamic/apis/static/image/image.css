@@ -1,0 +1,86 @@
+@media (max-width: 480px) {}
+
+@media (min-width: 481px)and (max-width: 640px) {}
+
+@media (min-width: 641px) {}
+
+body {
+  background-color: #fafafa;
+  font-family: "Oxygen", 'Arial', sans-serif;
+  font-size: 1em;
+  max-width: 960px;
+  margin: auto;
+}
+
+.main {
+  padding-top: 20px;
+}
+
+.doc {
+  background-color: #def2f8;
+  border: solid 1px #9cd9eb;
+  color: #375EAB;
+}
+
+h1.header {
+  font-size: 2em;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+span {
+  font-size: 1.3em;
+  padding: 5px 20px;
+  margin: 0px 5px 5px 0px;
+  border-radius: 10px;
+  font-family: monospace;
+  background-color: #82BF56;
+}
+
+.codePre {
+  text-align: center;
+}
+
+.doc a {
+  /* allow links <a> to use scale */
+  display: inline-block;
+}
+
+.doc a:hover {
+  transform: scale(1.1);
+}
+
+pre {
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+.json {
+  text-align: center;
+}
+
+hr {
+  color: #ededed;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
