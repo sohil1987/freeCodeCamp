@@ -21,7 +21,8 @@ func parser(w http.ResponseWriter, r *http.Request) {
 		data.OS = r.Header.Get("User-Agent")
 		sendStructAsJSON(w, r, data)
 	} else {
-		http.Redirect(w, r, "/parser/parser.html", 301)
+		// http.Redirect(w, r, "/parser/parser.html", 301) // for local dev
+		http.Redirect(w, r, "/freecodecamp/8-dynamic/apis/parser/parser.html", 301) //for deploy
 	}
 }
 

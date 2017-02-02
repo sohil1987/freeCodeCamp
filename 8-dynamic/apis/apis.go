@@ -10,7 +10,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/v1/time/", timestamp)
 	mux.HandleFunc("/v1/parser/", parser)
-	mux.HandleFunc("/v1/url/", url)
+	mux.HandleFunc("/v1/url/", urlRedirect)
 	mux.HandleFunc("/v1/image/", image)
 	mux.HandleFunc("/v1/file/", file)
 
