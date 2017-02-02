@@ -62,14 +62,15 @@
 
 ## Old Curriculum Backend
 
-* [Timestamp](https://brusbilis.com/freecodecamp/8-dynamic/apis/time.html)
-* [Request Header Parser](https://brusbilis.com/freecodecamp/8-dynamic/apis/parser.html)
-* [URL Shortener](https://brusbilis.com/freecodecamp/8-dynamic/apis/url.html)
-* [Image Search](https://brusbilis.com/freecodecamp/8-dynamic/apis/image.html)
-* [File Metadata](https://brusbilis.com/freecodecamp/8-dynamic/apis/file.html)
-* ~~Voting App~~
-* ~~Nightlife Coordination~~
-* ~~Stock Market~~
-* ~~Book Trading Club~~
-* ~~Pinterest Clone~~
+* [Timestamp](https://brusbilis.com/freecodecamp/old-v1/apis/time/time.html)
+* [Request Header Parser](https://brusbilis.com/freecodecamp/old-v1/apis/parser/parser.html)
+* [URL Shortener](https://brusbilis.com/freecodecamp/old-v1/apis/url/url.html)
+* [Image Search](https://brusbilis.com/freecodecamp/old-v1/apis/image/image.html)
+* [File Metadata](https://brusbilis.com/freecodecamp/old-v1/apis/file/file.html)
+* [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Nightlife Coordination](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Stock Market](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps)
+
 

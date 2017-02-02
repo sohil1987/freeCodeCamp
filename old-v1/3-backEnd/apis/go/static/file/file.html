@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> API File Metadata</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Freecodecamp API Projects Timestamp Microservice" />
+
+	<!-- Oxygen -->
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="./../../assets/logos/brusbb.png">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./file.css">
+
+	<!-- siteVerification -->
+	<!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+	<div class="main">
+		<h1 class="header">
+			API File Metadata Docs
+		</h1>
+		<blockquote class="doc">
+			<ul>
+				1) You submit a Form that includes a file upload.
+			</ul>
+			<ul>
+				2) You get a JSON response with the uploaded file size in bytes.
+			</ul>
+		</blockquote>
+		<h3><span>Usage :</span></h3>
+		<div class="codePre">
+			<form class="form-inline" method="post" action="./../v1/file/" enctype="multipart/form-data">
+				<div class="form-group">
+					<input type="file" class="form-control-file" name="inputFile">
+				</div>
+				<button type="submit" class="but">Upload File</button>
+			</form>
+		</div>
+		<h3><span>Response :</span></h3>
+		<div class="json">
+			<pre>
+{ 
+	"File": "X",
+	"Size": "X" 
+}
+     </pre>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="footer">
+		<a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+	</div>
+
+	<!-- google-analytics -->
+	<!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+	<!-- cookie Law -->
+	<!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->-->
+
+</body>
+
+</html>

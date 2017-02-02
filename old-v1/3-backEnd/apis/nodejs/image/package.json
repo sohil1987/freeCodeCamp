@@ -1,0 +1,18 @@
+{
+  "name": "imagesearch",
+  "version": "0.0.1",
+  "description": "API image search",
+  "main": "image.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon image.js"
+  },
+  "author": "brusbilis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.12.0",
+    "request": "^2.78.0"
+  }
+}

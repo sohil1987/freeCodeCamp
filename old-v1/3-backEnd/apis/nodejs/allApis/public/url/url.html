@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>API URL Shortener</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Freecodecamp proyecto backend de servidor para crear una API que acorta url y las guarda en una bbdd para su posterior uso y consulta"
+	/>
+
+	<!-- Titillium Web -->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+		crossorigin="anonymous">
+
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="./../logo/brusbb.png">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="url.css">
+
+
+	<!-- Head -->
+	<!--#include file="/freecodecamp/plantillas/head.html" -->
+
+</head>
+
+<body>
+
+	<div class="main container-fluid text-xs-center">
+		<h1 class="header">
+			API URL Shortener
+		</h1>
+		<blockquote class="alert alert-info">
+			<ul>1) You submit a URL as a parameter and receive a shortened URL in JSON response.</ul>
+			<ul>2) If you pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain
+				an error instead. </ul>
+			<ul>3) If you visit a shortened URL you will be redirected to the original link. </ul>
+		</blockquote>
+		<h5>Example Creation</h5>
+		<code>https://brusbilis.com/freecodecamp/5-api/allApis/url/new/https://www.freecodecamp.com</code><br>
+		<code>https://brusbilis.com/freecodecamp/5-api/allApis/url/new/https://freecodecamp.com</code>
+		<br>
+		<h5>Creation JSON response</h5>
+		<code>
+			{ 
+				"original": "http://freecodecamp.com" , 
+				"short": "https://brusbilis.com/freecodecamp/5-api/allApis/url/1596" 
+			}
+		</code>
+		<h5>Usage</h5>
+		<code>https://brusbilis.com/freecodecamp/5-api/allApis/url/1596</code>
+		<span class="separation"> redirects to </span>
+		<code>https://freecodecamp.com</code>
+
+
+		<!-- google-analytics -->
+		<!--#include file="/freecodecamp/plantillas/analyticstracking.html" -->
+
+</body>
+
+</html>
