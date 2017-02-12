@@ -39,7 +39,7 @@ func setSessionCookie(w http.ResponseWriter, r *http.Request, user string) {
 	cookie := http.Cookie{
 		Name:  "session",
 		Value: sessionID,
-		Path:  "/voting/",
+		Path:  baseURL + "voting/",
 	}
 	http.SetCookie(w, &cookie)
 	err := dbSaveCookie(user, sessionID)
@@ -69,8 +69,6 @@ func dbSaveCookie(user, sessionID string) error {
 	return nil
 }
 
-// https://stackoverflow.com/questions/5285940/correct-way-to-delete-cookies-server-side
-// 	// MaxAge<0 means delete cookie now, equivalently 'Max-Age: 0'
 func dbDeleteCookie(r *http.Request) {
 	cookie, err := r.Cookie("session")
 	if err != nil {
@@ -87,7 +85,7 @@ func dbDeleteCookie(r *http.Request) {
 		}
 	}
 	res, _ := rows.RowsAffected()
-	fmt.Println("BORRADAS", res)
+	fmt.Sprintln("DELETED", res)
 }
 
 func dbSearchCookie(user, sessionID string) bool {

@@ -30,7 +30,7 @@ func doLoginOrCreate(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	setSessionCookie(w, r, user)
-	http.Redirect(w, r, "/voting/logged?user="+user, 301)
+	http.Redirect(w, r, baseURL+"voting/logged?user="+user, 301)
 }
 
 func createUser(db *sql.DB, user, pwd string) error {

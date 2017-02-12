@@ -11,7 +11,7 @@ import (
 
 func sumUserVote(w http.ResponseWriter, r *http.Request) {
 	if !isLogged(r) {
-		http.Redirect(w, r, "/voting/login/", 301)
+		http.Redirect(w, r, baseURL+"voting/login/", 301)
 		return
 	}
 	cookie, _ := r.Cookie("session")
@@ -21,11 +21,11 @@ func sumUserVote(w http.ResponseWriter, r *http.Request) {
 	ipUsed := getIP(r)
 	//fmt.Printf("%s Voted option %d from IP %s", user, choiceVoted, ipUsed)
 	if dbAlreadyUserVoted(user, choiceVoted, ipUsed) {
-		http.Redirect(w, r, "/voting/alreadyUserVoted?user="+user, 301)
+		http.Redirect(w, r, baseURL+"voting/alreadyUserVoted?user="+user, 301)
 		return // avoid execute next redirect
 	}
 	dbSumUserVote(user, choiceVoted, ipUsed)
-	http.Redirect(w, r, "/voting/logged?user="+user, 301)
+	http.Redirect(w, r, baseURL+"voting/logged?user="+user, 301)
 }
 
 func dbSumUserVote(user string, option int, ip string) {
@@ -61,7 +61,6 @@ func dbAlreadyUserVoted(user string, option int, ip string) bool {
 }
 
 func dbInsertNewOption(newPoll int, newOption string) {
-	fmt.Println("10-->", newPoll, newOption)
 	db, _ := connectDB()
 	// find out pollID from the choiceID we have
 	row := db.QueryRow("SELECT PollID FROM voting.choices WHERE ChoicesID = ?", newPoll)
@@ -74,7 +73,6 @@ func dbInsertNewOption(newPoll int, newOption string) {
 		}
 		log.Fatal(err)
 	}
-	fmt.Println("11-->", pollNumber)
 	// find out if there is newOption in the Poll
 	if dbExistsOption(pollNumber, newOption) {
 		return
@@ -112,7 +110,7 @@ func doCreateNewPoll(w http.ResponseWriter, r *http.Request) {
 	}
 	dbInsertChoicesOnNewPoll(pollID, choices)
 	user := r.Form["user"][0]
-	http.Redirect(w, r, "/voting/logged?user="+user, 301)
+	http.Redirect(w, r, baseURL+"voting/logged?user="+user, 301)
 }
 
 func dbInsertNewPollIfNoExists(question string) int {

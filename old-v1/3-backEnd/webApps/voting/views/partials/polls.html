@@ -9,7 +9,7 @@
       <div class="question">
         <!-- -->{{.Question}}
       </div>
-      <form class="formGuest" method="post">
+      <form class="formGuest" action="./voting/guest/" method="post">
         <!-- -->{{with .Options}}
         <select class="selectStyle" name="options">
             <!-- -->{{range .}}

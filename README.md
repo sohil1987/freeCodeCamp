@@ -67,10 +67,10 @@
 * [URL Shortener](https://brusbilis.com/freecodecamp/old-v1/apis/url/url.html)
 * [Image Search](https://brusbilis.com/freecodecamp/old-v1/apis/image/image.html)
 * [File Metadata](https://brusbilis.com/freecodecamp/old-v1/apis/file/file.html)
-* [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps/voting/guest/)
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/old-v1/webapps)
 * [Stock Market](https://brusbilis.com/freecodecamp/old-v1/webapps)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps)
-* [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps)
+* [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/)
 
 

@@ -8,35 +8,24 @@ import (
 	"strings"
 )
 
-/* FALTA
+/*
 
-**********************
-**********************
-**********************
-**********************
-**********************
-**********************
-LOGGED 86
-http://localhost:3006/voting/newColumn/?poll=13&newOption=tenisppp
-**********************
-**********************
-**********************
-**********************
-**********************
+Go
+var baseURL = "./../../" // Go local
+var baseURL = "/freecodecamp/old-v1/webapps/" // Go deploy
 
-REdireccIONEs
-- logout
-- despues de useralreadyvoted manda a login en vez de a logged
+HTML Templates
+"./../../voting/loQueSea" || "/voting/loQueSea "// html local
+<head> <base href="/freecodecamp/old-v1/webapps/"></head> // html deploy
+"./voting/loQueSea" // hrml deploy relative URL
 
-ADD option
-
-ADD POLL
+JS
+window.location.assign(app.getBaseUrl() + 'voting/guest/');
 
 */
 
-//var baseURL = "/freecodecamp/old-v1/3-backEnd/webApps/" // deploy
-//var baseURL = "" // local
-// add baseURL to pass go var to client js for adjust path in deploy
+//var baseURL = "./../../" // Go local
+var baseURL = "/freecodecamp/old-v1/webapps/" // Go deploy
 var tmpl map[string]*template.Template
 
 func init() {
@@ -70,7 +59,7 @@ func RouterVoting(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "INDEX, NOT FOUND")
 		return
 	}
-	fmt.Println("Going ==> ", path[0]) //len(path), path)
+	//fmt.Println("Going ==> ", path[0]) //len(path), path)
 	switch path[0] {
 	case "guest":
 		if r.Method == "POST" {
@@ -80,7 +69,7 @@ func RouterVoting(w http.ResponseWriter, r *http.Request) {
 		}
 	case "logged":
 		if !isLogged(r) {
-			http.Redirect(w, r, "/voting/login", 301)
+			http.Redirect(w, r, baseURL+"voting/login", 301)
 			return
 		}
 		if r.Method == "POST" {
@@ -100,13 +89,13 @@ func RouterVoting(w http.ResponseWriter, r *http.Request) {
 		alreadyUserVoted(w, r)
 	case "logout":
 		if !isLogged(r) {
-			http.Redirect(w, r, "/voting/login", 301)
+			http.Redirect(w, r, baseURL+"voting/login", 301)
 			return
 		}
 		logout(w, r)
 	case "newPoll":
 		if !isLogged(r) {
-			http.Redirect(w, r, "/voting/login", 301)
+			http.Redirect(w, r, baseURL+"voting/login", 301)
 			return
 		}
 		if r.Method == "POST" {
@@ -117,7 +106,7 @@ func RouterVoting(w http.ResponseWriter, r *http.Request) {
 		}
 	case "newColumn":
 		if !isLogged(r) {
-			http.Redirect(w, r, "/voting/login", 301)
+			http.Redirect(w, r, baseURL+"voting/login", 301)
 			return
 		}
 		newColumn(w, r)
@@ -160,7 +149,7 @@ func alreadyUserVoted(w http.ResponseWriter, r *http.Request) {
 
 func logout(w http.ResponseWriter, r *http.Request) {
 	dbDeleteCookie(r)
-	http.Redirect(w, r, "/voting/guest/", 301)
+	http.Redirect(w, r, baseURL+"voting/guest/", 301)
 }
 
 func newPoll(w http.ResponseWriter, r *http.Request) {
@@ -174,5 +163,5 @@ func newColumn(w http.ResponseWriter, r *http.Request) {
 	dbInsertNewOption(newPoll, newOption)
 	cookie, _ := r.Cookie("session")
 	user := strings.Split(cookie.Value, ":")[0]
-	http.Redirect(w, r, "/voting/logged/?user="+user, 301)
+	http.Redirect(w, r, baseURL+"voting/logged/?user="+user, 301)
 }

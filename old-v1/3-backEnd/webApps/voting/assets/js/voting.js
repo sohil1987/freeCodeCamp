@@ -9,7 +9,7 @@ var guest = (function () {
     } else {
       alert('You already voted on that poll');
       // window.location = '/voting/guest/'
-      window.location.assign('/voting/guest/');
+      window.location.assign(app.getBaseUrl() + 'voting/guest/');
     }
   }
 
@@ -31,7 +31,7 @@ var logged = (function () {
     } else {
       alert(user + ' has already voted on that poll');
       // window.location = '/voting/logged/?user=' + user
-      window.location.assign('/voting/logged/?user=' + user);
+      window.location.assign(app.getBaseUrl() + 'voting/logged/?user=' + user);
     }
     document.getElementById('whichUser').innerHTML = user;
     document.getElementById('linkNewPoll').href += '?user=' + user;
@@ -42,7 +42,7 @@ var logged = (function () {
     if (ev.value === '0') { // add option choosed
       var newOption = prompt('Enter new option');
       if (newOption !== undefined && newOption !== '') {
-        var url = '/voting/newColumn/?poll=' + poll;
+        var url = app.getBaseUrl() + 'voting/newColumn/?poll=' + poll;
         url += '&newOption=' + newOption;
         window.location.assign(url);
         console.log(url);
@@ -141,9 +141,14 @@ var app = (function () {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
   }
 
+  function getBaseUrl () {
+    return ('/freecodecamp/old-v1/webapps/');
+  }
+
   return {
     drawCharts: drawCharts,
-    getURLParameter: getURLParameter
+    getURLParameter: getURLParameter,
+    getBaseUrl: getBaseUrl
 
   };
 }());

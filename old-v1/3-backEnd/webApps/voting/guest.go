@@ -14,11 +14,11 @@ func sumGuestVote(w http.ResponseWriter, r *http.Request) {
 	ipUsed := getIP(r)
 	//fmt.Printf("Voted option %d from IP %s", choiceVoted, ipUsed)
 	if dbAlreadyGuestVoted(choiceVoted, ipUsed) {
-		http.Redirect(w, r, "/voting/alreadyGuestVoted/", 301)
+		http.Redirect(w, r, baseURL+"voting/alreadyGuestVoted/", 301)
 		return // avoid execute next redirect
 	}
 	dbSumGuestVote(choiceVoted, ipUsed)
-	http.Redirect(w, r, "/voting/guest/", 301)
+	http.Redirect(w, r, baseURL+"voting/guest/", 301)
 }
 
 func dbSumGuestVote(option int, ip string) {
@@ -30,6 +30,7 @@ func dbSumGuestVote(option int, ip string) {
 }
 
 func dbAlreadyGuestVoted(option int, ip string) bool {
+	//fmt.Println(`IP == >`, ip)
 	//ip = "192.168.1.3"
 	odds := dbGetChoicesFromOnePoll(option)
 	//fmt.Println("ODDS --> ", len(odds), odds)
