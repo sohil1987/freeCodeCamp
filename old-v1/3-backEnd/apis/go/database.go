@@ -33,6 +33,7 @@ func init() {
 	loadConfig() // use this or next
 	//loadConfig2() // use this or previous
 	connPath := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", c.Mysql.User, c.Mysql.Password, c.Mysql.Host, c.Mysql.Port, c.Mysql.Db)
+	fmt.Println(connPath)
 	db, err = sql.Open("mysql", connPath)
 	if err != nil {
 		log.Fatal(err)

@@ -10,7 +10,7 @@ var db = require('./../models/database.js');
 var passport = require('passport');
 var passConf = require('./../config/passport.js');
 
-var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest';
+var baseUrl = 'https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest';
 var pics;
 
 // router.use(express.static(__dirname + './../public'))

@@ -1,0 +1,48 @@
+{{ define "layout" }}
+
+<head>
+
+  <title> Voting App </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Back End Development Certification Dynamic Web Applications Project Build Voting App "
+  />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+  <!-- Chewy -->
+  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/voting/assets/images/chart.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/test.css">
+  <link rel="stylesheet" type="text/css" href="/voting/assets/css/voting.css">
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <!-- -->
+  {{template "content" .}}
+  <!-- -->
+
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+</body>
+
+</html>
+
+{{ end }}

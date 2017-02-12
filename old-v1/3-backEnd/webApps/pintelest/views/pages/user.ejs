@@ -19,8 +19,8 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="./../pintelest.css">
 
-  <!-- Head -->
-  <!--#include file="/freecodecamp/plantillas/head.html" -->
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
 
 </head>
 
@@ -48,19 +48,19 @@
         <% if (active === "myPics") { %>
           <a class="nav-item nav-link active" href="myPics">My Pics</a>
         <% } else {%>
-          <a class="nav-item nav-link" href="/myPics">My Pics</a>
+          <a class="nav-item nav-link" href="./myPics">My Pics</a>
         <% } %>
 
         <% if (active === "addPic") { %>
           <a class="nav-item nav-link active" href="addPic">Add a Pic </a>
         <% } else {%>
-          <a class="nav-item nav-link" href="/addPic">Add a Pic </a>
+          <a class="nav-item nav-link" href="./addPic">Add a Pic </a>
         <% } %>
         
         <% if (active === "profile") { %>
           <a class="nav-item nav-link active" href="profile">Profile</a>
         <% } else {%>
-          <a class="nav-item nav-link" href="/profile">Profile</a>
+          <a class="nav-item nav-link" href="./profile">Profile</a>
         <% } %>
       <% } %>
 

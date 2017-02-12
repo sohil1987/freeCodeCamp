@@ -3,7 +3,7 @@ var app = (function () {
   /* jshint node: true */
   /* code here */
 
-  var baseUrl = 'https://brusbilis.com/freecodecamp/6-backEnd/pintelest/';
+  var baseUrl = 'https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/';
   // var baseUrl = ''
 
   function init () {
@@ -69,4 +69,4 @@ var app = (function () {
 window.addEventListener('load', app.inicio);
 
 // callback in secret.json
-// "https://brusbilis.com/freecodecamp/6-backEnd/pintelest/login/twitter/return"
+// "https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/login/twitter/return"

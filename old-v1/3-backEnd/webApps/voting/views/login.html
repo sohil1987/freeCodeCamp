@@ -1,0 +1,54 @@
+<!-- -->
+{{ template "layout" .}}
+<!-- -->
+
+<!-- -->
+{{define "content"}}
+<!-- -->
+
+<div id="main">
+
+  <nav class="navbar">
+    <div class="navLink">
+      <img id="img-navbar" src="/voting/assets/images/chart.png">
+    </div>
+    <a class="navLink" href="/voting/guest/">Guest</a>
+    <a class="navLink" href="/voting/login/">Login</a>
+  </nav>
+
+  <section id="login">
+    <form class="formLogin" method="post">
+      <div class="usernameBox">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="user" required>
+      </div>
+      <div class="passwordBox">
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pass" required>
+      </div>
+      <div class="submitBox">
+        <input type="Submit" class="voteBut" value="Login or Create Account" />
+      </div>
+    </form>
+
+  </section>
+
+</div>
+
+<!-- -->
+{{template "footer"}}
+<!-- -->
+{{template "scripts"}}
+<!-- -->
+
+<script type="text/javascript">
+  // Pass go vars to client js
+  var go = {{.}} // Pass object as global var
+  //var go = "{{ .}}"; // idem as string
+  window.addEventListener("load", login.init)
+
+</script>
+
+<!-- -->
+{{end}}
+<!-- -->

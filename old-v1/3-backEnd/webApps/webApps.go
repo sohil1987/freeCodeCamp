@@ -1,27 +1,74 @@
 package main
 
-import "net/http"
+import (
+	"freeCodeCamp/old-v1/3-backEnd/webApps/voting"
+	"net/http"
+)
 
 func main() {
-	public := http.FileServer(http.Dir("./_public/"))
+	//pwd, _ := os.Getwd()
+	//fmt.Println("We are here ->", pwd)
+	//mainNormal()
+	mainMux()
+}
+
+func mainMux() {
+	mux := http.NewServeMux()
+
+	// assets for all apps
+	assets := http.FileServer(http.Dir("_public"))
+	mux.Handle("/", http.StripPrefix("/", assets))
+
+	// assets for individual apps
+	votingRes := http.FileServer(http.Dir("voting/assets"))
+	mux.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
 
 	book := http.FileServer(http.Dir("./book/"))
 	nightlife := http.FileServer(http.Dir("./nightlife/"))
-	//pintelest := http.FileServer(http.Dir("./pintelest/"))
 	stock := http.FileServer(http.Dir("./stock/"))
-	voting := http.FileServer(http.Dir("./voting/"))
 
-	http.Handle("/", http.StripPrefix("/", public))
-	http.Handle("/book/", http.StripPrefix("/book", book))
-	http.Handle("/nightlife/", http.StripPrefix("/nightlife", nightlife))
-	//http.Handle("/pintelest/", http.StripPrefix("/pintelest", pintelest))
-	http.HandleFunc("/pintelest/", nodePintelest)
+	mux.Handle("/book/", http.StripPrefix("/book", book))
+	mux.Handle("/nightlife/", http.StripPrefix("/nightlife", nightlife))
+	mux.Handle("/stock/", http.StripPrefix("/stock", stock))
 
-	http.Handle("/stock/", http.StripPrefix("/stock", stock))
-	http.Handle("/voting/", http.StripPrefix("/voting", voting))
+	mux.HandleFunc("/voting/", voting.RouterVoting)
+	//mux.HandleFunc("/voting/p/", nodePintelest)
+
+	// any /pintelest/* will redirect to nodePintelest
+	mux.HandleFunc("/pintelest/", nodePintelest)
 
 	server := http.Server{
-		Addr: "localhost:3006",
+		Addr:    "localhost:3006",
+		Handler: mux,
+	}
+	server.ListenAndServe()
+}
+
+func mainNormal() {
+	// assets for all apps
+	assets := http.FileServer(http.Dir("_public"))
+	http.Handle("/", http.StripPrefix("/", assets))
+
+	// assets for individual apps
+	votingRes := http.FileServer(http.Dir("voting/assets"))
+	http.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
+
+	book := http.FileServer(http.Dir("./book/"))
+	nightlife := http.FileServer(http.Dir("./nightlife/"))
+	stock := http.FileServer(http.Dir("./stock/"))
+
+	http.Handle("/book/", http.StripPrefix("/book", book))
+	http.Handle("/nightlife/", http.StripPrefix("/nightlife", nightlife))
+	http.Handle("/stock/", http.StripPrefix("/stock", stock))
+
+	// any /voting/* will redirect to voting.Voting
+	http.HandleFunc("/voting/", voting.RouterVoting)
+
+	// any /pintelest/* will redirect to voting.Voting
+	http.HandleFunc("/pintelest/", nodePintelest)
+
+	server := http.Server{
+		Addr: "127.0.0.1:3006",
 	}
 	server.ListenAndServe()
 }

@@ -1,0 +1,32 @@
+<!-- -->
+{{define "polls"}}
+<!-- -->
+
+<section id="polls">
+  <div class="polls">
+    <!-- -->{{ range .}}
+    <div class="poll" id="poll{{.PollID}}">
+      <div class="question">
+        <!-- -->{{.Question}}
+      </div>
+      <form class="formGuest" method="post">
+        <!-- -->{{with .Options}}
+        <select class="selectStyle" name="options">
+            <!-- -->{{range .}}
+            <option value="{{.OptionID}}">{{.Option}}</option>
+            <!-- -->{{end}}
+          </select>
+        <input type="Submit" class="voteBut" value="Vote" />
+        <!-- -->{{end}}
+      </form>
+      <div class="myChart">
+        <canvas class="card{{.PollID}}" id="myChart" width="250" height="250"></canvas>
+      </div>
+    </div>
+    <!-- -->{{end}}
+  </div>
+</section>
+
+<!-- -->
+{{end}}
+<!-- -->
