@@ -83,6 +83,7 @@ func dbGetVotes() []*vote {
 	if err != nil {
 		if err == sql.ErrNoRows {
 			fmt.Println("No Records Found")
+			defer rows.Close()
 			return nil
 		}
 	}
@@ -110,6 +111,7 @@ func dbGetChoices() []*choice {
 	if err != nil {
 		if err == sql.ErrNoRows {
 			fmt.Println("No Records Found")
+			defer rows.Close()
 			return nil
 		}
 	}
@@ -137,6 +139,7 @@ func dbGetPolls() []*poll {
 	if err != nil {
 		if err == sql.ErrNoRows {
 			fmt.Println("No Records Found")
+			defer rows.Close()
 			return nil
 		}
 	}

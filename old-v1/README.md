@@ -54,8 +54,8 @@ Valid Curriculum until Feb 2017
 
 ### Dynamic Web Applicaiion
 
-* ~~Voting App~~
-* ~~Nightlife Coordination App~~
+* Voting App
+* Nightlife Coordination App
 * ~~Chart Stock Market~~
 * ~~Manage Book Trading Club~~
 * Pinterest Clone

@@ -61,6 +61,7 @@ func dbGetChoicesFromOnePoll(choiceID int) []int {
 	rows, err := db.Query("SELECT ChoicesID FROM voting.choices WHERE PollID = (SELECT PollID from voting.choices WHERE ChoicesID = ?)", choiceID)
 	if err != nil {
 		fmt.Println("No Records Found")
+		defer rows.Close()
 		return nil
 	}
 	defer rows.Close()

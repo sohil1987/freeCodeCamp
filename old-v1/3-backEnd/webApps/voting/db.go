@@ -32,13 +32,13 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	} else {
-		fmt.Println(`sql.Open() OK`)
+		fmt.Println(`voting sql.Open() OK`)
 	}
 	err = db.Ping()
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	} else {
-		fmt.Println("db.Ping() OK")
+		fmt.Println("voying db.Ping() OK")
 	}
 }
 

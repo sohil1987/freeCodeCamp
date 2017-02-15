@@ -64,6 +64,7 @@ func saltHash(salt []byte, pwd string) []byte {
 
 func dbGetAllUsers(db *sql.DB) {
 	rows, _ := db.Query("SELECT Username, PassSalt, PassMd5 FROM voting.users")
+	defer rows.Close()
 	var user string
 	var salt, hash []byte
 	for rows.Next() {

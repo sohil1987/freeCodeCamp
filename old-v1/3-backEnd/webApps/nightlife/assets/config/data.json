@@ -1,0 +1,852 @@
+{
+  "businesses": [
+    {
+      "distance": 770.7422481748,
+      "is_closed": false,
+      "display_phone": "+34 609 53 11 51",
+      "url": "https://www.yelp.com/biz/1862-dry-bar-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KvhUnD6gsrZR_kXKZUqTMA/o.jpg",
+      "phone": "+34609531151",
+      "coordinates": {
+        "longitude": -3.7065101,
+        "latitude": 40.4241219
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle del Pez, 27",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle del Pez, 27",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "1862-dry-bar-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "1862 Dry Bar",
+      "review_count": 42,
+      "price": "€€"
+    },
+    {
+      "distance": 412.33120619579995,
+      "is_closed": false,
+      "display_phone": "+34 639 46 79 17",
+      "url": "https://www.yelp.com/biz/warehouse-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/H3jRvGFSZvtRzAVivRiATw/o.jpg",
+      "phone": "+34639467917",
+      "coordinates": {
+        "longitude": -3.70245,
+        "latitude": 40.4229012
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle del Barco, 37",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle del Barco, 37",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "warehouse-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        }
+      ],
+      "name": "Warehouse",
+      "review_count": 13,
+      "price": "€"
+    },
+    {
+      "distance": 245.22324687359998,
+      "is_closed": false,
+      "display_phone": "+34 915 32 00 11",
+      "url": "https://www.yelp.com/biz/toni-2-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Zct04hLHwWsZ4_UMojoCrA/o.jpg",
+      "phone": "+34915320011",
+      "coordinates": {
+        "longitude": -3.6947,
+        "latitude": 40.4225693
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle del Almirante, 9",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle del Almirante, 9",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "toni-2-madrid",
+      "rating": 5,
+      "categories": [
+        {
+          "alias": "musicvenues",
+          "title": "Music Venues"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        }
+      ],
+      "name": "Toni 2",
+      "review_count": 14,
+      "price": "€€€"
+    },
+    {
+      "distance": 1343.959190264,
+      "is_closed": false,
+      "display_phone": "+34 910 71 14 57",
+      "url": "https://www.yelp.com/biz/tinto-y-tapas-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/z1AwgDucL1dEoSwwDM7SJQ/o.jpg",
+      "phone": "+34910711457",
+      "coordinates": {
+        "longitude": -3.6943901,
+        "latitude": 40.4109993
+      },
+      "location": {
+        "zip_code": "28014",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de Almadén, 14",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de Almadén, 14",
+          "28014 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "tinto-y-tapas-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "tabernas",
+          "title": "Tabernas"
+        }
+      ],
+      "name": "Tinto y Tapas",
+      "review_count": 15,
+      "price": "€"
+    },
+    {
+      "distance": 427.63253732799996,
+      "is_closed": false,
+      "display_phone": "+34 915 23 11 99",
+      "url": "https://www.yelp.com/biz/caf%!C(MISSING)3%!A(MISSING)9-de-la-luz-madrid-2?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/7XZ4Gl04sWLC-kX9OiYpuw/o.jpg",
+      "phone": "+34915231199",
+      "coordinates": {
+        "longitude": -3.7025405,
+        "latitude": 40.422107
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de la Puebla, 8",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de la Puebla, 8",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "café-de-la-luz-madrid-2",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast \u0026 Brunch"
+        },
+        {
+          "alias": "cafeteria",
+          "title": "Cafeteria"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "Café de la Luz",
+      "review_count": 97,
+      "price": "€"
+    },
+    {
+      "distance": 818.266348056,
+      "is_closed": false,
+      "display_phone": "+34 914 29 73 13",
+      "url": "https://www.yelp.com/biz/la-venencia-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Dj3GzUQIJ4_SDftrvVrA1Q/o.jpg",
+      "phone": "+34914297313",
+      "coordinates": {
+        "longitude": -3.69961742185654,
+        "latitude": 40.4156647343705
+      },
+      "location": {
+        "zip_code": "28014",
+        "address2": null,
+        "address3": null,
+        "address1": "Calle Echegaray, 7",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle Echegaray, 7",
+          "28014 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "la-venencia-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "tabernas",
+          "title": "Tabernas"
+        },
+        {
+          "alias": "andalusian",
+          "title": "Andalusian"
+        }
+      ],
+      "name": "La Venencia",
+      "review_count": 41,
+      "price": "€"
+    },
+    {
+      "distance": 368.7040909378,
+      "is_closed": false,
+      "display_phone": "+34 910 11 58 10",
+      "url": "https://www.yelp.com/biz/macera-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nv5Wi3zohue8uUEjn9gq0w/o.jpg",
+      "phone": "+34910115810",
+      "coordinates": {
+        "longitude": -3.6981399,
+        "latitude": 40.4261398
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle San Mateo, 21",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle San Mateo, 21",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "macera-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        },
+        {
+          "alias": "modern_european",
+          "title": "Modern European"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        }
+      ],
+      "name": "Macera",
+      "review_count": 25,
+      "price": "€"
+    },
+    {
+      "distance": 1530.3234498617999,
+      "is_closed": false,
+      "display_phone": "+34 913 65 08 04",
+      "url": "https://www.yelp.com/biz/casa-lucas-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/bPEdeNGTx9VONMsYNc2xkg/o.jpg",
+      "phone": "+34913650804",
+      "coordinates": {
+        "longitude": -3.70917382327877,
+        "latitude": 40.4122955242989
+      },
+      "location": {
+        "zip_code": "28005",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de la Cava Baja, 30",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de la Cava Baja, 30",
+          "28005 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "casa-lucas-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        }
+      ],
+      "name": "Casa Lucas",
+      "review_count": 92,
+      "price": "€€"
+    },
+    {
+      "distance": 989.3510991719999,
+      "is_closed": false,
+      "display_phone": "+34 915 23 16 29",
+      "url": "https://www.yelp.com/biz/taberna-del-chato-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jR8C4b0BavA2F-ClQyzRzw/o.jpg",
+      "phone": "+34915231629",
+      "coordinates": {
+        "longitude": -3.7026819,
+        "latitude": 40.4148527
+      },
+      "location": {
+        "zip_code": "28012",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de la Cruz, 35",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de la Cruz, 35",
+          "28012 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "taberna-del-chato-madrid",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "tapasmallplates",
+          "title": "Tapas/Small Plates"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "Taberna del Chato",
+      "review_count": 66,
+      "price": "€"
+    },
+    {
+      "distance": 575.993327177,
+      "is_closed": false,
+      "display_phone": "+34 915 31 02 60",
+      "url": "https://www.yelp.com/biz/jard%!C(MISSING)3%!A(MISSING)Dn-secreto-madrid-2?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/y0z3MZ-xd6Cnv0LrOVu0AQ/o.jpg",
+      "phone": "+34915310260",
+      "coordinates": {
+        "longitude": -3.7021899,
+        "latitude": 40.4190292
+      },
+      "location": {
+        "zip_code": "28013",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de la Montera, 37",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de la Montera, 37",
+          "28013 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "jardín-secreto-madrid-2",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "modern_european",
+          "title": "Modern European"
+        }
+      ],
+      "name": "Jardín Secreto",
+      "review_count": 43,
+      "price": "€€"
+    },
+    {
+      "distance": 1222.8348866684,
+      "is_closed": false,
+      "display_phone": "+34 915 41 80 23",
+      "url": "https://www.yelp.com/biz/el-jard%!C(MISSING)3%!A(MISSING)Dn-secreto-madrid-2?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8Fl4I1OHIcEM0J0XAb43Uw/o.jpg",
+      "phone": "+34915418023",
+      "coordinates": {
+        "longitude": -3.7115128,
+        "latitude": 40.4257794
+      },
+      "location": {
+        "zip_code": "28015",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de Conde Duque, 2",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de Conde Duque, 2",
+          "28015 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "el-jardín-secreto-madrid-2",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "spanish",
+          "title": "Spanish"
+        }
+      ],
+      "name": "El Jardín Secreto",
+      "review_count": 72,
+      "price": "€€"
+    },
+    {
+      "distance": 1778.5170394799998,
+      "is_closed": false,
+      "display_phone": "",
+      "url": "https://www.yelp.com/biz/bendito-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/GTocLUk4Op5xHfaDIkjq-A/o.jpg",
+      "phone": "",
+      "coordinates": {
+        "longitude": -3.70388,
+        "latitude": 40.40759
+      },
+      "location": {
+        "zip_code": "28012",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de Embajadores,  41",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de Embajadores,  41",
+          "28012 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "bendito-madrid",
+      "rating": 5,
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "wineries",
+          "title": "Wineries"
+        }
+      ],
+      "name": "Bendito",
+      "review_count": 12,
+      "price": "€€"
+    },
+    {
+      "distance": 1657.062080888,
+      "is_closed": false,
+      "display_phone": "+34 660 73 88 93",
+      "url": "https://www.yelp.com/biz/label-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/QG-Fjiz39qsmAObcRmfo-Q/o.jpg",
+      "phone": "+34660738893",
+      "coordinates": {
+        "longitude": -3.7050426,
+        "latitude": 40.40907472
+      },
+      "location": {
+        "zip_code": "28012",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de los Cabestreros, 15",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de los Cabestreros, 15",
+          "28012 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "label-madrid",
+      "rating": 5,
+      "categories": [
+        {
+          "alias": "divebars",
+          "title": "Dive Bars"
+        }
+      ],
+      "name": "Label",
+      "review_count": 5,
+      "price": "€"
+    },
+    {
+      "distance": 1842.701220162,
+      "is_closed": false,
+      "display_phone": "+34 913 65 44 09",
+      "url": "https://www.yelp.com/biz/coraz%!C(MISSING)3%!B(MISSING)3n-agavero-mezcaloteca-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/OwlrkindhE64ghWxL3bHXQ/o.jpg",
+      "phone": "+34913654409",
+      "coordinates": {
+        "longitude": -3.71035605669022,
+        "latitude": 40.4094375745566
+      },
+      "location": {
+        "zip_code": "28005",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle del Humilladero, 28",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle del Humilladero, 28",
+          "28005 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "corazón-agavero-mezcaloteca-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "name": "Corazón Agavero Mezcaloteca",
+      "review_count": 13,
+      "price": "€"
+    },
+    {
+      "distance": 1951.65144602,
+      "is_closed": false,
+      "display_phone": "+34 678 51 24 94",
+      "url": "https://www.yelp.com/biz/sierra-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/7X3KIMVFfrLKEwWGu0HzHA/o.jpg",
+      "phone": "+34678512494",
+      "coordinates": {
+        "longitude": -3.71026103,
+        "latitude": 40.43441164
+      },
+      "location": {
+        "zip_code": "28015",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de Galileo, 41",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de Galileo, 41",
+          "28015 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "sierra-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        },
+        {
+          "alias": "divebars",
+          "title": "Dive Bars"
+        }
+      ],
+      "name": "Sierra",
+      "review_count": 12,
+      "price": "€"
+    },
+    {
+      "distance": 960.788371918,
+      "is_closed": false,
+      "display_phone": "+34 917 01 60 00",
+      "url": "https://www.yelp.com/biz/the-roof-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/LzZSYPttIOKXMVT-p1rEZg/o.jpg",
+      "phone": "+34917016000",
+      "coordinates": {
+        "longitude": -3.70136260986328,
+        "latitude": 40.4147091028221
+      },
+      "location": {
+        "zip_code": "28012",
+        "address2": "Plaza de Santa Ana, 14",
+        "address3": "",
+        "address1": "ME Madrid Reina Victoria",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "ME Madrid Reina Victoria",
+          "Plaza de Santa Ana, 14",
+          "28012 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "the-roof-madrid",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "The Roof",
+      "review_count": 15,
+      "price": "€€€"
+    },
+    {
+      "distance": 879.6379817804,
+      "is_closed": false,
+      "display_phone": "+34 914 48 75 58",
+      "url": "https://www.yelp.com/biz/la-musa-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/29oA2l2g_rDqKPkDDE6KhA/o.jpg",
+      "phone": "+34914487558",
+      "coordinates": {
+        "longitude": -3.70439,
+        "latitude": 40.428791
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de Manuela Malasaña, 18",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de Manuela Malasaña, 18",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "la-musa-madrid",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "mediterranean",
+          "title": "Mediterranean"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast \u0026 Brunch"
+        }
+      ],
+      "name": "La Musa",
+      "review_count": 62,
+      "price": "€"
+    },
+    {
+      "distance": 1508.0979172861998,
+      "is_closed": false,
+      "display_phone": "+34 915 47 03 38",
+      "url": "https://www.yelp.com/biz/la-mayor-madrid?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/fOdjyNKBZnabyZQG-_xURg/o.jpg",
+      "phone": "+34915470338",
+      "coordinates": {
+        "longitude": -3.7121301,
+        "latitude": 40.415081
+      },
+      "location": {
+        "zip_code": "28013",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle Mayor, 77",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle Mayor, 77",
+          "28013 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "la-mayor-madrid",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "tapas",
+          "title": "Tapas Bars"
+        },
+        {
+          "alias": "beerbar",
+          "title": "Beer Bar"
+        }
+      ],
+      "name": "La Mayor",
+      "review_count": 23,
+      "price": "€€"
+    },
+    {
+      "distance": 345.3388881478,
+      "is_closed": false,
+      "display_phone": "+34 915 32 28 26",
+      "url": "https://www.yelp.com/biz/bar-cock-madrid-2?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DYzShKDurg3LIK61eq134A/o.jpg",
+      "phone": "+34915322826",
+      "coordinates": {
+        "longitude": -3.69882,
+        "latitude": 40.4199
+      },
+      "location": {
+        "zip_code": "28004",
+        "address2": null,
+        "address3": null,
+        "address1": "Calle de la Reina, 16",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de la Reina, 16",
+          "28004 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "bar-cock-madrid-2",
+      "rating": 4,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "Bar Cock",
+      "review_count": 20,
+      "price": "€€€"
+    },
+    {
+      "distance": 1023.638892542,
+      "is_closed": false,
+      "display_phone": "+34 913 69 34 94",
+      "url": "https://www.yelp.com/biz/guau-madrid-2?adjust_creative=y6IkPG_3Fo4TGVxdn7oE2A\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=y6IkPG_3Fo4TGVxdn7oE2A",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CBmcTfms21DSdapKpWOjQA/o.jpg",
+      "phone": "+34913693494",
+      "coordinates": {
+        "longitude": -3.69936478037748,
+        "latitude": 40.4137549379703
+      },
+      "location": {
+        "zip_code": "28014",
+        "address2": "",
+        "address3": "",
+        "address1": "Calle de las Huertas, 24",
+        "city": "Madrid",
+        "country": "ES",
+        "state": "M",
+        "display_address": [
+          "Calle de las Huertas, 24",
+          "28014 Madrid",
+          "Spain"
+        ]
+      },
+      "id": "guau-madrid-2",
+      "rating": 4.5,
+      "categories": [
+        {
+          "alias": "lounges",
+          "title": "Lounges"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "name": "Guau",
+      "review_count": 11,
+      "price": "€€€"
+    }
+  ],
+  "region": {
+    "center": {
+      "longitude": -3.6975860595703125,
+      "latitude": 40.42286012989007
+    }
+  },
+  "total": 9522
+}
