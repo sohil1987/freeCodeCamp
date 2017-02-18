@@ -78,7 +78,6 @@ func dbGetGuestListPolls() []aPoll {
 }
 
 func dbGetVotes() []*vote {
-	db, _ := connectDB()
 	rows, err := db.Query("SELECT * FROM voting.votes")
 	if err != nil {
 		if err == sql.ErrNoRows {
@@ -106,7 +105,6 @@ func dbGetVotes() []*vote {
 }
 
 func dbGetChoices() []*choice {
-	db, _ := connectDB()
 	rows, err := db.Query("SELECT * FROM voting.choices")
 	if err != nil {
 		if err == sql.ErrNoRows {
@@ -134,7 +132,6 @@ func dbGetChoices() []*choice {
 }
 
 func dbGetPolls() []*poll {
-	db, _ := connectDB()
 	rows, err := db.Query("SELECT * FROM voting.polls")
 	if err != nil {
 		if err == sql.ErrNoRows {

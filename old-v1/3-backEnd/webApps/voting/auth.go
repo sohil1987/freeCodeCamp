@@ -14,12 +14,10 @@ import (
 )
 
 func doLoginOrCreate(w http.ResponseWriter, r *http.Request) {
-	db, err := connectDB()
-	defer db.Close()
 	r.ParseForm()
 	user := r.Form["user"][0]
 	pwd := r.Form["pass"][0]
-	err = createUser(db, user, pwd)
+	err := createUser(db, user, pwd)
 	if err != nil { // user already exists
 		//fmt.Println(err)
 		err = authenticateUser(db, user, pwd)

@@ -22,7 +22,6 @@ func sumGuestVote(w http.ResponseWriter, r *http.Request) {
 }
 
 func dbSumGuestVote(option int, ip string) {
-	db, _ := connectDB()
 	_, err := db.Exec("INSERT into voting.votes (Username, ChoiceID, ip) values (?,?,?)", "guest", option, ip)
 	if err != nil {
 		log.Fatal(err)
@@ -37,7 +36,6 @@ func dbAlreadyGuestVoted(option int, ip string) bool {
 	var user string
 	var choiceID int
 	var ipdir string
-	db, _ := connectDB()
 	for i := 0; i < len(odds); i++ {
 		row := db.QueryRow("SELECT * FROM voting.votes WHERE ChoiceID = ? AND IP = ?", odds[i], ip)
 		err := row.Scan(&user, &choiceID, &ipdir)
@@ -57,7 +55,6 @@ func dbAlreadyGuestVoted(option int, ip string) bool {
 func dbGetChoicesFromOnePoll(choiceID int) []int {
 	var result []int
 	var choiceIDfromTable int
-	db, _ := connectDB()
 	rows, err := db.Query("SELECT ChoicesID FROM voting.choices WHERE PollID = (SELECT PollID from voting.choices WHERE ChoicesID = ?)", choiceID)
 	if err != nil {
 		fmt.Println("No Records Found")

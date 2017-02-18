@@ -63,8 +63,7 @@ func sha2(str string) string {
 /*  DATABASE METHODS */
 
 func dbSaveCookie(user, sessionID string) error {
-	db, err := connectDB()
-	_, err = db.Exec("INSERT INTO nightlife.sessions (Username, SessionID)     values (?, ?)", user, sessionID)
+	_, err := db.Exec("INSERT INTO nightlife.sessions (Username, SessionID)     values (?, ?)", user, sessionID)
 	if err != nil {
 		return err
 	}
@@ -77,7 +76,6 @@ func dbDeleteCookie(r *http.Request) {
 		fmt.Println(err)
 	}
 	username := strings.Split(cookie.Value, ":")[0]
-	db, err := connectDB()
 	rows, err := db.Exec("DELETE FROM nightlife.sessions WHERE USername = ?", username)
 	if err != nil {
 		if err == sql.ErrNoRows {
@@ -93,10 +91,8 @@ func dbDeleteCookie(r *http.Request) {
 func dbSearchCookie(user, sessionID string) bool {
 	var u, s string
 	//fmt.Println(`User, SESSIONID`, user, sessionID)
-	db, err := connectDB()
 	row := db.QueryRow("SELECT * FROM nightlife.sessions WHERE Username = ? AND SessionID = ?", user, user+":"+sessionID)
-	defer db.Close()
-	err = row.Scan(&u, &s)
+	err := row.Scan(&u, &s)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			fmt.Println("No Records Found")

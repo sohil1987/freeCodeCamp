@@ -1,6 +1,7 @@
 package main
 
 import (
+	"freeCodeCamp/old-v1/3-backEnd/webApps/book"
 	"freeCodeCamp/old-v1/3-backEnd/webApps/nightlife"
 	"freeCodeCamp/old-v1/3-backEnd/webApps/voting"
 
@@ -26,18 +27,17 @@ func mainMux() {
 	mux.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
 	nightRes := http.FileServer(http.Dir("nightlife/assets"))
 	mux.Handle("/nightlife/assets/", http.StripPrefix("/nightlife/assets/", nightRes))
+	bookRes := http.FileServer(http.Dir("book/assets"))
+	mux.Handle("/book/assets/", http.StripPrefix("/book/assets/", bookRes))
 
-	book := http.FileServer(http.Dir("./book/"))
 	stock := http.FileServer(http.Dir("./stock/"))
 
-	mux.Handle("/book/", http.StripPrefix("/book", book))
 	mux.Handle("/stock/", http.StripPrefix("/stock", stock))
 
 	mux.HandleFunc("/voting/", voting.RouterVoting)
 	mux.HandleFunc("/nightlife/", nightlife.RouterNight)
-	//mux.HandleFunc("/voting/p/", nodePintelest)
+	mux.HandleFunc("/book/", book.RouterBook)
 
-	// any /pintelest/* will redirect to nodePintelest
 	mux.HandleFunc("/pintelest/", nodePintelest)
 
 	server := http.Server{

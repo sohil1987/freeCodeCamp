@@ -14,12 +14,10 @@ import (
 )
 
 func doLoginOrCreate(w http.ResponseWriter, r *http.Request) {
-	db, err := connectDB()
-	defer db.Close()
 	r.ParseForm()
 	user := r.Form["user"][0]
 	pwd := r.Form["pass"][0]
-	err = createUser(db, user, pwd)
+	err := createUser(db, user, pwd)
 	if err != nil { // user already exists
 		fmt.Println(err)
 		err = authenticateUser(db, user, pwd)
@@ -47,7 +45,6 @@ func createUser(db *sql.DB, user, pwd string) error {
 func authenticateUser(db *sql.DB, user, pwd string) error {
 	var salt, hash []byte
 	row := db.QueryRow("SELECT PassSalt, PassMd5 from nightlife.users WHERE Username=?", user)
-	defer db.Close()
 	if err := row.Scan(&salt, &hash); err != nil {
 		return fmt.Errorf("User %s unknown", user)
 	}

@@ -29,7 +29,6 @@ func sumUserVote(w http.ResponseWriter, r *http.Request) {
 }
 
 func dbSumUserVote(user string, option int, ip string) {
-	db, _ := connectDB()
 	_, err := db.Exec("INSERT into voting.votes (Username, ChoiceID, ip) values (?,?,?)", user, option, ip)
 	if err != nil {
 		log.Fatal(err)
@@ -43,7 +42,6 @@ func dbAlreadyUserVoted(user string, option int, ip string) bool {
 	var name string
 	var choiceID int
 	var ipdir string
-	db, _ := connectDB()
 	for i := 0; i < len(odds); i++ {
 		row := db.QueryRow("SELECT * FROM voting.votes WHERE ChoiceID = ? AND Username = ?", odds[i], user)
 		err := row.Scan(&name, &choiceID, &ipdir)
@@ -61,7 +59,6 @@ func dbAlreadyUserVoted(user string, option int, ip string) bool {
 }
 
 func dbInsertNewOption(newPoll int, newOption string) {
-	db, _ := connectDB()
 	// find out pollID from the choiceID we have
 	row := db.QueryRow("SELECT PollID FROM voting.choices WHERE ChoicesID = ?", newPoll)
 	var pollNumber int
@@ -84,7 +81,6 @@ func dbInsertNewOption(newPoll int, newOption string) {
 }
 
 func dbExistsOption(poll int, newOption string) bool {
-	db, _ := connectDB()
 	row := db.QueryRow("SELECT ChoicesID FROM voting.choices WHERE PollID = ? AND Choice = ?", poll, newOption)
 	var choiceID int
 	err := row.Scan(&choiceID)
@@ -114,10 +110,6 @@ func doCreateNewPoll(w http.ResponseWriter, r *http.Request) {
 }
 
 func dbInsertNewPollIfNoExists(question string) int {
-	db, err := connectDB()
-	if err != nil {
-		log.Fatal(err)
-	}
 	row, err := db.Exec("INSERT INTO voting.polls (Question) SELECT ? FROM dual WHERE NOT EXISTS (SELECT Question FROM voting.polls WHERE Question = ?) LIMIT 1", question, question)
 	if err != nil {
 		log.Fatal(err)
@@ -131,10 +123,6 @@ func dbInsertNewPollIfNoExists(question string) int {
 }
 
 func dbInsertChoicesOnNewPoll(pollID int, choices []string) {
-	db, err := connectDB()
-	if err != nil {
-		log.Fatal(err)
-	}
 	total := 0
 	for index := 0; index < len(choices); index++ {
 		row, err := db.Exec("INSERT into voting.choices (PollID, Choice) values (?,?)", pollID, choices[index])

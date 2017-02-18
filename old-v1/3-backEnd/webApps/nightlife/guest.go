@@ -55,10 +55,8 @@ func searchBarInLocation2() dataAPI {
 
 func dbGetPeopleGoingABar(id string) int {
 	var going int
-	db, err := connectDB()
 	row := db.QueryRow("SELECT COUNT(*) as count FROM  nightlife.votes WHERE BarID=?", id)
-	defer db.Close()
-	err = row.Scan(&going)
+	err := row.Scan(&going)
 	if err != nil {
 		log.Fatal(err)
 	}

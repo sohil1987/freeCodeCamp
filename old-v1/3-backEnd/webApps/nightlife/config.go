@@ -39,7 +39,8 @@ func init() {
 	loadConfig()
 	connPath = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", c.Mysql.User, c.Mysql.Password, c.Mysql.Host, c.Mysql.Port, c.Mysql.Db)
 	//fmt.Println(connPath)
-	db, err := sql.Open("mysql", connPath)
+	var err error
+	db, err = sql.Open("mysql", connPath)
 	if err != nil {
 		log.Fatal(err)
 	} else {
@@ -52,10 +53,6 @@ func init() {
 		fmt.Println("nightlife db.Ping() OK")
 	}
 	//fmt.Println("Token ==>", c.Yelp.Token)
-}
-
-func connectDB() (*sql.DB, error) {
-	return sql.Open("mysql", connPath)
 }
 
 func loadConfig() { // parse JSON with MARSHALL

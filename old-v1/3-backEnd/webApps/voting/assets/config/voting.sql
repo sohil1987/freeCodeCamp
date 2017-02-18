@@ -130,3 +130,10 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2017-02-08 16:29:18
+
+
+CREATE TABLE `sessions` (
+  `Username` varchar(32) NOT NULL,
+  `SessionID` varchar(200) NOT NULL,
+  UNIQUE KEY `SessionID_UNIQUE` (`SessionID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
