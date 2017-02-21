@@ -1,0 +1,65 @@
+<head>
+
+  <title>Chart the Stock Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Back End Development Certification Dynamic Web Applications Project Chart the Stock Market"
+  />
+
+
+  <base href="/freecodecamp/old-v1/webapps/">
+
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./stock/images/stock3.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./stock/css/stock.css">
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <section id="menu">
+    <form class="addStock">
+      <div class="formAdd">
+        <input type="text" required id="stockCode" class="inputForm" name="stockCode" placeholder="Insert stock code">
+        <span id="addStockCode" class="buttomForm noSelect">ADD</span>
+      </div>
+    </form>
+  </section>
+
+  <section id="container" style="height: 400px; min-width: 310px">
+  </section>
+
+  <section id="list">
+  </section>
+  <div class="free">
+    Max 3 stocks for free version
+  </div>
+
+  <section id="footer">
+    <a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="./stock/js/stock.js"></script>
+  <script src="./stock/js/data.js"></script>
+  <script src="./stock/js/view.js"></script>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+</body>
+
+</html>
