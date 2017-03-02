@@ -56,6 +56,6 @@ Valid Curriculum until Feb 2017
 
 * Voting App
 * Nightlife Coordination App
-* ~~Chart Stock Market~~
-* ~~Manage Book Trading Club~~
+* Chart Stock Market
+* Manage Book Trading Club
 * Pinterest Clone
