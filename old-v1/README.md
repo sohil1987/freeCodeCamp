@@ -1,6 +1,6 @@
 # **Free Code Camp**
 
-Valid Curriculum until Feb 2017
+Valid Curriculum until Nov 2017
 
 ## FRONT END
 
