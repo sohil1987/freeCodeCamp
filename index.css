@@ -51,6 +51,10 @@ body {
   margin: 0px;
 }
 
+.curriculum {
+  text-align: center;
+}
+
 a, a:visited {
   text-decoration: none;
   color: #375EAB;

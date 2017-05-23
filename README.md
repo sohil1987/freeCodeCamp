@@ -1,4 +1,4 @@
-# Free Code Camp
+# BETA CURRICULUM
 
 ## Responsive Web Design
 
@@ -60,7 +60,36 @@
 * ~~National Contiguity with Force Directed Graph~~
 * ~~Meteor World Map Data~~
 
-## Old Curriculum Backend
+
+# OLD CURRICULUM
+
+## FronEnd Certification
+ 
+* [Tribute Page](https://codepen.io/BrusBilis/pen/LkBOWv)  
+* [Personal Portfolio WebPage](https://codepen.io/BrusBilis/pen/akjqqV)  
+* [Quote Machine](https://codepen.io/BrusBilis/pen/ZOqOAaRandom)
+* [Local Weather](https://codepen.io/BrusBilis/pen/bZmaLY)
+* [Wikipedia Viewer](https://codepen.io/BrusBilis/pen/QEkxBX)
+* [Twitch.tv API](https://codepen.io/BrusBilis/pen/QEJyGr) 
+* [Calculator](https://codepen.io/BrusBilis/pen/YGKkLG) 
+* [Pomodoro Clock](https://codepen.io/BrusBilis/pen/kkNRbp)
+* [TicTacToe Game](https://codepen.io/BrusBilis/pen/zKdgrw)
+* [Simon Game](https://codepen.io/BrusBilis/pen/LRjwad)
+  
+## Data Visualization Certification
+            
+* [Markdown Previewer](https://codepen.io/BrusBilis/pen/RGZxmZ)
+* [Camper Leaderboard](https://codepen.io/BrusBilis/pen/ALmQdQ)
+* [Recipe Box](https://codepen.io/BrusBilis/pen/XjOjvJ)
+* [Game of Life](https://codepen.io/BrusBilis/pen/BLrgNg)
+* [Roguelike Dungeon Crawler](https://codepen.io/BrusBilis/pen/oYvaWa)
+* [Bar Chart](https://codepen.io/BrusBilis/pen/ZpAaLJ)
+* [Scatterplot Graph](https://codepen.io/BrusBilis/pen/zKRWyL)
+* [Heat Map](https://codepen.io/BrusBilis/pen/BLYXdR) 
+* [Country Borders Force Directed Graph](https://codepen.io/BrusBilis/pen/vXjpKw)
+* [Meteorite Landings Map Data](https://codepen.io/BrusBilis/pen/kkjNNE)
+            
+## Backend Certification
 
 * [Timestamp](https://brusbilis.com/freecodecamp/old-v1/apis/time/time.html)
 * [Request Header Parser](https://brusbilis.com/freecodecamp/old-v1/apis/parser/parser.html)
@@ -72,5 +101,4 @@
 * [Stock Market](https://brusbilis.com/freecodecamp/old-v1/webapps/stock/stock.html)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps/book/guest)
 * [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/)
-
-
+   
