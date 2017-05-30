@@ -2,7 +2,8 @@
 'use strict';
 
 function reverseString (str) {
-  console.log(str);
+  str = str.split('').reverse().join('');
+  return str;
 }
 
-reverseString('hello');
+console.log(reverseString('hello'));

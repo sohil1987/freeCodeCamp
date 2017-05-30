@@ -10,9 +10,8 @@
 
 ## Javascript and Data Structures
 
-* [Basic Algorithm](https://brusbilis.com/freecodecamp/2-algorithm/algorithm.html)
-* ~~Intermediate Algorithm~~
-* ~~Advanced Algorithm~~
+* [Javascript Algorithms](https://brusbilis.com/freecodecamp/2-algorithm/algorithm.html)
+* ~~Golang Algorithms~~
 
 ## Front End Libraries
 
