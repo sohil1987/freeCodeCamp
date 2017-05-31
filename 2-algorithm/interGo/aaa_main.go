@@ -17,7 +17,7 @@ func main() {
 	//searchReplace()
 	//smallCommonMultiple()
 	//sortedUnion()
-	//spinalTapCase()
+	spinalTapCase()
 	//sumAllNumsIntRange()
 	//sumAllPrimes()
 	//sumOddFiboNums()

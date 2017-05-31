@@ -18,7 +18,7 @@ body {
   background-color: #fafafa;
   font-family: "Oxygen", 'Arial', sans-serif;
   font-size: 1em;
-  max-width: 600px;
+  max-width: 840px;
   margin: auto;
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -30,6 +30,8 @@ body {
 }
 
 .title {
+  max-width: 400px;
+  margin: auto;
   font-size: 3em;
   text-align: center;
   margin-top: 40px;
