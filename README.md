@@ -1,66 +1,4 @@
-# BETA CURRICULUM
-
-## Responsive Web Design
-
-* [Tribute Page](https://brusbilis.com/freecodecamp/1-responsive/tribute/tribute.html)  
-* [Survey Form](https://brusbilis.com/freecodecamp/1-responsive/form/form.html)
-* [Product Landing Page](https://brusbilis.com/freecodecamp/1-responsive/landing/landing.html)
-* [Technical Documentation Page](https://brusbilis.com/freecodecamp/1-responsive/doc/doc.html)
-* [Personal Portfolio](https://brusbilis.com/freecodecamp/1-responsive/portfolio/portfolio.html)  
-
-## Javascript and Data Structures
-
-* [Javascript Algorithms](https://brusbilis.com/freecodecamp/2-algorithm/algorithm.html)
-* ~~Golang Algorithms~~
-
-## Front End Libraries
-
-* ~~Random Quote Machine~~
-* ~~Markdown Previewer~~
-* ~~Drum Machine~~
-* ~~Javascript Calculator~~
-* ~~Pomodoro Clock~~
-
-## Data Visualization
-
-* ~~Bar Chart~~
-* ~~Scatterplot Graph~~
-* ~~Heat Map~~
-* ~~Choropleth Map~~
-* ~~Treemap Diagram~~
-
-## APIs and Microservices
-
-* ~~Timestamp~~
-* ~~Request Header Parser~~
-* ~~URL Shortener~~
-* ~~Exercise Tracker~~
-* ~~File Metadata~~
-
-## Information Security and Quality Assurance
-
-* ~~Metric-Imperial Converter~~
-* ~~Issue Tracker~~
-* ~~Personal Library~~
-* ~~Stock Price Checker~~
-* ~~Anonymous Message Board~~
-
-## Bonus Extra Projects and Challenges
-
-* ~~Local Weather~~
-* ~~Wikipedia Viewer~~
-* ~~Twitch.tv API~~
-* ~~Tic Tac Toe Game~~
-* ~~Simon Game~~
-* ~~Camper Leaderboard~~
-* ~~Roguelike Dungeon Game~~
-* ~~Random Dungeon generator~~
-* ~~P2P Video Chat Aplication~~
-* ~~National Contiguity with Force Directed Graph~~
-* ~~Meteor World Map Data~~
-
-
-# OLD CURRICULUM
+# CURRICULUM
 
 ## FronEnd Certification
  
@@ -101,3 +39,68 @@
 * [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps/book/guest)
 * [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/)
    
+
+
+
+# BETA CURRICULUM
+
+## Responsive Web Design
+
+* [Tribute Page](https://brusbilis.com/freecodecamp/1-responsive/tribute/tribute.html)  
+* [Survey Form](https://brusbilis.com/freecodecamp/1-responsive/form/form.html)
+* [Product Landing Page](https://brusbilis.com/freecodecamp/1-responsive/landing/landing.html)
+* [Technical Documentation Page](https://brusbilis.com/freecodecamp/1-responsive/doc/doc.html)
+* [Personal Portfolio](https://brusbilis.com/freecodecamp/1-responsive/portfolio/portfolio.html)  
+
+## Javascript and Data Structures
+
+* [Javascript Algorithms](https://brusbilis.com/freecodecamp/2-algorithm/algorithm.html)
+* ~~Golang Algorithms~~
+
+## Front End Libraries
+
+* [Random Quote Machine](https://brusbilis.com/freecodecamp/3-frontEnd/quote/quote.html)  
+* [Markdown Previewer](https://brusbilis.com/freecodecamp/3-frontEnd/markdown/markdown.html)  
+* [Drum Machine](https://brusbilis.com/freecodecamp/3-frontEnd/drum/drum.html)
+* [Javascript Calculator](https://brusbilis.com/freecodecamp/3-frontEnd/calculator/calculator.html)
+* [Pomodoro Clock](https://brusbilis.com/freecodecamp/3-frontEnd/clock/clock.html)
+
+## Data Visualization
+
+* ~~Bar Chart~~
+* ~~Scatterplot Graph~~
+* ~~Heat Map~~
+* ~~Choropleth Map~~
+* ~~Treemap Diagram~~
+
+## APIs and Microservices
+
+* ~~Timestamp~~
+* ~~Request Header Parser~~
+* ~~URL Shortener~~
+* ~~Exercise Tracker~~
+* ~~File Metadata~~
+
+## Information Security and Quality Assurance
+
+* ~~Metric-Imperial Converter~~
+* ~~Issue Tracker~~
+* ~~Personal Library~~
+* ~~Stock Price Checker~~
+* ~~Anonymous Message Board~~
+
+## Bonus Extra Projects and Challenges
+
+* ~~Local Weather~~
+* ~~Wikipedia Viewer~~
+* ~~Twitch.tv API~~
+* ~~Tic Tac Toe Game~~
+* ~~Simon Game~~
+* ~~Camper Leaderboard~~
+* ~~Roguelike Dungeon Game~~
+* ~~Random Dungeon generator~~
+* ~~P2P Video Chat Aplication~~
+* ~~National Contiguity with Force Directed Graph~~
+* ~~Meteor World Map Data~~
+
+
