@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Pomodoro Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Front End Frameworks Projects: Build a Pomodoro Clock" />
+
+  <!-- Inconsolate -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../assets/icons/clock.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./clock.css">
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="controls">
+      <div class="breakTime">
+        <div class="timeTitle">
+          <span>Break Time</span><br>
+        </div>
+        <span class="action" id="breakTimeMinus">-</span>
+        <span id="breakTime">05</span>
+        <span class="action" id="breakTimePlus">+</span>
+      </div>
+      <div class="workTime">
+        <div class="timeTitle">
+          <span>Work Time</span><br>
+        </div>
+        <span class="action" id="workTimeMinus">-</span>
+        <span id="workTime">25</span>
+        <span class="action" id="workTimePlus">+</span>
+      </div>
+    </div>
+
+    <div class="clock">
+      <div class="box">
+        <div class="status">
+          <span id="type">&nbsp;</span>
+        </div>
+        <div class="time">
+          <span id="clock">25:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="play">
+      <span class="action">
+          <img id="start" src="./../../assets/icons/play.png">
+        </span>
+      <span class="action">
+          <img id="reload" src="./../../assets/icons/reload.png">
+      </span>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+  </div>
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  -->
+
+  <script src="./clock.js"></script>
+
+</body>
+
+</html>

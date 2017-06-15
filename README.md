@@ -91,7 +91,7 @@
 
 ## Bonus Extra Projects and Challenges
 
-* ~~Local Weather~~
+* [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
 * ~~Wikipedia Viewer~~
 * ~~Twitch.tv API~~
 * ~~Tic Tac Toe Game~~

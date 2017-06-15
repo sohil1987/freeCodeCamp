@@ -1,0 +1,99 @@
+@media (max-width: 480px) {}
+
+@media (min-width: 481px)and (max-width: 640px) {}
+
+@media (min-width: 641px) {}
+
+body {
+  background-color: #fafafa;
+  font-family: "Inconsolata", 'monospace', sans-serif;
+  font-size: 1.4em;
+  max-width: 960px;
+  margin: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  color: #333333;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #a1d589;
+  max-width: 360px;
+  margin: 50px auto 0px auto;
+  border: 2px solid #a1d589;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px 30px 0px;
+}
+
+.controls span.action {
+  border-radius: 2px;
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.controls span.action:hover {
+  background-color: #fafafa;
+}
+
+.breakTime .timeTitle, .workTime .timeTitle {
+  margin: 0px 0px 10px 0px;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.clock .box {
+  border: 3px solid #fafafa;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px;
+}
+
+#clock {
+  font-size: 4em;
+}
+
+.play {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.play .action img {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.play .action img:hover {
+  transform: scale(1.5);
+}
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
