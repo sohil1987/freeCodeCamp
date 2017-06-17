@@ -93,7 +93,7 @@
 
 * [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
 * [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wiki/wiki.html)  
-* ~~Twitch.tv API~~
+* [Twitch.tv API](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
 * ~~Tic Tac Toe Game~~
 * ~~Simon Game~~
 * ~~Camper Leaderboard~~
