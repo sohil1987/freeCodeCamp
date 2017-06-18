@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>TicTacToe Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Coding Interview Take Home Projects: Build a Tic Tac Toe Game" />
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../assets/icons/tictactoe.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./tictactoe.css">
+
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="control">
+      <div class="display">
+        Select PLAYER (X or O)
+      </div>
+      <div class="options">
+        <span class="action" id="X">PLAY - X</span>
+        <span class="action" id="O">PLAY - 0</span>
+      </div>
+    </div>
+
+    <div class="board" hidden>
+      <div class="boardBox">
+        <div id="0" class="action2 cell"></div>
+        <div id="1" class="action2 cell"></div>
+        <div id="2" class="action2 cell"></div>
+        <div id="3" class="action2 cell"></div>
+        <div id="4" class="action2 cell"></div>
+        <div id="5" class="action2 cell"></div>
+        <div id="6" class="action2 cell"></div>
+        <div id="7" class="action2 cell"></div>
+        <div id="8" class="action2 cell"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="result" hidden>
+    <div class="resultBox">
+      <div class="text1">
+        <p id="gameResult">RESULT</p>
+      </div>
+      <div class="text2">
+        <button id="continue" class="continue">CONTINUE</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+  </div>
+
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+  <script src="./tictactoe.js"></script>
+
+</body>
+
+</html>
