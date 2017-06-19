@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+
+/* FOOTER */
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 50px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/*
+
+red #d9534f
+white #f9f9f9
+lightblue #5bc0de
+green #5cb85c 
+darkblue #428bca 
+
+*/

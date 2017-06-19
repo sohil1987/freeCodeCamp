@@ -67,9 +67,9 @@
 
 ## Data Visualization
 
-* ~~Bar Chart~~
-* ~~Scatterplot Graph~~
-* ~~Heat Map~~
+* [Bar Chart](https://brusbilis.com/freecodecamp/4-data/bar/bar.html)
+* [Scatterplot Graph](https://brusbilis.com/freecodecamp/4-data/scatterplot/scatterplot.html)
+* [Heat Map](https://brusbilis.com/freecodecamp/4-data/heat/heat.html)
 * ~~Choropleth Map~~
 * ~~Treemap Diagram~~
 
@@ -95,7 +95,7 @@
 * [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wiki/wiki.html)  
 * [Twitch.tv API](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
 * [Tic Tac Toe Game](https://brusbilis.com/freecodecamp/7-bonus/tictactoe/tictactoe.html)  
-* ~~Simon Game~~
+* ~~Simon Game~~  
 * ~~Camper Leaderboard~~
 * ~~Roguelike Dungeon Game~~
 * ~~Random Dungeon generator~~
