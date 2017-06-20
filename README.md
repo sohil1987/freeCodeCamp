@@ -71,7 +71,7 @@
 * [Scatterplot Graph](https://brusbilis.com/freecodecamp/4-data/scatterplot/scatterplot.html)
 * [Heat Map](https://brusbilis.com/freecodecamp/4-data/heat/heat.html)
 * [Choropleth Map](https://brusbilis.com/freecodecamp/4-data/choropleth/choropleth.html)
-* ~~Treemap Diagram~~
+* [Treemap Diagram](https://brusbilis.com/freecodecamp/4-data/treemap/treemap.html)
 
 ## APIs and Microservices
 
