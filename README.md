@@ -102,7 +102,7 @@
 * ~~Random Map Dungeon generator~~
 * ~~Roguelike Dungeon Game~~
 * [National Contiguity with Force Directed Graph](https://brusbilis.com/freecodecamp/7-bonus/flags/flags.html)
-* ~~Meteor World Map Data~~
+* [Meteor World Map Data](https://brusbilis.com/freecodecamp/7-bonus/meteor/meteor.html)
 * ~~P2P Video Chat Aplication~~
 * ~~Book Trading Club~~  
 * ~~Pinterest Clone~~  
