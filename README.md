@@ -97,10 +97,13 @@
 * [Tic Tac Toe Game](https://brusbilis.com/freecodecamp/7-bonus/tictactoe/tictactoe.html)  
 * ~~Simon Game~~  
 * ~~Camper Leaderboard~~
+* ~~Recipe Box~~  
+* ~~Game Of Life~~  
+* ~~Random Map Dungeon generator~~
 * ~~Roguelike Dungeon Game~~
-* ~~Random Dungeon generator~~
-* ~~P2P Video Chat Aplication~~
-* ~~National Contiguity with Force Directed Graph~~
+* [National Contiguity with Force Directed Graph](https://brusbilis.com/freecodecamp/7-bonus/flags/flags.html)
 * ~~Meteor World Map Data~~
-
+* ~~P2P Video Chat Aplication~~
+* ~~Book Trading Club~~  
+* ~~Pinterest Clone~~  
 
