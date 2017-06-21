@@ -96,7 +96,7 @@
 * [Twitch.tv API](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
 * [Tic Tac Toe Game](https://brusbilis.com/freecodecamp/7-bonus/tictactoe/tictactoe.html)  
 * [Simon Game](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)   
-* ~~Camper Leaderboard~~
+* [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/camper/camper.html)
 * ~~Recipe Box~~  
 * ~~Game Of Life~~  
 * ~~Random Map Dungeon generator~~

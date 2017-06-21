@@ -1,0 +1,107 @@
+body {
+  font-family: 'Lato', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  max-width: 960px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #404040;
+  padding: 5px 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #404040;
+  background-color: #5bc0de;
+}
+
+.camper .logo {
+  max-height: 1.2em;
+  border-radius: 30%;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+.camper {
+  display: flex;
+}
+
+.camper div {
+  margin-top: 5px;
+}
+
+#theadLast:hover, #theadAll:hover {
+  cursor: pointer;
+}
+
+.date {
+  display: flex;
+}
+
+a {
+  color: #0099CC;
+  text-decoration: none;
+}
+
+.camper div:hover a {
+  color: #ff4444
+}
+
+thead tr th {
+  color: #fafafa;
+  background-color: #404040;
+}
+
+.table>thead>tr>th {
+  padding: 5px 10px !important;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  padding: 0px;
+  line-height: 1.3em;
+}
+
+table, tr, th, td {
+  border-collapse: collapse;
+  box-shadow: inset 0 0 1px #cccccc;
+}
+
+.table tbody tr .points {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* FOOTER */
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 50px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
