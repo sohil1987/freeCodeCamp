@@ -95,7 +95,7 @@
 * [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wiki/wiki.html)  
 * [Twitch.tv API](https://brusbilis.com/freecodecamp/7-bonus/twitch/twitch.html)
 * [Tic Tac Toe Game](https://brusbilis.com/freecodecamp/7-bonus/tictactoe/tictactoe.html)  
-* ~~Simon Game~~  
+* [Simon Game](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)   
 * ~~Camper Leaderboard~~
 * ~~Recipe Box~~  
 * ~~Game Of Life~~  

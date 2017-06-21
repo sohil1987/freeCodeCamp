@@ -2,6 +2,8 @@ body {
   font-family: 'Roboto', 'arial', sans-serif;
   background-color: #fafafa;
   font-size: 1em;
+  margin: auto;
+  max-width: 960px;
   -webkit-user-select: none;
   /* Chrome all / Safari all */
   -moz-user-select: none;
@@ -9,6 +11,192 @@ body {
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
+}
+
+.container {}
+
+
+/*
+    <div class="control">
+      <div class="name">
+        Simon<span class="reg">&reg;</span>
+      </div>
+      <div class="controls">
+        <button class="btn btnPlus" id="start">START</button>
+        <button class="btn" id="restart">RESTART</button>
+        <button class="btn btnPlus" id="strict">STRICT</button>
+      </div>
+    </div>
+*/
+
+
+/*  CONTROLS */
+
+.control {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.name {
+  font-size: 4em;
+  font-weight: 500;
+}
+
+span.reg {
+  font-size: 0.5em;
+}
+
+.controls {}
+
+.btn {
+  background-color: #fafafa;
+  border: 1px solid #3f3f3f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.btn.btnPlus {
+  border-right: 5px solid red;
+  border-left: 5px solid red;
+}
+
+.btn:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px #3f3f3f;
+}
+
+.btn:active, .btn:focus {
+  background-color: #fafafa;
+}
+
+
+/*
+    <div class="board">
+      <div id="green" class="action cell"></div>
+      <div id="red" class="action cell"></div>
+      <div id="yellow" class="action cell"></div>
+      <div id="blue" class="action cell"></div>
+    </div>
+*/
+
+
+/* BOARD */
+
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 250px;
+  margin: 10px auto 0px auto;
+  pointer-events: none;
+}
+
+.cell {
+  flex: 1 110px;
+  height: 110px;
+  border: 10px;
+  border: 10px solid #3f3f3f;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#green {
+  background-color: green;
+  border-top-left-radius: 125px;
+  border-right: 5px solid #3f3f3f;
+  border-bottom: 5px solid #3f3f3f;
+}
+
+
+/*
+#green:hover {
+  background-color: chartreuse;
+}
+*/
+
+#red {
+  background-color: #b20000;
+  border-top-right-radius: 125px;
+  border-left: 5px solid #3f3f3f;
+  border-bottom: 5px solid #3f3f3f;
+}
+
+
+/*
+#red:hover {
+  background-color: #ff0000;
+}
+*/
+
+#yellow {
+  background-color: #cccc00;
+  border-bottom-left-radius: 125px;
+  border-right: 5px solid #3f3f3f;
+  border-top: 5px solid #3f3f3f;
+}
+
+
+/*
+#yellow:hover {
+  background-color: #ffff00;
+}
+*/
+
+#blue {
+  background-color: blue;
+  border-bottom-right-radius: 125px;
+  border-left: 5px solid #3f3f3f;
+  border-top: 5px solid #3f3f3f;
+}
+
+
+/*
+#blue:hover {
+  background-color: cyan;
+}
+*/
+
+
+/*
+    <div class="score">
+      <div id="score" class="serie">
+        <h4>COUNT&nbsp;
+          <span class="digit" id="counter"><strong>0</strong></span> &nbsp;OF&nbsp;
+          <span class="digit" id="round"><strong>0</strong></span>
+        </h4>
+      </div>
+      <div id="next" class="ok" hidden>
+        <h4><strong>Well Done! Prepare for next Round</strong></h4>
+      </div>
+    </div>
+*/
+
+
+/* SCORE */
+
+.score {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.score .digit {
+  border: solid 1px #428bca;
+  padding: 15px 15px;
+  border-radius: 3px;
+  color: #428bca;
+  background-color: #def9ff;
+}
+
+.score .ok {
+  border: solid 1px #99cc99;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: #99cc99
 }
 
 
