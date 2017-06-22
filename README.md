@@ -89,7 +89,7 @@
 * ~~Stock Price Checker~~
 * ~~Anonymous Message Board~~
 
-## Bonus Extra Projects and Challenges
+## Bonus Extra FrontEnd Projects and Challenges
 
 * [Local Weather](https://brusbilis.com/freecodecamp/7-bonus/weather/weather.html)
 * [Wikipedia Viewer](https://brusbilis.com/freecodecamp/7-bonus/wiki/wiki.html)  
@@ -103,7 +103,16 @@
 * ~~Roguelike Dungeon Game~~
 * [National Contiguity with Force Directed Graph](https://brusbilis.com/freecodecamp/7-bonus/flags/flags.html)
 * [Meteor World Map Data](https://brusbilis.com/freecodecamp/7-bonus/meteor/meteor.html)
-* ~~P2P Video Chat Aplication~~
-* ~~Book Trading Club~~  
-* ~~Pinterest Clone~~  
+
+## Bonus Extra BackEnd Projects and Challenges
+
+* ~~Image Search API~~
+* ~~P2P Video Chat App~~
+* ~~Voting App~~
+* ~~Nightlife Coordination~~
+* ~~Stock Market~~
+* ~~Book Trading Club~~
+* ~~Pinterest Clone~~
+
+
 
