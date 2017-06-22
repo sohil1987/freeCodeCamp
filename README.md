@@ -99,7 +99,7 @@
 * [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/camper/camper.html)
 * [Recipe Box](https://brusbilis.com/freecodecamp/7-bonus/recipe/recipe.html)  
 * [Game Of Life](https://brusbilis.com/freecodecamp/7-bonus/life/life.html)  
-* ~~Random Map Dungeon generator~~
+* [Random Map Dungeon generator](https://brusbilis.com/freecodecamp/7-bonus/random/random.html)
 * ~~Roguelike Dungeon Game~~
 * [National Contiguity with Force Directed Graph](https://brusbilis.com/freecodecamp/7-bonus/flags/flags.html)
 * [Meteor World Map Data](https://brusbilis.com/freecodecamp/7-bonus/meteor/meteor.html)
