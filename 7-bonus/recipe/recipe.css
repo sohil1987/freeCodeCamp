@@ -1,0 +1,169 @@
+body {
+  font-family: 'Titillium Web', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  max-width: 960px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+  background-color: #fafafa;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+
+/*
+    <div class="menu">
+      <div class="left">
+        <div class=""></div>
+      </div>
+      <div class="title">
+        <div>RECIPE BOX</div>
+      </div>
+      <div class="action">
+        <div id="addRecipe" class="btn">+ Add</div>
+      </div>
+    </div>
+*/
+
+@media (max-width: 670px) {
+  .menu {
+    justify-content: space-around;
+    padding: 5px 5px 10px 5px;
+  }
+  .left {
+    display: none;
+  }
+}
+
+@media (min-width: 671px) {
+  .menu {
+    padding: 5px 50px 10px 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu > div {
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .left div {
+    margin-left: auto;
+  }
+}
+
+.menu {
+  display: flex;
+  margin: 10px 40px;
+  border: 1px solid #5cb85c;
+  border-radius: 5px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #007E33;
+  background-color: #cce5cc;
+}
+
+.action #addRecipe {
+  padding: 5px 15px;
+  border: 1px solid #7fbf7f;
+  border-radius: 5px;
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #fafafa;
+  background-color: #7fbf7f;
+}
+
+
+/*
+  <div class="recipes" id="dataTable">
+    <div class="card">
+      <div class="recipe">
+        <img class="recipeImg" alt="" src="${recipes[i].image}">
+        <div class="recipeText">${recipes[i].title}</div>
+      </div>
+      <div class="controls">
+        <div class="action">
+          <button id="delRecipe" class="btn" value=${i}>Del</button>
+        </div>
+        <div class="action">
+          <button id="editRecipe" class="btn" value=${i}>Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+*/
+
+.recipes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  max-width: 250px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.recipeImg {
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
+}
+
+.recipe .recipeText {
+  line-height: 1em;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action {
+  margin-top: 5px;
+}
+
+.action #delRecipe, #editRecipe {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: normal;
+  color: #fafafa;
+  background-color: #7fbf7f;
+}
+
+.action #delRecipe {
+  border: 1px solid #ffbb33;
+  background-color: #ffbb33;
+}
+
+.action #editRecipe {
+  border: 1px solid #33b5e5;
+  background-color: #33b5e5;
+}
+
+
+/* FOOTER */
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 50px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

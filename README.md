@@ -97,7 +97,7 @@
 * [Tic Tac Toe Game](https://brusbilis.com/freecodecamp/7-bonus/tictactoe/tictactoe.html)  
 * [Simon Game](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)   
 * [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/camper/camper.html)
-* ~~Recipe Box~~  
+* [Recipe Box](https://brusbilis.com/freecodecamp/7-bonus/recipe/recipe.html)  
 * ~~Game Of Life~~  
 * ~~Random Map Dungeon generator~~
 * ~~Roguelike Dungeon Game~~
