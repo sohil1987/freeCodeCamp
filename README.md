@@ -98,7 +98,7 @@
 * [Simon Game](https://brusbilis.com/freecodecamp/7-bonus/simon/simon.html)   
 * [Camper Leaderboard](https://brusbilis.com/freecodecamp/7-bonus/camper/camper.html)
 * [Recipe Box](https://brusbilis.com/freecodecamp/7-bonus/recipe/recipe.html)  
-* ~~Game Of Life~~  
+* [Game Of Life](https://brusbilis.com/freecodecamp/7-bonus/life/life.html)  
 * ~~Random Map Dungeon generator~~
 * ~~Roguelike Dungeon Game~~
 * [National Contiguity with Force Directed Graph](https://brusbilis.com/freecodecamp/7-bonus/flags/flags.html)

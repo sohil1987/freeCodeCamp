@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Game Of Life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Coding Interview Take Home Projects: Build the Game of Life" />
+
+  <!-- Maven Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,900" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../assets/icons/life.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./life.css">
+
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      <span>Conway's Game of Life</span>
+    </div>
+
+    <hr>
+
+    <div class="up">
+      <div class="up1">
+        <div class="controls">
+          <span class="tag">controls</span>
+          <span id="0" class="btn">Run</span><span id="1" class="btn">Pause</span><span id="2" class="btn">Clear</span>
+        </div>
+        <div class="speed">
+          <span class="tag">speed</span>
+          <span id="3" class="btn">x0.5</span><span id="4" class="btn">x1</span><span id="5" class="btn">x3</span>
+        </div>
+      </div>
+      <div class="size up2">
+        <span class="tag">size</span>
+        <span id="6" class="btn">20x20</span><span id="7" class="btn">50x40</span><span id="8" class="btn">80x50</span>
+      </div>
+    </div>
+
+    <div class="canvas">
+      <canvas id="myCanvas"></canvas>
+    </div>
+
+    <div class="down">
+      <div class="down1">
+        <div class="generation">
+          <span class="tag">GENERATION :</span>
+          <button id="score" class="cell">0</button>
+        </div>
+        <div class="cells">
+          <span class="tag">LIVE CELLS :</span>
+          <button id="living" class="cell">0</button>
+        </div>
+      </div>
+      <div class="legend down2">
+        <span class="">You can add or remove Cells during Pause</span>
+      </div>
+    </div>
+
+    <hr>
+
+  </div>
+
+  <div id="footer">
+    <a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+  </div>
+
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+  <script src="./life.js"></script>
+
+</body>
+
+</html>
