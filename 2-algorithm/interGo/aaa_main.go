@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // http://beta.freecodecamp.com/en/map
 
 func main() {
@@ -19,7 +21,8 @@ func main() {
 	//spinalTapCase()
 	//sumAllNumsInRange()
 	//sumAllPrimes()
-	sumOddFiboNums()
+	//sumOddFiboNums()
+	fmt.Println(`Hi from Main.go`)
 }
 
 /*
