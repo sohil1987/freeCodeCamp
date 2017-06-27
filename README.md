@@ -55,7 +55,7 @@
 ## Javascript and Data Structures
 
 * [Javascript Algorithms](https://brusbilis.com/freecodecamp/2-algorithm/algorithm.html)
-* ~~Golang Algorithms~~
+* [Golang Algorithms](https://github.com/brusbilis/freeCodeCamp/tree/master/2-algorithm)
 
 ## Front End Libraries
 

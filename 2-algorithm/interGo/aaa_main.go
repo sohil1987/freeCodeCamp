@@ -13,15 +13,13 @@ func main() {
 	//missingLetters()
 	//pigLatin()
 	//romanNumConverter()
-	searchReplace()
-	//seekAndDestroy()
+	//searchReplace()
 	//smallCommonMultiple()
 	//sortedUnion()
 	//spinalTapCase()
-	//steamRoller()
 	//sumAllNumsInRange()
 	//sumAllPrimes()
-	//sumOddFiboNums()
+	sumOddFiboNums()
 }
 
 /*
