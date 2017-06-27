@@ -7,3 +7,8 @@ import (
 func symmetricDiff() {
 	fmt.Println("symmetricDiff")
 }
+/*
+var test = []struct {
+}{
+}
+*/

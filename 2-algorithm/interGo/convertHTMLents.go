@@ -1,45 +1,41 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
-func convertHTML(str string) string {
-	var res string
-	letters := strings.Split(str, "")
-	for _, v := range letters {
-		v = convert2(v)
-		res += v
-	}
-	return res
-}
-
-func convert2(str string) string {
-	if str == "<" {
-		return "&lt;"
-	}
-	if str == ">" {
-		return "&gt;"
-	}
-	if str == "&" {
-		return "&amp;"
-	}
-	if str == "\"" {
-		return "&quot;"
-	}
-	if str == "'" {
-		return "&apos;"
-	}
-	return str
-}
+import "fmt"
 
 func convertHTMLents() {
-	fmt.Println(convertHTML("Dolce & Gabbana"))
-	fmt.Println(convertHTML("Hamburgers < Pizza < Tacos"))
-	fmt.Println(convertHTML("Sixty > twelve"))
-	fmt.Println(convertHTML("Stuff in \"quotation marks\""))
-	fmt.Println(convertHTML("Shindler's List"))
-	fmt.Println(convertHTML("<>"))
-	fmt.Println(convertHTML("abc"))
+	var sol = make([]string, 0)
+	for _, v := range test04 {
+		var clean = ""
+		for _, l := range v.data {
+			if string(l) == "<" {
+				clean += "&lt;"
+			} else if string(l) == ">" {
+				clean += "&gt;"
+			} else if string(l) == "&" {
+				clean += "&amp;"
+			} else if string(l) == `"` {
+				clean += "&quot;"
+			} else if string(l) == `'` {
+				clean += "&apos;"
+			} else {
+				clean += string(l)
+			}
+		}
+		sol = append(sol, clean)
+	}
+	for _, v := range sol {
+		fmt.Printf(" %-40s \n", v)
+	}
+}
+
+var test04 = []struct {
+	data string
+}{
+	{"Dolce & Gabbana"},
+	{"Hamburgers < Pizza < Tacos"},
+	{"Sixty > twelve"},
+	{"Stuff in \"quotation marks\""},
+	{"Shindler's List"},
+	{"<>"},
+	{"abc"},
 }

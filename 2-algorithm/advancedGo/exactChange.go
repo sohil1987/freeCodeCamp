@@ -7,3 +7,8 @@ import (
 func exactChange() {
 	fmt.Println("exactChange")
 }
+/*
+var test = []struct {
+}{
+}
+*/

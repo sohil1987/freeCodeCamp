@@ -1,13 +1,17 @@
 package main
 
+// http://beta.freecodecamp.com/en/map
+
 func main() {
-	exactChange()
-	//friendlyDateRange()
+	//bubbleSort()
+	//exactChange()
+	//insertioNSort()
 	//inventoryUpdate()
-	//makeAPerson()
-	//mapDebris()
+	//mergeSort()
 	//noRepeatsPlease()
 	//pairWise()
+	//quickSort()
+	//selectionSort()
 	//symmetricDiff()
 	//validateUSPhone()
 }

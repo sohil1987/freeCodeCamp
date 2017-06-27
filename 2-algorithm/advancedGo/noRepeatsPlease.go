@@ -7,3 +7,8 @@ import (
 func noRepeatsPlease() {
 	fmt.Println("noRepeatsPlease")
 }
+/*
+var test = []struct {
+}{
+}
+*/

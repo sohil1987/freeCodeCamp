@@ -41,3 +41,9 @@ func validateUSPhone() {
 	fmt.Println(telephoneCheck("(555)5(55?)-5555"))
 
 }
+
+/*
+var test = []struct {
+}{
+}
+*/

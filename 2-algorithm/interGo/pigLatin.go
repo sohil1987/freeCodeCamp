@@ -1,55 +1,41 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
-func translatePigLatin(str string) string {
-	//vowels := []string{"a", "e", "i", "o", "u"}
-	vowels := "aeiou"
-	chain := strings.Split(str, "")
-	var res string
-	if strings.Index(vowels, string(str[0])) != -1 {
-		return str + "way"
-	}
-	for i, v := range chain {
-		//fmt.Println(i, v)
-		if strings.Index(vowels, v) != -1 {
-			res = str[i:] + str[:i] + "ay"
-			return res
-		}
-	}
-	return "ERROR"
-}
+import "fmt"
+import "strings"
 
 func pigLatin() {
-	fmt.Println(translatePigLatin("california"))
-	fmt.Println(translatePigLatin("paragraphs"))
-	fmt.Println(translatePigLatin("glove"))
-	fmt.Println(translatePigLatin("algorithm"))
-	fmt.Println(translatePigLatin("eight"))
+	var sol = make([]string, 0)
+	for _, v := range test09 {
+		sol = append(sol, getPigLatin(v.data))
+	}
+	for i, v := range sol {
+		fmt.Printf("%d --> %s \n", i, v)
+	}
 }
 
-/*
-// only takes first consonant, non consonant cluster
-func translatePigLatin(str string) string {
-	//vowels := []string{"a", "e", "i", "o", "u"}
-	vowels := "aeiou"
-	chain := strings.Split(str, "")
-	var res string
-	if strings.Index(vowels, string(str[0])) != -1 {
-		return str + "way"
+func getPigLatin(s string) string {
+	const vowels = "aeiou"
+	//if strings.Index(vowels, string(s[0])) != -1 {
+	if strings.Contains(vowels, string(s[0])) {
+		return s + "way"
 	}
-	for i, v := range chain {
-		//fmt.Println(i, v)
-		if strings.Index(vowels, v) == -1 {
-			res += str[i+1:] + v + "ay"
-			return res
+	var aux string
+	for i, v := range s {
+		if !strings.Contains(vowels, string(v)) {
+			aux += string(v)
+		} else {
+			return s[i:] + aux + "ay"
 		}
-		res += v
 	}
-	return "PigLatin --> " + res
+	return s
 }
 
-*/
+var test09 = []struct {
+	data string
+}{
+	{"california"},
+	{"paragraphs"},
+	{"glove"},
+	{"algorithm"},
+	{"eight"},
+}

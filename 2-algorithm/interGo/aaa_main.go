@@ -1,24 +1,31 @@
 package main
 
-import "fmt"
+// http://beta.freecodecamp.com/en/map
 
 func main() {
-	fmt.Println(`HOLA`)
 	//binaryAgents()
-	//booWho()
+	//caesarsCipher()
+	//checkPalindrome()
 	//convertHTMLents()
 	//diffTwoArrays()
 	//dnaPairing()
-	//dropIt()
-	//findersKeepers()
+	//mapDebris()
 	//missingLetters()
 	//pigLatin()
 	//romanNumConverter()
-	//searchReplace()
+	searchReplace()
+	//seekAndDestroy()
 	//smallCommonMultiple()
 	//sortedUnion()
-	spinalTapCase()
-	//sumAllNumsIntRange()
+	//spinalTapCase()
+	//steamRoller()
+	//sumAllNumsInRange()
 	//sumAllPrimes()
 	//sumOddFiboNums()
 }
+
+/*
+var test = []struct {
+}{
+}
+*/

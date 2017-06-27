@@ -7,3 +7,8 @@ import (
 func pairWise() {
 	fmt.Println("pairWise")
 }
+/*
+var test = []struct {
+}{
+}
+*/

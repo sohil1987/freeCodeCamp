@@ -1,42 +1,36 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
-func pairElement(str string) [][2]string {
-	var res [][2]string
-	list := strings.Split(str, "")
-	var aux [2]string
-	for _, v := range list {
-		//fmt.Println(i, v)
-		aux[0] = v
-		aux[1] = pair(v)
-		res = append(res, aux)
-	}
-	//fmt.Println(res)
-	return res
-}
-
-func pair(str string) string {
-	if str == "C" {
-		return "G"
-	}
-	if str == "G" {
-		return "C"
-	}
-	if str == "A" {
-		return "T"
-	}
-	if str == "T" {
-		return "A"
-	}
-	return ""
-}
+import "fmt"
 
 func dnaPairing() {
-	fmt.Println(pairElement("ATCGA"))
-	fmt.Println(pairElement("TTGAG"))
-	fmt.Println(pairElement("CTCTA"))
+	var sol = make([][][]string, len(test06))
+	for i, v := range test06 {
+		for _, t := range v.data {
+			var aux = make([]string, 0)
+			aux = append(aux, string(t))
+			switch string(t) {
+			case "A":
+				aux = append(aux, "T")
+			case "T":
+				aux = append(aux, "A")
+			case "C":
+				aux = append(aux, "G")
+			case "G":
+				aux = append(aux, "C")
+			}
+			sol[i] = append(sol[i], aux)
+			aux = make([]string, 0)
+		}
+	}
+	for i, v := range sol {
+		fmt.Printf("%s ==> %s \n", test06[i].data, v)
+	}
+}
+
+var test06 = []struct {
+	data string
+}{
+	{"ATCGA"},
+	{"TTGAG"},
+	{"CTCTA"},
 }

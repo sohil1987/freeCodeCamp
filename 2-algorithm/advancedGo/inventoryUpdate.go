@@ -7,3 +7,8 @@ import (
 func inventoryUpdate() {
 	fmt.Println("inventoryUpdate")
 }
+/*
+var test = []struct {
+}{
+}
+*/

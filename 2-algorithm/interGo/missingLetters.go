@@ -5,27 +5,36 @@ import (
 	"strings"
 )
 
-func fearNotLetter(str string) string {
-	var missing = ""
-	letters := "abcdefghijklmnopqrstuvwxyz"
-	test := strings.Split(letters, "")
-	//fmt.Println(len(test))
-	begin := strings.Index(letters, string(str[0]))
-	//fmt.Println(begin)
-	for i := 0; i < len(str); i++ {
-		//fmt.Println("Compare ...", string(str[i]), " con ", test[begin+i])
-		if string(str[i]) != test[begin+i] {
-			missing = string(test[begin+i])
-			return "On " + str + " Fails ... " + missing
-		}
+func missingLetters() {
+	var sol = make([]string, 0)
+	for _, v := range test08 {
+		fmt.Println(v)
+		sol = append(sol, getMissingLetter(v.data))
 	}
-	return "On " + str + " nobody fails"
+	for i, v := range sol {
+		fmt.Printf("%d --> %s \n", i, v)
+	}
 }
 
-func missingLetters() {
-	fmt.Println(fearNotLetter("bcdf"))
-	fmt.Println(fearNotLetter("abce"))
-	fmt.Println(fearNotLetter("abcdefghjklmno"))
-	fmt.Println(fearNotLetter("bcd"))
-	fmt.Println(fearNotLetter("yz"))
+func getMissingLetter(s string) string {
+	const letters = "abcdefghijklmnopqrstuvwxyz"
+	var index = strings.Index(letters, string(s[0]))
+	for i, v := range s {
+		if string(v) != string(letters[index+i]) {
+			return string(letters[index+i])
+		}
+	}
+
+	return "undefined"
+
+}
+
+var test08 = []struct {
+	data string
+}{
+	{"bcdf"},
+	{"abce"},
+	{"abcdefghjklmno"},
+	{"bcd"},
+	{"yz"},
 }

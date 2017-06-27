@@ -5,34 +5,45 @@ import (
 	"math"
 )
 
-func convertToRoman(n int) string {
-	var res string
+func romanNumConverter() {
+	var sol = make([]string, 0)
+	for _, v := range test10 {
+		sol = append(sol, getRomanNum(v.data))
+	}
+	for i, v := range sol {
+		fmt.Println(i, v)
+	}
+}
+
+func getRomanNum(num int) (sol string) {
 	hundreds := []string{"C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"}
 	tens := []string{"X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"}
 	units := []string{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"}
-	t := int(math.Floor(float64(n / 1000)))
-	h := int(math.Floor(float64(n % 1000 / 100)))
-	d := int(math.Floor(float64(n % 100 / 10)))
-	u := int(math.Floor(float64(n % 10)))
+	t := int(math.Floor(float64(num / 1000)))
+	h := int(math.Floor(float64(num % 1000 / 100)))
+	d := int(math.Floor(float64(num % 100 / 10)))
+	u := int(math.Floor(float64(num % 10)))
 	for i := 0; i < t; i++ {
-		res += "M"
+		sol += "M"
 	}
 	if h > 0 {
-		res += hundreds[h-1]
+		sol += hundreds[h-1]
 	}
 	if d > 0 {
-		res += tens[d-1]
+		sol += tens[d-1]
 	}
 	if u > 0 {
-		res += units[u-1]
+		sol += units[u-1]
 	}
-	return res
+	return sol
 }
 
-func romanNumConverter() {
-	fmt.Println(convertToRoman(36))
-	fmt.Println(convertToRoman(68))
-	fmt.Println(convertToRoman(97))
-	fmt.Println(convertToRoman(1000))
-	fmt.Println(convertToRoman(3999))
+var test10 = []struct {
+	data int
+}{
+	{36},
+	{68},
+	{697},
+	{1000},
+	{3999},
 }
