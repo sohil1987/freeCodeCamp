@@ -8,7 +8,6 @@ func main() {
 	//raindrops()
 	//acronym()
 	//pangram()
-	//triangle()
 	//diffOfSquares()
 	//pascalsTriangle()
 	//series()
@@ -19,13 +18,13 @@ func main() {
 	//parallelLetFreq()
 	//sumMultiples()
 	//isogram()
-	//cryptoSquare()
+	//cryptoSquare() // PENDING
 	//luhn()
 	//largeSeriesProds()
 	//sieve()
-	//palindrome()
+	//palindrome() // PENDING
 	//perfectsNums()
-	//bracketPush()
+	//bracketPush() // FAILS 1 TEST
 	//anagram()
 	//wordCount()
 	//allergies()
@@ -33,14 +32,11 @@ func main() {
 	//romanNumerals()
 	//diamond()
 	//atbashCipher()
-	//phoneNumber()
-	//strain()
+	//phoneNumber() FAILS MULTIPLE TEST
 	//pigLatin()
 	//primeFactors()
 	//nthPrime()
-	//diffieHellman()
-	//beerSong()
-	//ocrNumbers()
+	ocrNumbers() // HERE
 	//wordy()
 	//nucleotideCount()
 	//gradeSchool()

@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-func () {
+func strain() {
 	fmt.Println("")
 }
-
