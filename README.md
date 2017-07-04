@@ -75,7 +75,7 @@
 
 ## APIs and Microservices
 
-* ~~Timestamp~~
+* [Timestamp](https://brusbilis.com/freecodecamp/5-api/time/time.html)
 * ~~Request Header Parser~~
 * ~~URL Shortener~~
 * ~~Exercise Tracker~~
