@@ -20,8 +20,8 @@ type Output struct {
 	Natural string `json:"utc"`
 }
 
-// TimeRouter ...
-func TimeRouter(w http.ResponseWriter, r *http.Request) {
+// RouterTime ...
+func RouterTime(w http.ResponseWriter, r *http.Request) {
 	params := strings.Split(r.URL.Path, "/")
 	input := params[3]
 	o := Output{Unix: 0, Natural: "Invalid Date"}
