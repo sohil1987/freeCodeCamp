@@ -3,15 +3,14 @@ package main
 // fresh -c tmp/fresh.conf
 
 import (
+	"freeCodeCamp/5-api/_help"
+	"freeCodeCamp/5-api/files"
 	"freeCodeCamp/5-api/parser"
 	"freeCodeCamp/5-api/timestamp"
 	"net/http"
 	"os"
 	"path"
 )
-
-var baseURL = "/" // Go local
-//var baseURL = "/freecodecamp/5-api/" // Go deploy
 
 func main() {
 	mux := http.NewServeMux()
@@ -28,13 +27,17 @@ func main() {
 	parserAssets := fs404(http.Dir("./parser/assets"))
 	mux.Handle("/parser/", http.StripPrefix("/parser/", parserAssets))
 
+	fileAssets := fs404(http.Dir("./files/assets"))
+	mux.Handle("/file/", http.StripPrefix("/file/", fileAssets))
+
 	mux.HandleFunc("/time/v1/", timestamp.RouterTime)
 	mux.HandleFunc("/parser/v1/", parser.RouterParser)
+	mux.HandleFunc("/file/v1/", files.RouterFiles)
 
 	mux.HandleFunc("/", pageNotFound)
 
 	server := http.Server{
-		Addr:    "localhost:3000",
+		Addr:    help.ServerIP,
 		Handler: mux,
 		//ReadTimeout:    10 * time.Second,
 		//WriteTimeout:   10 * time.Second,
@@ -44,7 +47,8 @@ func main() {
 }
 
 func pageNotFound(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, baseURL+"error/404.html", 301)
+	http.Redirect(w, r, help.BaseURL+"error/404.html", 301)
+
 }
 
 func fs404(fs http.FileSystem) http.Handler {

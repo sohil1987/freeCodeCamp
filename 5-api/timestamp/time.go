@@ -1,8 +1,7 @@
 package timestamp
 
 import (
-	"encoding/json"
-	"log"
+	"freeCodeCamp/5-api/_help"
 	"net/http"
 	"strconv"
 	"strings"
@@ -35,7 +34,7 @@ func RouterTime(w http.ResponseWriter, r *http.Request) {
 	} else { // empty string, we get current timestamp
 		getOutputFromUnixTime(int(time.Now().Unix()*1000), &o)
 	}
-	structToJSON(w, r, o)
+	help.StructToJSON(w, r, o)
 }
 
 func getOutputFromUnixTime(unix int, o *Output) {
@@ -61,13 +60,4 @@ func getOutputFromDate(s string, o *Output) {
 		o.Unix = o.utc.Unix() * 1000
 		o.Natural = o.utc.Format(time.RFC1123Z)
 	}
-}
-
-func structToJSON(w http.ResponseWriter, r *http.Request, data interface{}) {
-	dataJSON, err := json.MarshalIndent(data, "", " ")
-	if err != nil {
-		log.Fatal(err)
-	}
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(dataJSON)
 }

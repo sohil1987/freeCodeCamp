@@ -1,15 +1,11 @@
 package parser
 
 import (
-	"encoding/json"
-	"log"
+	"freeCodeCamp/5-api/_help"
 	"net"
 	"net/http"
 	"strings"
 )
-
-//var baseURL = "/" // Go local
-var baseURL = "/freecodecamp/5-api/" // Go deploy
 
 func init() {
 	//fmt.Println(`Init from Package Parser`)
@@ -27,13 +23,13 @@ func RouterParser(w http.ResponseWriter, r *http.Request) {
 	params := strings.Split(r.URL.Path, "/")
 	input := params[3]
 	if strings.ToLower(input) != "whoami" {
-		http.Redirect(w, r, baseURL+"parser/parser.html", 301)
+		http.Redirect(w, r, help.BaseURL+"parser/parser.html", 301)
 	}
 	var o Output
 	o.IP = getIP(r)
 	o.Language = r.Header.Get("Accept-Language")
 	o.Os = r.Header.Get("User-Agent")
-	structToJSON(w, r, o)
+	help.StructToJSON(w, r, o)
 }
 
 func getIP(r *http.Request) string {
@@ -43,13 +39,4 @@ func getIP(r *http.Request) string {
 	}
 	ip, _, _ = net.SplitHostPort(r.RemoteAddr)
 	return ip
-}
-
-func structToJSON(w http.ResponseWriter, r *http.Request, data interface{}) {
-	dataJSON, err := json.MarshalIndent(data, "", " ")
-	if err != nil {
-		log.Fatal(err)
-	}
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(dataJSON)
 }

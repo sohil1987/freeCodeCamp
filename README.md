@@ -79,7 +79,7 @@
 * [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/parser/parser.html)
 * ~~URL Shortener~~
 * ~~Exercise Tracker~~
-* ~~File Metadata~~
+* [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/file.html)
 
 ## Information Security and Quality Assurance
 
