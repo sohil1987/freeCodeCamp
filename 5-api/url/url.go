@@ -35,6 +35,7 @@ func RouterURL(w http.ResponseWriter, r *http.Request) {
 
 const filePath = "./url/url.json"
 const filePath2 = "./url/url2.json"
+const registryLimit = 1000
 
 type invalid struct {
 	Url   string `json:"url"`
@@ -86,7 +87,7 @@ func getNewShortenedURL(w http.ResponseWriter, r *http.Request) {
 	sort.Ints(indexs) // sort
 	found := false    // look for the first free
 	cont := 1
-	for !found && cont < 1000 {
+	for !found && cont < registryLimit {
 		if cont != indexs[cont-1] {
 			rec.Short = cont
 			found = true

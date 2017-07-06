@@ -77,7 +77,7 @@
 
 * [Timestamp](https://brusbilis.com/freecodecamp/5-api/time/time.html)
 * [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/parser/parser.html)
-* ~~URL Shortener~~
+* [URL Shortener](https://brusbilis.com/freecodecamp/5-api/url/url.html)
 * ~~Exercise Tracker~~
 * [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/file.html)
 
