@@ -11,12 +11,12 @@ func init() {
 }
 
 // BaseURL ...
-//var BaseURL = "/" // Go local
-var BaseURL = "/freecodecamp/5-api/" // Go deploy
+//const BaseURL = "/" // Go local
+const BaseURL = "/freecodecamp/5-api/" // Go deploy
 
 // ServerIP ...
-//var ServerIP = "localhost:3000" // Go local
-var ServerIP = "localhost:3501" // Go deploy
+//const ServerIP = "localhost:3000" // Go local
+const ServerIP = "localhost:3501" // Go deploy
 
 // StructToJSON ...
 func StructToJSON(w http.ResponseWriter, r *http.Request, data interface{}) {

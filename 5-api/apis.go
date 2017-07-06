@@ -1,12 +1,14 @@
 package main
 
 // fresh -c tmp/fresh.conf
+// GOOS=linux GOARCH=amd64 go build
 
 import (
 	"freeCodeCamp/5-api/_help"
 	"freeCodeCamp/5-api/files"
 	"freeCodeCamp/5-api/parser"
 	"freeCodeCamp/5-api/timestamp"
+	"freeCodeCamp/5-api/url"
 	"net/http"
 	"os"
 	"path"
@@ -30,9 +32,13 @@ func main() {
 	fileAssets := fs404(http.Dir("./files/assets"))
 	mux.Handle("/file/", http.StripPrefix("/file/", fileAssets))
 
+	urlAssets := fs404(http.Dir("./url/assets"))
+	mux.Handle("/url/", http.StripPrefix("/url/", urlAssets))
+
 	mux.HandleFunc("/time/v1/", timestamp.RouterTime)
 	mux.HandleFunc("/parser/v1/", parser.RouterParser)
 	mux.HandleFunc("/file/v1/", files.RouterFiles)
+	mux.HandleFunc("/url/v1/", url.RouterURL)
 
 	mux.HandleFunc("/", pageNotFound)
 
