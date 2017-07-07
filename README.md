@@ -106,7 +106,7 @@
 
 ## Bonus Extra BackEnd Projects and Challenges
 
-* ~~Image Search API~~
+* [Image Search API](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
 * ~~P2P Video Chat App~~
 * ~~Voting App~~
 * ~~Nightlife Coordination~~
