@@ -6,6 +6,7 @@ package main
 import (
 	"freeCodeCamp/7-bonus2/_help"
 	"freeCodeCamp/7-bonus2/search"
+	"freeCodeCamp/7-bonus2/stock"
 	"net/http"
 	"os"
 	"path"
@@ -22,8 +23,13 @@ func main() {
 	// assets for individual apis
 	searchAssets := fs404(http.Dir("./search/assets"))
 	mux.Handle("/search/", http.StripPrefix("/search/", searchAssets))
+	stockAssets := fs404(http.Dir("./stock/assets"))
+	mux.Handle("/stock/", http.StripPrefix("/stock/", stockAssets))
 
 	mux.HandleFunc("/search/v1/", search.RouterSearch)
+	mux.HandleFunc("/stock/api/", stock.RouterStock)
+	go stock.Hub.Start()
+	mux.HandleFunc("/stock/socket/", stock.Socket)
 
 	mux.HandleFunc("/", pageNotFound)
 

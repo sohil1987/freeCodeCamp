@@ -12,13 +12,17 @@ func init() {
 	//fmt.Println(`Init From Help Package`)
 }
 
-// BaseURL ...
-const BaseURL = "/" // Go local
-//const BaseURL = "/freecodecamp/7-bonus2/" // Go deploy
-
 // ServerIP ...
-const ServerIP = "localhost:3000" // Go local
-//const ServerIP = "localhost:3502" // Go deploy
+//const ServerIP = "localhost:3000" // Go local
+const ServerIP = "localhost:3502" // Go deploy
+
+// BaseURL ...
+//const BaseURL = "/" // Go local
+//const BaseURL = "./../../" // Go local
+const BaseURL = "/freecodecamp/7-bonus2/" // Go deploy
+
+// SecretJSON ...
+const SecretJSON = "./secret.json"
 
 // StructToJSON ...
 func StructToJSON(w http.ResponseWriter, r *http.Request, data interface{}) {
@@ -63,6 +67,10 @@ type Conf struct {
 		Key   string `json:"key"`
 		CseID string `json:"cseID"`
 	} `json:"apiImage"`
+	APIStockMarket struct {
+		Key    string `json:"apiKey"`
+		FileDB string `json:"fileDB"`
+	} `json:"apiStockMarket"`
 }
 
 // LoadConfig ...

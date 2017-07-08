@@ -28,14 +28,14 @@
             
 ## Backend Certification
 
-* [Timestamp](https://brusbilis.com/freecodecamp/old-v1/apis/time/time.html)
-* [Request Header Parser](https://brusbilis.com/freecodecamp/old-v1/apis/parser/parser.html)
-* [URL Shortener](https://brusbilis.com/freecodecamp/old-v1/apis/url/url.html)
-* [Image Search](https://brusbilis.com/freecodecamp/old-v1/apis/image/image.html)
-* [File Metadata](https://brusbilis.com/freecodecamp/old-v1/apis/file/file.html)
+* [Timestamp](https://brusbilis.com/freecodecamp/5-api/time/time.html)
+* [Request Header Parser](https://brusbilis.com/freecodecamp/5-api/parser/parser.html)
+* [URL Shortener](https://brusbilis.com/freecodecamp/5-api/url/url.html)
+* [Image Search](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
+* [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/file.html)
 * [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps/voting/guest/)
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/old-v1/webapps/nightlife/guest)
-* [Stock Market](https://brusbilis.com/freecodecamp/old-v1/webapps/stock/stock.html)
+* [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps/book/guest)
 * [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/)
    
@@ -110,7 +110,7 @@
 * ~~P2P Video Chat App~~
 * ~~Voting App~~
 * ~~Nightlife Coordination~~
-* ~~Stock Market~~
+* [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
 * ~~Book Trading Club~~
 * ~~Pinterest Clone~~
 
