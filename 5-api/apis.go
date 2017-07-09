@@ -8,10 +8,12 @@ import (
 	"freeCodeCamp/5-api/files"
 	"freeCodeCamp/5-api/parser"
 	"freeCodeCamp/5-api/timestamp"
+	"freeCodeCamp/5-api/tracker"
 	"freeCodeCamp/5-api/url"
 	"net/http"
 	"os"
 	"path"
+	"time"
 )
 
 func main() {
@@ -35,26 +37,29 @@ func main() {
 	urlAssets := fs404(http.Dir("./url/assets"))
 	mux.Handle("/url/", http.StripPrefix("/url/", urlAssets))
 
+	trackerAssets := fs404(http.Dir("./tracker/assets"))
+	mux.Handle("/tracker/", http.StripPrefix("/tracker/", trackerAssets))
+
 	mux.HandleFunc("/time/v1/", timestamp.RouterTime)
 	mux.HandleFunc("/parser/v1/", parser.RouterParser)
 	mux.HandleFunc("/file/v1/", files.RouterFiles)
 	mux.HandleFunc("/url/v1/", url.RouterURL)
+	mux.HandleFunc("/tracker/v1/", tracker.RouterTracker)
 
 	mux.HandleFunc("/", pageNotFound)
 
 	server := http.Server{
-		Addr:    help.ServerIP,
-		Handler: mux,
-		//ReadTimeout:    10 * time.Second,
-		//WriteTimeout:   10 * time.Second,
-		//MaxHeaderBytes: 1 << 20,
+		Addr:           help.ServerIP,
+		Handler:        mux,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
+		MaxHeaderBytes: 1 << 20,
 	}
 	server.ListenAndServe()
 }
 
 func pageNotFound(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, help.BaseURL+"error/404.html", 301)
-
 }
 
 func fs404(fs http.FileSystem) http.Handler {
