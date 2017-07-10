@@ -33,7 +33,7 @@
 * [URL Shortener](https://brusbilis.com/freecodecamp/5-api/url/url.html)
 * [Image Search](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
 * [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/file.html)
-* [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps/voting/guest/)
+* [Voting App](https://brusbilis.com/freecodecamp/7-bonus2/voting/guest/)
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/7-bonus2/book/guest)
@@ -108,7 +108,7 @@
 
 * [Image Search API](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
 * ~~P2P Video Chat App~~
-* ~~Voting App~~
+* [Voting App](https://brusbilis.com/freecodecamp/7-bonus2/voting/guest/)
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/7-bonus2/book/guest)

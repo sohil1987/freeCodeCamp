@@ -9,6 +9,7 @@ import (
 	"freeCodeCamp/7-bonus2/nightlife"
 	"freeCodeCamp/7-bonus2/search"
 	"freeCodeCamp/7-bonus2/stock"
+	"freeCodeCamp/7-bonus2/voting"
 	"net/http"
 	"os"
 	"path"
@@ -31,6 +32,8 @@ func main() {
 	mux.Handle("/nightlife/assets/", http.StripPrefix("/nightlife/assets/", nightRes))
 	bookRes := http.FileServer(http.Dir("book/assets"))
 	mux.Handle("/book/assets/", http.StripPrefix("/book/assets/", bookRes))
+	votingRes := http.FileServer(http.Dir("voting/assets"))
+	mux.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
 
 	mux.HandleFunc("/search/v1/", search.RouterSearch)
 	mux.HandleFunc("/stock/api/", stock.RouterStock)
@@ -38,6 +41,7 @@ func main() {
 	mux.HandleFunc("/stock/socket/", stock.Socket)
 	mux.HandleFunc("/nightlife/", nightlife.RouterNight)
 	mux.HandleFunc("/book/", book.RouterBook)
+	mux.HandleFunc("/voting/", voting.RouterVoting)
 
 	mux.HandleFunc("/", pageNotFound)
 

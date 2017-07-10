@@ -1,11 +1,10 @@
-package book
+package voting
 
 import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
 	"freeCodeCamp/7-bonus2/_help"
-	"io/ioutil"
 	"log"
 	"os"
 
@@ -35,26 +34,26 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	} else {
-		fmt.Println(`book sql.Open() OK`)
+		fmt.Println(`voting sql.Open() OK`)
 	}
 	err = db.Ping()
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	} else {
-		fmt.Println("book db.Ping() OK")
+		fmt.Println("voying db.Ping() OK")
 	}
 }
 
-func loadConfig() { // parse JSON with MARSHALL
+func loadConfig() { // parse JSON with DECODER
 	file, err := os.Open(help.SecretJSON)
 	if err != nil {
 		log.Fatalln("Cannot open config file", err)
 	}
 	defer file.Close()
-	// get file content
-	chunk, err := ioutil.ReadAll(file)
+	decoder := json.NewDecoder(file)
+	c = configuration{}
+	err = decoder.Decode(&c)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln("Cannot get configuration from file", err)
 	}
-	err = json.Unmarshal(chunk, &c)
 }

@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+	"freeCodeCamp/7-bonus2/_help"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -56,7 +57,7 @@ func init() {
 }
 
 func loadConfig() { // parse JSON with MARSHALL
-	file, err := os.Open("nightlife/assets/config/secret.json")
+	file, err := os.Open(help.SecretJSON)
 	if err != nil {
 		log.Fatalln("Cannot open config file", err)
 	}
