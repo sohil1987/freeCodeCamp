@@ -34,9 +34,9 @@
 * [Image Search](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
 * [File Metadata](https://brusbilis.com/freecodecamp/5-api/file/file.html)
 * [Voting App](https://brusbilis.com/freecodecamp/old-v1/webapps/voting/guest/)
-* [Nightlife Coordination](https://brusbilis.com/freecodecamp/old-v1/webapps/nightlife/guest)
+* [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
-* [Book Trading Club](https://brusbilis.com/freecodecamp/old-v1/webapps/book/guest)
+* [Book Trading Club](https://brusbilis.com/freecodecamp/7-bonus2/book/guest)
 * [Pinterest Clone](https://brusbilis.com/freecodecamp/old-v1/webapps/pintelest/)
    
 
@@ -109,9 +109,9 @@
 * [Image Search API](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
 * ~~P2P Video Chat App~~
 * ~~Voting App~~
-* ~~Nightlife Coordination~~
+* [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
-* ~~Book Trading Club~~
+* [Book Trading Club](https://brusbilis.com/freecodecamp/7-bonus2/book/guest)
 * ~~Pinterest Clone~~
 
 

@@ -5,6 +5,8 @@ package main
 
 import (
 	"freeCodeCamp/7-bonus2/_help"
+	"freeCodeCamp/7-bonus2/book"
+	"freeCodeCamp/7-bonus2/nightlife"
 	"freeCodeCamp/7-bonus2/search"
 	"freeCodeCamp/7-bonus2/stock"
 	"net/http"
@@ -25,11 +27,17 @@ func main() {
 	mux.Handle("/search/", http.StripPrefix("/search/", searchAssets))
 	stockAssets := fs404(http.Dir("./stock/assets"))
 	mux.Handle("/stock/", http.StripPrefix("/stock/", stockAssets))
+	nightRes := http.FileServer(http.Dir("./nightlife/assets"))
+	mux.Handle("/nightlife/assets/", http.StripPrefix("/nightlife/assets/", nightRes))
+	bookRes := http.FileServer(http.Dir("book/assets"))
+	mux.Handle("/book/assets/", http.StripPrefix("/book/assets/", bookRes))
 
 	mux.HandleFunc("/search/v1/", search.RouterSearch)
 	mux.HandleFunc("/stock/api/", stock.RouterStock)
 	go stock.Hub.Start()
 	mux.HandleFunc("/stock/socket/", stock.Socket)
+	mux.HandleFunc("/nightlife/", nightlife.RouterNight)
+	mux.HandleFunc("/book/", book.RouterBook)
 
 	mux.HandleFunc("/", pageNotFound)
 
