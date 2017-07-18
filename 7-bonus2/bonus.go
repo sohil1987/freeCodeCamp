@@ -35,9 +35,9 @@ func main() {
 	mux.Handle("/book/assets/", http.StripPrefix("/book/assets/", bookRes))
 	votingRes := http.FileServer(http.Dir("voting/assets"))
 	mux.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
+
 	pintelestRes := http.FileServer(http.Dir("./pintelest/assets"))
 	mux.Handle("/pintelest/assets/", http.StripPrefix("/pintelest/assets/", pintelestRes))
-
 	mux.HandleFunc("/search/v1/", search.RouterSearch)
 	mux.HandleFunc("/stock/api/", stock.RouterStock)
 	go stock.Hub.Start()

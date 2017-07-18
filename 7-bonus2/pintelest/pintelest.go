@@ -59,7 +59,7 @@ func RouterPintelest(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Printf("Going ..... %s logueado como %v \n", path, c.User.Name)
 	if len(path) == 0 {
-		http.Redirect(w, r, help.BaseURL+"pintelest/guest", 301)
+		http.Redirect(w, r, "https://brusbilis.com/freecodecamp/7-bonus2/pintelest/guest/", 301)
 		return
 	}
 	switch path[0] {
