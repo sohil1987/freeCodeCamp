@@ -112,7 +112,7 @@
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
 * [Book Trading Club](https://brusbilis.com/freecodecamp/7-bonus2/book/guest)
-* ~~Pinterest Clone~~
+* [Pinterest Clone](https://brusbilis.com/freecodecamp/7-bonus2/pintelest/guest)
 
 
 

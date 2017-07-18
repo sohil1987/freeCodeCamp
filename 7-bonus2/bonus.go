@@ -7,6 +7,7 @@ import (
 	"freeCodeCamp/7-bonus2/_help"
 	"freeCodeCamp/7-bonus2/book"
 	"freeCodeCamp/7-bonus2/nightlife"
+	"freeCodeCamp/7-bonus2/pintelest"
 	"freeCodeCamp/7-bonus2/search"
 	"freeCodeCamp/7-bonus2/stock"
 	"freeCodeCamp/7-bonus2/voting"
@@ -20,7 +21,7 @@ func main() {
 	mux := http.NewServeMux()
 
 	// custom404 for all apps
-	assets := fs404(http.Dir("./_public/404/"))
+	assets := fs404(http.Dir("./_public/404"))
 	mux.Handle("/error/", http.StripPrefix("/error/", assets))
 
 	// assets for individual apis
@@ -34,6 +35,8 @@ func main() {
 	mux.Handle("/book/assets/", http.StripPrefix("/book/assets/", bookRes))
 	votingRes := http.FileServer(http.Dir("voting/assets"))
 	mux.Handle("/voting/assets/", http.StripPrefix("/voting/assets/", votingRes))
+	pintelestRes := http.FileServer(http.Dir("./pintelest/assets"))
+	mux.Handle("/pintelest/assets/", http.StripPrefix("/pintelest/assets/", pintelestRes))
 
 	mux.HandleFunc("/search/v1/", search.RouterSearch)
 	mux.HandleFunc("/stock/api/", stock.RouterStock)
@@ -42,6 +45,7 @@ func main() {
 	mux.HandleFunc("/nightlife/", nightlife.RouterNight)
 	mux.HandleFunc("/book/", book.RouterBook)
 	mux.HandleFunc("/voting/", voting.RouterVoting)
+	mux.HandleFunc("/pintelest/", pintelest.RouterPintelest)
 
 	mux.HandleFunc("/", pageNotFound)
 
@@ -57,7 +61,7 @@ func main() {
 
 func pageNotFound(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, help.BaseURL+"error/404.html", 301)
-
+	//fmt.Fprintf(w, r.URL.Path)
 }
 
 func fs404(fs http.FileSystem) http.Handler {

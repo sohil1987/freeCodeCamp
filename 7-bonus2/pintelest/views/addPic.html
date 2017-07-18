@@ -1,0 +1,45 @@
+<!-- -->
+{{template "head" .}}
+<!-- -->
+
+<!-- -->
+{{$user := .conf.User}}
+<!-- -->
+
+<!-- -->
+{{template "navbarLogged" .}}
+<!-- -->
+
+<section class="addPic">
+
+  <h2>ADD PIC</h2>
+
+  <form action="./pintelest/addPic" method="POST">
+    <div class="wrapper">
+      <div class="question1">
+        <div class="left">
+          <label class="left" for="label1">Link to the image :</label>
+        </div>
+        <div class="right">
+          <input type="text" class="inputText" name="linkPic" id="linkPic" placeholder="link">
+        </div>
+      </div>
+      <div class="question2">
+        <div class="left">
+          <label class="left" for="label2">Text of the Pic :</label>
+        </div>
+        <div class="right">
+          <input type="text" class="inputText" name="textPic" id="textPic" placeholder="text">
+        </div>
+      </div>
+      <div class="send">
+        <button type="submit" class="but2">Add Pic</button>
+      </div>
+    </div>
+  </form>
+
+</section>
+
+<!-- -->
+{{template "end" .}}
+<!-- -->

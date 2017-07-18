@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 )
 
@@ -85,4 +86,13 @@ func LoadConfig(pathToFile string, c *Conf) {
 	if err != nil {
 		log.Fatalln("Cannot get configuration from file", err)
 	}
+}
+
+// IsValidURL ...
+func IsValidURL(rawurl string) bool {
+	_, err := url.ParseRequestURI(rawurl)
+	if err != nil {
+		return false
+	}
+	return true
 }
