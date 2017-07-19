@@ -83,7 +83,7 @@
 
 ## Information Security and Quality Assurance
 
-* ~~Metric-Imperial Converter~~
+* [Metric-Imperial Converter](https://brusbilis.com/freecodecamp/6-backEnd/metric/metric.html)  
 * ~~Issue Tracker~~
 * ~~Personal Library~~
 * ~~Stock Price Checker~~
@@ -107,7 +107,6 @@
 ## Bonus Extra BackEnd Projects and Challenges
 
 * [Image Search API](https://brusbilis.com/freecodecamp/7-bonus2/search/search.html)
-* ~~P2P Video Chat App~~
 * [Voting App](https://brusbilis.com/freecodecamp/7-bonus2/voting/guest/)
 * [Nightlife Coordination](https://brusbilis.com/freecodecamp/7-bonus2/nightlife/guest)
 * [Stock Market](https://brusbilis.com/freecodecamp/7-bonus2/stock/stock.html)
