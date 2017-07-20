@@ -7,6 +7,7 @@ package main
 
 import (
 	"freeCodeCamp/6-backEnd/metric"
+	"freeCodeCamp/6-backEnd/stock"
 	"freeCodeCamp/6-backEnd/util"
 	"net/http"
 	"time"
@@ -21,10 +22,13 @@ func main() {
 
 	// assets for individual apis
 	//timeAssets := http.FileServer(http.Dir("./timestamp/assets"))
-	timeAssets := util.FS404(http.Dir("./metric/assets"))
-	mux.Handle("/metric/", http.StripPrefix("/metric/", timeAssets))
+	metricAssets := util.FS404(http.Dir("./metric/assets"))
+	mux.Handle("/metric/", http.StripPrefix("/metric/", metricAssets))
+	stockAssets := util.FS404(http.Dir("./stock/assets"))
+	mux.Handle("/stock/", http.StripPrefix("/stock/", stockAssets))
 
 	mux.HandleFunc("/metric/v1/", metric.RouterMetric)
+	mux.HandleFunc("/stock/v1/", stock.RouterStock)
 
 	mux.HandleFunc("/", util.PageNotFound)
 

@@ -86,7 +86,7 @@
 * [Metric-Imperial Converter](https://brusbilis.com/freecodecamp/6-backEnd/metric/metric.html)  
 * ~~Issue Tracker~~
 * ~~Personal Library~~
-* ~~Stock Price Checker~~
+* [Stock Price Checker](https://brusbilis.com/freecodecamp/6-backEnd/stock/stock.html)
 * ~~Anonymous Message Board~~
 
 ## Bonus Extra FrontEnd Projects and Challenges
