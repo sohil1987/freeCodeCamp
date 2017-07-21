@@ -6,6 +6,7 @@ package main
 // https://pricey-hugger.glitch.me/
 
 import (
+	"freeCodeCamp/6-backEnd/library"
 	"freeCodeCamp/6-backEnd/metric"
 	"freeCodeCamp/6-backEnd/stock"
 	"freeCodeCamp/6-backEnd/util"
@@ -26,9 +27,12 @@ func main() {
 	mux.Handle("/metric/", http.StripPrefix("/metric/", metricAssets))
 	stockAssets := util.FS404(http.Dir("./stock/assets"))
 	mux.Handle("/stock/", http.StripPrefix("/stock/", stockAssets))
+	libraryAssets := util.FS404(http.Dir("./library/assets"))
+	mux.Handle("/library/", http.StripPrefix("/library/", libraryAssets))
 
 	mux.HandleFunc("/metric/v1/", metric.RouterMetric)
 	mux.HandleFunc("/stock/v1/", stock.RouterStock)
+	mux.HandleFunc("/library/v1/", library.RouterLibrary)
 
 	mux.HandleFunc("/", util.PageNotFound)
 
