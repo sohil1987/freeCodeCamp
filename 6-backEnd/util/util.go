@@ -20,12 +20,12 @@ func init() {
 const SecretJSON = "./secret.json"
 
 // BaseURL ...
-const BaseURL = "/" // Go local
-//const BaseURL = "/freecodecamp/6-backEnd/" // Go deploy
+//const BaseURL = "/" // Go local
+const BaseURL = "/freecodecamp/6-backEnd/" // Go deploy
 
 // ServerIP ...
-const ServerIP = "localhost:3000" // Go local
-//const ServerIP = "localhost:3503" // Go deploy
+//const ServerIP = "localhost:3000" // Go local
+const ServerIP = "localhost:3503" // Go deploy
 
 // C ...
 var C Conf

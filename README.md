@@ -84,8 +84,8 @@
 ## Information Security and Quality Assurance
 
 * [Metric-Imperial Converter](https://brusbilis.com/freecodecamp/6-backEnd/metric/metric.html)  
-* ~~Issue Tracker~~
-* ~~Personal Library~~
+* [Issue Tracker](https://brusbilis.com/freecodecamp/6-backEnd/issue/issue.html)
+* [Personal Library](https://brusbilis.com/freecodecamp/6-backEnd/library/library.html)
 * [Stock Price Checker](https://brusbilis.com/freecodecamp/6-backEnd/stock/stock.html)
 * ~~Anonymous Message Board~~
 
