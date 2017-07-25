@@ -87,7 +87,7 @@
 * [Issue Tracker](https://brusbilis.com/freecodecamp/6-backEnd/issue/issue.html)
 * [Personal Library](https://brusbilis.com/freecodecamp/6-backEnd/library/library.html)
 * [Stock Price Checker](https://brusbilis.com/freecodecamp/6-backEnd/stock/stock.html)
-* ~~Anonymous Message Board~~
+* [Anonymous Message Board](https://brusbilis.com/freecodecamp/6-backEnd/message/message.html)
 
 ## Bonus Extra FrontEnd Projects and Challenges
 
