@@ -13,7 +13,6 @@ import (
 )
 
 func init() {
-	C.LoadConfig(SecretJSON)
 }
 
 // SecretJSON ...
@@ -32,12 +31,14 @@ var C Conf
 
 // Conf ...
 type Conf struct {
-	Forge struct {
-		APIKey string `json:"apiKey"`
-	} `json:"forge"`
-	Quandl struct {
-		APIKey string `json:"apiKey"`
-	} `json:"quandl"`
+	OpenWeather struct {
+		Name string `json:"name" xml:"name"`
+		Key  string `json:"key" xml:"key"`
+	} `json:"openWeather" xml:"openWeather"`
+	WeatherUnlocked struct {
+		AppID string `json:"appId" xml:"appID"`
+		Key   string `json:"key" xml:"key"`
+	} `json:"weatherUnlocked" xml:"weatherUnlocked"`
 }
 
 // StructToJSON ...

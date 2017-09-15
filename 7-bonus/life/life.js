@@ -151,7 +151,7 @@ const app = (function () {
         render();
       }
       onoff = requestAnimationFrame(gameLoop);
-      // console.log('gameLoop sigue ... ', onoff)
+      console.log('gameLoop sigue ... ', onoff);
       if (cancel) {
         cancelAnimationFrame(onoff);
         setScoreToZero();
