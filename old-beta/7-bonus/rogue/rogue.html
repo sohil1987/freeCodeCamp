@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Roguelike Dungeon Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coding Interview Take Home Projects: Build a Roguelike Dungeon Crawler Game" />
+
+  <!-- Pres Start 2P-->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <!-- Titillium Web -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../../assets/icons/rogue.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./rogue.css">
+
+  <!-- siteVerification -->
+  <!--#include file="/freecodecamp/assets/templates/siteVerification.html" -->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      <span>Roguelike Dungeon Game</span>
+    </div>
+
+    <div class="body">
+
+      <div class="infoPanel">
+        <div class="box">
+          <span class="tag">HP</span>
+          <button id="health" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">LEVEL</span>
+          <button id="level" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">XP</span>
+          <button id="xp" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">WEAPON</span>
+          <button id="weapon" class="btn">0</button>
+        </div>
+      </div>
+
+      <div class="canvas">
+        <canvas tabindex="1" id="myCanvas"></canvas>
+      </div>
+
+      <div class="logArea">
+        <textarea id="logArea" placeholder="Log Area"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <a class="text-primary" href="https://brusbilis.com/freecodecamp">See here all my freecodecamp projects</a>
+  </div>
+
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+  <!-- cookie Law -->
+  <!--#include file="/freecodecamp/assets/templates/cookieLaw.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+  <script src="https://brusbilis.com/libs/mylib.js"></script>
+  <script src="dungeon.js"></script>
+  <script src="renderer.js"></script>
+  <script src="rogue.js"></script>
+
+</body>
+
+</html>

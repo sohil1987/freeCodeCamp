@@ -1,0 +1,397 @@
+@media only screen and (max-width: 540px) {
+  .pics {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .navbar {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 70px !important;
+  }
+  .navRight {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .pics {
+    padding-top: 75px !important;
+  }
+}
+
+@media only screen and (min-width: 541px) {
+  .pics {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  .navbar {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .pics {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+  .navbar {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  .pics {
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+  .navbar {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+body {
+  font-family: 'Maven Pro', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+
+/* NAVBAR  */
+
+
+/*
+
+ 
+  <nav class="navbar">
+    <div class="navLeft">
+      <a class="link" href="./">PINTELEST CLONE</a>
+    </div>
+    <div class="navRight">
+      <a class="link" href="./">Pics</a>
+      <a class="link" href="./myPics">My Pics</a>
+      <a class="link" href="./addPic">Add a Pic </a>
+      <a class="link" href="./profile">Profile</a>
+      <a id="loginBut" class="but" href="./login">
+        <img src="/pintelest/assets/twitter.png" alt="Twitter Logo">
+        <span>Login</span>
+      </a>
+    </div>
+  </nav>
+
+  */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #404040;
+  display: flex;
+  height: 50px;
+  z-index: 1;
+}
+
+.navLeft {
+  padding-left: 30px;
+}
+
+.navRight {
+  padding-right: 30px;
+}
+
+.navRight .link {
+  padding: 0px 7px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.navbar a:hover {
+  color: #fafafa;
+  cursor: pointer;
+}
+
+a img {
+  vertical-align: middle;
+}
+
+.navRight .but {
+  margin-left: 20px;
+}
+
+
+/* PICS */
+
+
+/*
+  <section class="pics">
+
+    {{ range .Image}}
+    <div class="pic">
+      <div class="card">
+        <img class="cardImage" src="{{.Link}}" alt="image">
+        <div class="cardText">
+          <span>{{.Text}}</span>
+        </div>
+        <div class="cardFooter">
+          <a class="nameAuthor" href="{{.NameAuthor}}">
+            <img class="logoAuthor" src="{{.LogoAuthor}}">
+          </a>
+          <a class="addStar" href="./vote/{{.IDPic}}">
+            <img src="/pintelest/assets/star.png">{{.Likes}}
+          </a>
+        </div>
+      </div>
+    </div>
+    {{end}}
+
+  </section>
+
+*/
+
+.pics {
+  max-width: 960px;
+  margin: auto;
+  padding-top: 70px;
+  -moz-column-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+  column-gap: 0.5em;
+}
+
+.pic {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  max-width: 200px;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.cardText {
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 3px;
+}
+
+.cardFooter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.cardFooter .nameAuthor img {
+  max-height: 28px;
+}
+
+.cardFooter .addStar {
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  background-color: #e5e5e5;
+  padding: 0px 8px 0px 3px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pic .cardFooter a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.pic .cardFooter a:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.pic .cardFooter a.notYet {
+  pointer-events: none;
+}
+
+
+/* DELETE PIC */
+
+
+/*
+ <div class="removeBut">
+    <a class="removeLink" href="pintelest/delete/{{.IDPic}}">Delete</a>
+  </div>
+*/
+
+.removeBut {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.removeLink {
+  border: 1px solid #ff4444;
+  border-radius: 3px;
+  background-color: #ff4444;
+  color: #fafafa;
+  padding: 2px 10px 5px 10px;
+}
+
+.removeBut a {
+  text-decoration: none;
+}
+
+
+/* PROFILE */
+
+
+/*
+
+  <section class="profile">
+
+    <h2>PROFILE</h2>
+    <span>ID ..... {{.ID}}</span><br>
+    <span>User ..... {{.Name}}</span><br>
+    <span>Logo .....<img src="{{.Logo}}"></span>
+
+  </section>
+
+  */
+
+.profile {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.profile img {
+  vertical-align: middle
+}
+
+
+/* ADD PIC */
+
+
+/*
+<section class="addPic">
+
+  <h2>ADD PIC</h2>
+
+  <form action="/pintelest/addPic" method="POST">
+    <div class="wrapper">
+      <div class="question1">
+        <div class="left">
+          <label class="left" for="label1">Link to the image :</label>
+        </div>
+        <div class="right">
+          <input type="text" class="inputText" name="linkPic" id="linkPic" placeholder="link">
+        </div>
+      </div>
+      <div class="question2">
+        <div class="left">
+          <label class="left" for="label2">Text of the Pic :</label>
+        </div>
+        <div class="right">
+          <input type="text" class="inputText" name="textPic" id="textPic" placeholder="text">
+        </div>
+      </div>
+      <div class="send">
+        <button type="submit" class="but2">Add Pic</button>
+      </div>
+    </div>
+  </form>
+
+</section>
+*/
+
+.addPic {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.addPic .wrapper {}
+
+.question1, .question2 {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.left {
+  text-align: right;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.right {
+  text-align: left;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.inputText {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.inputText:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.but2 {
+  margin-top: 20px;
+  font-size: 1em;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+/* 
+--------- GENERIC ----------
+*/
+
+hr {
+  color: #ededed;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  /*font-weight: bold;*/
+}

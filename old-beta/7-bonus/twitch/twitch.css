@@ -1,0 +1,103 @@
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .controls {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 481px) {
+  .controls {
+    padding-left: 30px;
+    padding-top: 1.5em;
+  }
+  .menu {
+    margin: 10px auto 0px auto;
+    max-width: 450px;
+  }
+}
+
+body {
+  font-family: 'Righteous', 'arial', sans-serif;
+  background-color: #a1d589;
+  font-size: 1em;
+  margin: auto;
+  max-width: 960px;
+  color: #a1d589;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.option {
+  border: 1px solid #a1d589;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+span.option:hover {
+  color: green;
+  cursor: pointer;
+}
+
+span.option + span.option {
+  border-left: 0px;
+}
+
+
+/* Channels */
+
+.channel {
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  margin: 5px auto 0px auto;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+
+img.logo {
+  height: 40px;
+  padding: 5px;
+}
+
+.channel span.name {
+  color: #375EAB;
+  padding: 0px 10px;
+}
+
+.channel span.name a {
+  text-decoration: none;
+}
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 100px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
