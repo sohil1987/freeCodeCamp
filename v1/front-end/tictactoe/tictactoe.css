@@ -1,0 +1,137 @@
+body {
+  font-family: 'Roboto', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.main {
+  border-radius: 10px;
+  /*background-color: #f6f6f6;*/
+  background-color: burlywood;
+  max-width: 360px;
+  margin: 50px auto 0px auto;
+  border: 2px solid grey;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* CONTROL */
+
+.control {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {}
+
+.options {
+  margin-top: 20px;
+}
+
+.action {
+  margin: 0px 20px;
+  border: 1px solid #5bc0de;
+  border-radius: 2px;
+  background-color: #5bc0de;
+  color: #fafafa;
+  padding: 5px 10px;
+}
+
+.action:hover {
+  background-color: #428bca;
+  border: 1px solid #428bca;
+}
+
+
+/* BOARD */
+
+.board {
+  font-size: 3em;
+  margin: 20px 10px 20px 10px;
+}
+
+.boardBox {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.cell {
+  flex-basis: 70px;
+  border: solid 2px lightgrey;
+  border-radius: 5px;
+  margin: 14px 10px 7px 10px;
+  cursor: pointer;
+  height: 1.5em;
+  background-color: burlywood;
+}
+
+.cell:hover {
+  background-color: cornsilk;
+}
+
+.action2 {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+
+/* RESULT */
+
+.result {
+  border-radius: 10px;
+  background-color: burlywood;
+  max-width: 300px;
+  margin: 20px auto 0px auto;
+  border: 2px solid grey;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text1 {
+  padding-top: 20px;
+}
+
+.text2 {
+  padding-bottom: 20px;
+}
+
+.continue {
+  margin: 0px 20px;
+  border: 1px solid #5cb85c;
+  border-radius: 2px;
+  background-color: #5cb85c;
+  color: #fafafa;
+  padding: 5px 10px;
+}
+
+
+/* FOOTER */
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 50px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

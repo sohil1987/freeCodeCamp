@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Timestamp API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: Timestamp Microservice" />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/api.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./time.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Timestamp API Docs</h1>
+    <h3>User Stories :</h3>
+    <ol class="userStories">
+      <li>
+        API endpoint is <code>GET https://brusbilis.com/freecodecamp/v1/apis/time/v1/:date_string</code>
+      </li>
+      <li>
+        A date string is valid if can be successfully parsed by <code>new Date(date_string)</code>.<br> Note that the unix
+        timestamp needs to be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br> You
+        must use date strings compliant with ISO-8601 (e.g. <code>"2016-11-20"</code>) because this will ensure an UTC timestamp.
+      </li>
+      <li>
+        If the date string is <strong>empty</strong> the service uses the current timestamp.
+      </li>
+      <li>
+        If the date string is <strong>valid</strong> the api returns a JSON having the structure where "utc" is RFC1123Z
+        (RFC1123 with numeric zone)<br><code>{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 18:31:29 +0100"}</code>
+      </li>
+      <li>
+        If the date string is <strong>invalid</strong> the api returns a JSON having the structure <br>
+        <code>{"unix": 0, "utc" : "Invalid Date" }</code>.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>
+        <code>GET <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/time/v1/">https://brusbilis.com/freecodecamp/v1/apis/time/v1/</a></code>
+      </li>
+      <li>
+        <code>GET <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/time/v1/2015-12-25">https://brusbilis.com/freecodecamp/v1/apis/time/v1/2015-12-25</a></code>
+      </li>
+      <li>
+        <code>GET <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/time/v1/1989 1 1">https://brusbilis.com/freecodecamp/v1/apis/time/v1/1989 1 1</a></code>
+      </li>
+      <li>
+        <code>GET <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/time/v1/1450137600000">https://brusbilis.com/freecodecamp/v1/apis/time/v1/1450137600000</a></code>
+      </li>
+      <li>
+        <code>GET <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/time/v1/not-valid-date">https://brusbilis.com/freecodecamp/v1/apis/time/v1/not-valid-date</a></code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>
+    <pre>
+        {
+          "unix": 1499163717000,
+          "utc": "Tue, 04 Jul 2017 12:21:57 +0200"
+        }    
+    </pre>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!-- -->
+{{template "head" .}}
+<!-- -->
+
+<!-- -->
+{{template "navbarLogged" .}}
+<!-- -->
+
+<!-- -->
+{{$user := .conf.User}}
+<!-- -->
+
+<section class="profile">
+
+  <h2>PROFILE</h2><br>
+
+  <p>Name: {{$user.Name}}</p>
+  <p>NickName: {{$user.NickName}}</p>
+  <p>AvatarURL: {{$user.AvatarURL}} <img src="{{$user.AvatarURL}}"></p>
+  <p>UserID: {{$user.UserID}}</p>
+
+</section>
+
+<!-- -->
+{{template "end" .}}
+<!-- -->

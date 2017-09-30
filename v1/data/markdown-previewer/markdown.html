@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Markdown Previewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp React Projects : Build a Markdown Previewer" />
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/markdown.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./markdown.css">
+
+</head>
+
+<body>
+
+  <div class="mdBox">
+
+    <div class="editor">
+      <div class="title">
+        <label>EDITOR</label>
+      </div>
+      <div class="textarea">
+        <textarea id="editor" placeholder=""></textarea>
+      </div>
+    </div>
+    <div class="previewer">
+      <div class="title">
+        <label>PREVIEWER</label>
+      </div>
+      <div class="preview">
+        <div id="preview">Markdown Preview</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js">
+
+  </script>
+
+  <script src="./markdown.js"></script>
+
+</body>
+
+</html>

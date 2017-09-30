@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Roguelike Dungeon Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp React Projects : Build a Roguelike Dungeon Crawler Game" />
+
+  <!-- Pres Start 2P + Titillium -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Titillium+Web:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/rogue.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./rogue.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      <span>Roguelike Dungeon Game</span>
+    </div>
+
+    <div class="body">
+
+      <div class="infoPanel">
+        <div class="box">
+          <span class="tag">HP</span>
+          <button id="health" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">LEVEL</span>
+          <button id="level" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">XP</span>
+          <button id="xp" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">WEAPON</span>
+          <button id="weapon" class="btn">0</button>
+        </div>
+      </div>
+
+      <div class="canvas">
+        <canvas tabindex="1" id="myCanvas"></canvas>
+      </div>
+
+      <div class="logArea">
+        <textarea id="logArea" placeholder="Log Area"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+  <script src="dungeon.js"></script>
+  <script src="renderer.js"></script>
+  <script src="rogue.js"></script>
+
+</body>
+
+</html>

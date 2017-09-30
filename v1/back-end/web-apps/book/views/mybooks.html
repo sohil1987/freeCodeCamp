@@ -1,0 +1,41 @@
+<!-- -->
+{{ template "layout" .}}
+<!-- -->
+
+<!-- -->
+{{define "content"}}
+<!-- -->
+
+<div id="main">
+
+  <!-- -->
+  {{template "loggedNav" .}}
+  <!-- -->
+
+  <!-- -->
+  {{template "addBook" .}}
+  <!-- -->
+
+  <!-- -->
+  {{template "books" .}}
+  <!-- -->
+
+</div>
+
+<!-- -->
+{{template "footer"}}
+<!-- -->
+{{template "scripts"}}
+<!-- -->
+
+<script type="text/javascript">
+  // Pass go vars to client js
+  var go = {{.}} // Pass object as global var
+  //var go = "{{ .}}"; // idem as string
+  window.addEventListener('load', mybooks.inicio);
+
+</script>
+
+<!-- -->
+{{end}}
+<!-- -->

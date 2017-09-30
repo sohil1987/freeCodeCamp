@@ -1,0 +1,27 @@
+<!-- -->
+{{ define "loggedNav"}}
+
+<nav id="nav-bar">
+  <div class="leftNav">
+    <img class="navLogo" src="./book/assets/images/library.png" alt="book Logo">
+    <a class="navLink navTitle" href="./book/logged/?user={{.ActiveUser}}"><span>Book Trading Club</span></a>
+  </div>
+  <div class="rightNav">
+    <a class="navLink navTitle" href="./book/logged/?user={{.ActiveUser}}">
+      <span>AllBooks</span>
+    </a>
+    <a class="navLink navTitle" href="./book/mybooks/?user={{.ActiveUser}}">
+      <span>MyBooks</span>
+    </a>
+    <a class="navLink" href="./book/profile/?user={{.ActiveUser}}">
+      <image class="imageLink" src="./book/assets/images/profile.png" alt="Profile">
+    </a>
+    <span>{{.ActiveUser}}</span>
+    <a class="navLink" href="./book/logout/">
+      <image class="imageLink" src="./book/assets/images/logout.png" alt="logout">
+    </a>
+  </div>
+</nav>
+
+{{end}}
+<!-- -->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>URL Shortener API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: URL Shortener Microservice" />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/api.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./url.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>URL Shortener API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        You submit a URL as a parameter and receive a shortened URL in JSON response.<br> API endpoint is <code>GET https://brusbilis.com/freecodecamp/v1/apis/url/v1/validUrl</code>
+      </li>
+      <li>
+        If you pass an invalid URL that doesn't follow the valid <code>http://www.example.com</code> format, the JSON response
+        will contain an error instead.
+      </li>
+      <li>
+        If you visit a shortened URL you will be redirected to the original link.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show all shortened URLs<br>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/url/v1/list">https://brusbilis.com/freecodecamp/v1/apis/url/v1/list</a>
+        </code>
+      </li>
+      <li>Create a new shortened URL<br>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/url/v1/new/http://freecodecamp.com">https://brusbilis.com/freecodecamp/v1/apis/url/v1/new/http://freecodecamp.com</a>
+        </code>
+      </li>
+      <li>Use a shortened URL<br>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/url/v1/168">https://brusbilis.com/freecodecamp/v1/apis/url/v1/168</a>
+        </code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>
+    <pre>
+{
+  "original":"https://brusbilis.com/freecodecamp/v1/apis/url/v1/new/http://freecodecamp.com",
+  "short": "https://brusbilis.com/freecodecamp/v1/apis/url/v1/168" 
+}
+    </pre>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+
+</body>
+
+</html>

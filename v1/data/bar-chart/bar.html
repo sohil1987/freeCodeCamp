@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Data Bar Chart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Data Visualization Projects: Visualize Data with a Bar Chart" />
+
+  <!-- Righteous + Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/chart.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./bar.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <div class="title">USA Gross Domestic Product</div>
+
+      <div class="chart">
+        <svg class="barChart" </svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong>$ <span id="value">value</span></strong><br>
+        <span id="date">date</span>
+      </div>
+
+      <div class="notes"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./bar.js"></script>
+
+
+</body>
+
+</html>

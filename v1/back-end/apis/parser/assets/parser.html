@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Header Parser API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: Request Header Parser Microservice" />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/api.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./parser.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Header Parser API Docs</h1>
+    <h3>User Stories :</h3>
+    <ol class="userStories">
+      <li>
+        You get a JSON response with the IP address, the language (from header <code>Accept-Language</code> ) and the operating
+        system (from header <code>User-Agent</code> ) for your browser.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/parser/v1/whoami">https://brusbilis.com/freecodecamp/v1/apis/time/v1/whoami</a>
+        </code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>
+    <pre>
+    {
+      "Ip Address": "XXX.XXX.XXX.XXX",
+      "Language": "en-US,en;q=0.5",
+      "Operative System": "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+    } 
+    </pre>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+</body>
+
+</html>

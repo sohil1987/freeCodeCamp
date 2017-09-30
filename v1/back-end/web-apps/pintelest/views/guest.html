@@ -1,0 +1,34 @@
+<!-- -->
+{{template "head" .}}
+<!-- -->
+
+<!-- -->
+{{template "navbar" .}}
+<!-- -->
+
+<section class="pics">
+
+  {{ range .}}
+  <div class="pic">
+    <div class="card">
+      <img class="cardImage" src="{{.Link}}" alt="image">
+      <div class="cardText">
+        <span>{{.Text}}</span>
+      </div>
+      <div class="cardFooter">
+        <a class="nameAuthor" href="./pintelest/user/{{.IDAuthor}}">
+          <img class="logoAuthor" src="{{.LogoAuthor}}">
+        </a>
+        <a class="addStar notYet" href="./pintelest/vote/{{.IDPic}}">
+          <img src="./pintelest/assets/star.png">{{.Likes}}
+        </a>
+      </div>
+    </div>
+  </div>
+  {{end}}
+
+</section>
+
+<!-- -->
+{{template "end" .}}
+<!-- -->

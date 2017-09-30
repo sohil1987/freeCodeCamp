@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Data Heat Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Data Visualization Projects: Visualize Data with a Heat Map" />
+
+  <!-- Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/heat.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./heat.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="title">
+        <h2>Monthly Global Land-Surface Temperature 1753 - 2015</h2>
+        <div class="clarification">Temperatures are in Celsius and reported as anomalies relative to the Jan 1951-Dec 1980 average.
+          <br> Estimated Jan 1951-Dec 1980 absolute temperature &#8451;: 8.66 +/- 0.07</div>
+      </div>
+      <div class="chart">
+        <svg class="heatMap"></svg>
+      </div>
+
+      <div id="tooltip" class="hidden">
+        <strong><span id="date">date</span></strong><br>
+        <span id="temp">temp</span><br>
+        <span id="variation">variation</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./heat.js"></script>
+
+</body>
+
+</html>

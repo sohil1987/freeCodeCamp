@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Pomodoro Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Advanced Front End Development Projects : Build a Pomodoro Clock" />
+
+  <!-- Inconsolate -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/clock.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./pomodoro.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="controls">
+      <div class="breakTime">
+        <div class="timeTitle">
+          <span>Break Time</span><br>
+        </div>
+        <span class="action" id="breakTimeMinus">-</span>
+        <span id="breakTime">05</span>
+        <span class="action" id="breakTimePlus">+</span>
+      </div>
+      <div class="workTime">
+        <div class="timeTitle">
+          <span>Work Time</span><br>
+        </div>
+        <span class="action" id="workTimeMinus">-</span>
+        <span id="workTime">25</span>
+        <span class="action" id="workTimePlus">+</span>
+      </div>
+    </div>
+
+    <div class="clock">
+      <div class="box">
+        <div class="status">
+          <span id="type">&nbsp;</span>
+        </div>
+        <div class="time">
+          <span id="clock">25:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="play">
+      <span class="action">
+          <img id="start" src="/freecodecamp/assets/icons/play.png">
+        </span>
+      <span class="action">
+          <img id="reload" src="/freecodecamp/assets/icons/reload.png">
+      </span>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+  <script src="./pomodoro.js"></script>
+
+</body>
+
+</html>

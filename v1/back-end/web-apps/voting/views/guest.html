@@ -1,0 +1,41 @@
+<!-- -->
+{{ template "layout" .}}
+<!-- -->
+
+<!-- -->
+{{define "content"}}
+<!-- -->
+
+<div id="main">
+
+  <nav class="navbar">
+    <div class="navLink">
+      <img id="img-navbar" src="./voting/assets/images/chart.png">
+    </div>
+    <a class="navLink" href="./voting/guest/">Guest</a>
+    <a class="navLink" href="./voting/login/">Login</a>
+  </nav>
+
+  <!-- -->
+  {{template "polls" .}}
+  <!-- -->
+
+</div>
+
+<!-- -->
+{{template "footer"}}
+<!-- -->
+{{template "scripts"}}
+<!-- -->
+
+<script type="text/javascript">
+  // Pass go vars to client js
+  var go = {{.}} // Pass object as global var
+  //var go = "{{ .}}"; // idem as string
+  window.addEventListener("load", guest.init)
+
+</script>
+
+<!-- -->
+{{end}}
+<!-- -->

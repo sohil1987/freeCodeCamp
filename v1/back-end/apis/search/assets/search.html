@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Image Search API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: Image Search Abstraction Layer" />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/freecodecamp/assets/icons/api.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./search.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Image Search API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        You can get the image URLs, alt text and page urls for a set of images relating to a given search string.<br> API
+        endpoint is <code>GET /search/v1/search?q=searchThis[&num=number][&offset=number]</code>
+      </li>
+      <li>
+        You can paginate add a ?offset=(1-100) which result the search should start at.<br> You can choose how many responses
+        you get adding parameter ?num=(1-10)<br><code>https://brusbilis.com/freecodecamp/v1/apis/image/api/search?q=board games&num=10&offset=5</code>
+      </li>
+      <li>
+        You can get a list of the most recently submitted search strings.<code>
+        https://brusbilis.com/freecodecamp/v1/apis/image/api/recent</code>
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show recent searches<br>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/search/v1/recent">https://brusbilis.com/freecodecamp/v1/apis/search/v1/recent</a>
+        </code>
+      </li>
+      <li>Show the first X results of the search<br>
+        <code>GET 
+          <a class="link" href="https://brusbilis.com/freecodecamp/v1/apis/search/v1/search?q=board games&num=10">https://brusbilis.com/freecodecamp/v1/apis/search/v1/search?q=board games&num=10</a>
+        </code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>Search
+    <pre>
+    {
+      "title":"Cats",
+      "id":"B37zkUD4sVcJ",
+      "snippet":"Further details: The logo for the musical cats.",
+      "displayLink":"en.wikipedia.org",
+      "thumb_src":"https://encryptedgstatic.com/images?q=tbn:",
+      "image_src":"https://upload.wikimedia./CatsMusicalLogo.jpg"
+    }
+    </pre>Recent
+    <pre>
+    {
+      "idimage": 18,
+      "search": "mysql json",
+      "when": "2016-11-13T10:21:14.000Z"
+    },
+    </pre>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <!--#include file="/freecodecamp/assets/templates/footer.html" -->
+
+  <!-- google-analytics -->
+  <!--#include file="/freecodecamp/assets/templates/analyticstracking.html" -->
+
+</body>
+
+</html>

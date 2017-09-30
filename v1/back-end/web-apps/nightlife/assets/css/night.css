@@ -1,0 +1,242 @@
+@media only screen and (max-width: 640px) {
+  .events {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .events {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .events {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Oxygen", 'Arial', sans-serif;
+  font-size: 1em;
+  max-width: 960px;
+  margin: auto;
+}
+
+
+/*
+---------- EVENTS ---------
+*/
+
+#events {
+  padding-top: 55px;
+}
+
+.events {
+  -moz-column-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+  column-gap: 0.5em;
+}
+
+.event {
+  background-color: #fafafa;
+  display: inline-block;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.barTile {
+  text-align: center;
+  max-width: 220px;
+  height: adjust;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  padding: 5px 0px;
+}
+
+span.titleSpan {
+  font-family: "Chewy", "arial", sans-serif;
+  font-size: 1.3em;
+  color: #375EAB;
+  padding: 10px 10px;
+}
+
+div.title a.going {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.going {
+  border: 1px solid #7fbf7f;
+  padding: 0px 4px;
+  border-radius: 3px;
+  background-color: #7fbf7f;
+}
+
+a.going:hover {
+  display: inline-block;
+  transform: scale(1.4);
+}
+
+.barImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.yelpLogo {
+  padding: 0ox;
+  margin: 0px;
+  height: 40px;
+}
+
+.bottomTile {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* 
+--------- NAVBAR ----------
+*/
+
+.navbar {
+  margin-top: 10px;
+  position: fixed;
+  font-family: "Chewy", "arial", sans-serif;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-around;
+  background-color: #7fbf7f;
+  /* #c3c3d5*/
+  height: 45px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+#img-navbar {
+  vertical-align: middle;
+  height: 35px;
+}
+
+.navLink {
+  align-self: center;
+  padding: 0px 15px 0px 15px;
+  color: #595959;
+  text-decoration: none;
+}
+
+a.navLink:hover {
+  color: white;
+}
+
+
+/*
+--------- NAVBAR FORM ----------
+*/
+
+.formSearch {
+  font-family: "Oxygen", 'Arial', sans-serif;
+}
+
+.navSearch {
+  padding-top: 7px;
+}
+
+.searchBox {
+  background: none!important;
+  border: none;
+  font: inherit;
+}
+
+.submitBox {
+  background: none!important;
+  border: none;
+  font-family: "Chewy", "arial", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  color: #595959;
+  background-color: #7fbf7f;
+}
+
+.submitBox:hover {
+  color: white;
+}
+
+.searchBox:required {
+  background: #7fbf7f !important;
+  outline-color: #7fbf7f !important;
+}
+
+
+/* 
+--------- LOGIN ----------
+*/
+
+#login {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.formLogin {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.3em;
+  width: 400px;
+  font-family: 'Chewy', cursive;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.formLogin label {
+  padding-right: 25px;
+}
+
+.usernameBox, .passwordBox, .submitBoxLogin {
+  align-self: center;
+  padding: 20px 0px;
+}
+
+.submitBoxLogin input {
+  font-size: 1em;
+  font-family: 'Chewy', cursive;
+}
+
+
+/* 
+--------- GENERIC ----------
+*/
+
+hr {
+  color: #ededed;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#footer a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#footer {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
+}
